@@ -1,0 +1,29 @@
+{
+  "modelSha256": {
+    "ground_slab": "1c5ec565719ce1815b83a9f041981ef1389b0329774da5386b627f1f1eec59ad",
+    "ground_band": "b969839219af4db4ae68cff4b1ee2281b33de2615c7f88999b5ceb8732bf645f",
+    "ground_platform": "1a36b3d91542a96756e9443d8872d1633136e8d3257aa9c264bc918befcb0858",
+    "wall_corner": "91e83e0dc65a67ca47051de9a9c0c834315132a68287f334c3ee84091a3c6e2b",
+    "railing": "b4a5e4bf1f97cb97e61a6ac57973aa85bac908fe31d2505f44a4bec7d234116a",
+    "stone_cluster": "63f0f64fd689e7d1799212f350289c63824a3c1f05b7b79d3fddf82eff0a275f",
+    "supply_crate": "f5de90372a2c77db39ac769fbd9ffef7e0db819666bb7075e360e62b8799e70e",
+    "route_flag": "01e46c3656cc3562203a404587c75030fbedd1806bc36e47223ef80029580ac1"
+  },
+  "removedTrianglesPerTemplate": {
+    "ground_slab": 0,
+    "ground_band": 8,
+    "ground_platform": 4,
+    "wall_corner": 2,
+    "railing": 8,
+    "stone_cluster": 4,
+    "supply_crate": 10,
+    "route_flag": 8
+  },
+  "originalPlacedTriangles": 3072,
+  "optimizedPlacedTriangles": 2614,
+  "scope": "Eight environment families, all placed instances. Only whole triangles covered by verified opaque source cubes removed. Collision unchanged. No cross-instance or partial-triangle removal.",
+  "unverified": [
+    "moving-view appearance",
+    "GPU timing or FPS improvement"
+  ]
+}

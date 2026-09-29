@@ -1,0 +1,53 @@
+{
+  "id": "route_flag",
+  "status": "source-only",
+  "source": "assets/source/environment/route_flag.bbmodel",
+  "triangles": 60,
+  "triangleBudget": 250,
+  "materials": 1,
+  "textureSize": 512,
+  "unitsPerMeter": 16,
+  "role": "Static stepped pennant points along positive X; rotate to mark actual route direction. No cloth simulation.",
+  "size": [
+    1.51,
+    2.8,
+    0.5
+  ],
+  "colliders": [
+    {
+      "position": [
+        0,
+        0.1,
+        0
+      ],
+      "halfExtents": [
+        0.25,
+        0.1,
+        0.25
+      ]
+    },
+    {
+      "position": [
+        0,
+        1.45,
+        0
+      ],
+      "halfExtents": [
+        0.06,
+        1.35,
+        0.06
+      ]
+    }
+  ],
+  "interactionPoints": [],
+  "author": "Project original geometry",
+  "license": "Project original; public release decision pending",
+  "unverified": [
+    "Blockbench native GLB export",
+    "source/native geometry and palette agreement",
+    "browser shading",
+    "internal-face cleanup",
+    "scene placement and route collision",
+    "distance readability"
+  ]
+}

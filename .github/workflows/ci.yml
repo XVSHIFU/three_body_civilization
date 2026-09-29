@@ -1,0 +1,27 @@
+name: Verify game
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # verified v4 ref
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # verified v4 ref
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run check:assets
+      - run: npm run check:handoff
+      - run: npm run screen:scenarios
+      - run: npm run build
+      - run: npm run check:subpath
+      - run: npm run report:build
+      - run: npx playwright install --with-deps chromium firefox
+      - run: npm run test:browser

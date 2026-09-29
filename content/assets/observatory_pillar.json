@@ -1,0 +1,38 @@
+{
+  "id": "observatory_pillar",
+  "path": "assets/models/observatory_pillar.glb",
+  "version": 2,
+  "type": "static",
+  "size": [
+    1.5,
+    3.0000000007450582,
+    1.5
+  ],
+  "coordinateSystem": "Y-up, metres, ground-centred",
+  "materials": 1,
+  "triangles": 36,
+  "animations": [],
+  "collider": "content/colliders/observatory_pillar.json",
+  "source": "assets/source/observatory_pillar.bbmodel",
+  "author": "Project original procedural geometry",
+  "license": "Project original; public release decision pending",
+  "bytes": 13136,
+  "sha256": "01d92784ecff947b080221f3a42f51612451da4f91d13eb77146396ad8995559",
+  "interactionPoints": [
+    {
+      "id": "sky_sample",
+      "purpose": "observation_origin",
+      "position": [
+        0,
+        3.15,
+        0
+      ]
+    }
+  ],
+  "export": {
+    "kind": "blockbench-native",
+    "report": "reports/blockbench/observatory_pillar-palette-roundtrip.json",
+    "sourceSha256": "752b07fa8c27903ea390f3c3fe07050f3ff3d1a2be6669652618510d576d2a02",
+    "vertexBaseline": "reports/vertex-assets/observatory_pillar.glb"
+  }
+}

@@ -1,0 +1,333 @@
+{
+  "meta": {
+    "format_version": "4.10",
+    "model_format": "free",
+    "box_uv": false
+  },
+  "name": "stone_cluster",
+  "model_identifier": "stone_cluster",
+  "resolution": {
+    "width": 512,
+    "height": 512
+  },
+  "elements": [
+    {
+      "name": "large_stone",
+      "uuid": "ec09947a-a567-42eb-a789-c0c6071dd53a",
+      "type": "cube",
+      "from": [
+        -12,
+        0,
+        -6.8
+      ],
+      "to": [
+        4,
+        11.2,
+        6.8
+      ],
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "color": 0,
+      "faces": {
+        "north": {
+          "uv": [
+            84.33333333333333,
+            255,
+            86.33333333333333,
+            257
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            84.33333333333333,
+            255,
+            86.33333333333333,
+            257
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            84.33333333333333,
+            255,
+            86.33333333333333,
+            257
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            84.33333333333333,
+            255,
+            86.33333333333333,
+            257
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            84.33333333333333,
+            255,
+            86.33333333333333,
+            257
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            84.33333333333333,
+            255,
+            86.33333333333333,
+            257
+          ],
+          "texture": 0
+        }
+      }
+    },
+    {
+      "name": "side_stone",
+      "uuid": "c5a65ab5-d198-4527-a96b-b68113d23e6f",
+      "type": "cube",
+      "from": [
+        4.000000000000001,
+        0,
+        -3.6
+      ],
+      "to": [
+        13.600000000000001,
+        6.4,
+        6.800000000000001
+      ],
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "color": 0,
+      "faces": {
+        "north": {
+          "uv": [
+            255,
+            255,
+            257,
+            257
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            255,
+            255,
+            257,
+            257
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            255,
+            255,
+            257,
+            257
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            255,
+            255,
+            257,
+            257
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            255,
+            255,
+            257,
+            257
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            255,
+            255,
+            257,
+            257
+          ],
+          "texture": 0
+        }
+      }
+    },
+    {
+      "name": "rear_stone",
+      "uuid": "71b4e782-a1e0-41f4-af49-e95e00891eb5",
+      "type": "cube",
+      "from": [
+        -6,
+        0,
+        -12.4
+      ],
+      "to": [
+        2.8000000000000003,
+        5.76,
+        -5.200000000000001
+      ],
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "color": 0,
+      "faces": {
+        "north": {
+          "uv": [
+            84.33333333333333,
+            255,
+            86.33333333333333,
+            257
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            84.33333333333333,
+            255,
+            86.33333333333333,
+            257
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            84.33333333333333,
+            255,
+            86.33333333333333,
+            257
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            84.33333333333333,
+            255,
+            86.33333333333333,
+            257
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            84.33333333333333,
+            255,
+            86.33333333333333,
+            257
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            84.33333333333333,
+            255,
+            86.33333333333333,
+            257
+          ],
+          "texture": 0
+        }
+      }
+    }
+  ],
+  "outliner": [
+    {
+      "name": "large_stone",
+      "uuid": "dd0f80f3-3916-4d3b-aa89-2ebd629380f6",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "export": true,
+      "children": [
+        "ec09947a-a567-42eb-a789-c0c6071dd53a"
+      ]
+    },
+    {
+      "name": "side_stone",
+      "uuid": "fe175230-eda0-4df3-a296-089fb7d85ebd",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "export": true,
+      "children": [
+        "c5a65ab5-d198-4527-a96b-b68113d23e6f"
+      ]
+    },
+    {
+      "name": "rear_stone",
+      "uuid": "3d56d3cd-cafe-4fe5-a390-54c86024b121",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "export": true,
+      "children": [
+        "71b4e782-a1e0-41f4-af49-e95e00891eb5"
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "name": "stone_cluster_palette",
+      "id": "0",
+      "uuid": "8ea84403-1174-4747-a2f4-a98103fce86e",
+      "path": "",
+      "folder": "",
+      "namespace": "",
+      "width": 512,
+      "height": 512,
+      "uv_width": 512,
+      "uv_height": 512,
+      "particle": false,
+      "use_as_default": false,
+      "layers_enabled": false,
+      "file_format": "png",
+      "render_mode": "default",
+      "render_sides": "auto",
+      "wrap_mode": "limited",
+      "pbr_channel": "color",
+      "visible": true,
+      "internal": true,
+      "saved": true,
+      "source": "data:image/png;base64,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"
+    }
+  ],
+  "animations": [],
+  "notes": "Original environment module. 16 units = 1 metre. Low angular rubble for non-route edges; keep capsule walking paths clear."
+}

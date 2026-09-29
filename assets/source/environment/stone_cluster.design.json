@@ -1,0 +1,65 @@
+{
+  "id": "stone_cluster",
+  "status": "source-only",
+  "source": "assets/source/environment/stone_cluster.bbmodel",
+  "triangles": 36,
+  "triangleBudget": 250,
+  "materials": 1,
+  "textureSize": 512,
+  "unitsPerMeter": 16,
+  "role": "Low angular rubble for non-route edges; keep capsule walking paths clear.",
+  "size": [
+    1.6,
+    0.7,
+    1.2000000000000002
+  ],
+  "colliders": [
+    {
+      "position": [
+        -0.25,
+        0.35,
+        0
+      ],
+      "halfExtents": [
+        0.5,
+        0.35,
+        0.425
+      ]
+    },
+    {
+      "position": [
+        0.55,
+        0.2,
+        0.1
+      ],
+      "halfExtents": [
+        0.3,
+        0.2,
+        0.325
+      ]
+    },
+    {
+      "position": [
+        -0.1,
+        0.18,
+        -0.55
+      ],
+      "halfExtents": [
+        0.275,
+        0.18,
+        0.225
+      ]
+    }
+  ],
+  "interactionPoints": [],
+  "author": "Project original geometry",
+  "license": "Project original; public release decision pending",
+  "unverified": [
+    "Blockbench native GLB export",
+    "source/native geometry and palette agreement",
+    "browser shading",
+    "internal-face cleanup",
+    "scene placement and route collision",
+    "distance readability"
+  ]
+}

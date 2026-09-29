@@ -1,0 +1,27 @@
+{
+  "id": "ground_platform",
+  "path": "assets/models/ground_platform.glb",
+  "version": 1,
+  "type": "static",
+  "size": [
+    4,
+    1,
+    4
+  ],
+  "coordinateSystem": "Y-up, metres, ground-centred",
+  "materials": 1,
+  "triangles": 24,
+  "animations": [],
+  "collider": "content/colliders/ground_platform.json",
+  "source": "assets/source/environment/ground_platform.bbmodel",
+  "author": "Project original geometry",
+  "license": "Project original; public release decision pending",
+  "bytes": 11252,
+  "sha256": "1a36b3d91542a96756e9443d8872d1633136e8d3257aa9c264bc918befcb0858",
+  "interactionPoints": [],
+  "export": {
+    "kind": "blockbench-native",
+    "report": "reports/blockbench/ground_platform-source-roundtrip.json",
+    "sourceSha256": "815fb530154544261029de5606a72cf8e2e2fd5a5ac95c38d298daa926e9c3d1"
+  }
+}

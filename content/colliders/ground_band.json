@@ -1,0 +1,17 @@
+{
+  "id": "ground_band",
+  "boxes": [
+    {
+      "position": [
+        0,
+        0.125,
+        0
+      ],
+      "halfExtents": [
+        2,
+        0.125,
+        2
+      ]
+    }
+  ]
+}

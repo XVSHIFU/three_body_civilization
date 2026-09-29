@@ -1,0 +1,133 @@
+{
+  "passed": true,
+  "baseSha256": "c8b20f5a0ac2b76303bb004434ec9f2995b93cfccf46d8e9fce2251550f1bc12",
+  "scope": "Six native Blockbench exports versus production base GLB with runtime accessories: rest and five poses per clip, every world-space mesh vertex, flat palette samples and all animation tracks.",
+  "reports": [
+    {
+      "id": "npc_variant_0",
+      "name": "观测员",
+      "sourceSha256": "3b1efacbd04c2be437cc241d51066369d1ce83b9b575e6ce01a8cace0cfc026c",
+      "nativeSha256": "d9395f4be35fb819b8274965a92aacebb75c82fd92253d64c9bd05579790f345",
+      "bytes": 25600,
+      "triangles": 96,
+      "meshes": 8,
+      "uvSamples": 192,
+      "clips": [
+        "idle",
+        "walk",
+        "observe",
+        "panic",
+        "preserve"
+      ],
+      "curveCount": 20,
+      "poses": 26,
+      "maxVertexError": 1.788139347702611e-8,
+      "maxCurveError": 0
+    },
+    {
+      "id": "npc_variant_1",
+      "name": "设施看守",
+      "sourceSha256": "477dfade6274d343e806dacbdb7b71ff5171266dcfb070d094648d0eaac94b20",
+      "nativeSha256": "35d4441cb24b0b02f51f64a41733d1b32d556ac679b7da28eaf7bf91840bb998",
+      "bytes": 25632,
+      "triangles": 96,
+      "meshes": 8,
+      "uvSamples": 192,
+      "clips": [
+        "idle",
+        "walk",
+        "observe",
+        "panic",
+        "preserve"
+      ],
+      "curveCount": 20,
+      "poses": 26,
+      "maxVertexError": 4.5446404004399355e-8,
+      "maxCurveError": 0
+    },
+    {
+      "id": "npc_variant_2",
+      "name": "居民 · 旅人",
+      "sourceSha256": "0cc0f582405f3a3b6100499814a3d5f1ca5cfe1eaed03cbe393a1b83ae2deba8",
+      "nativeSha256": "96224609cb5e069025b52e4ebba7a9202a39008c7990bc847b716483a3a12b68",
+      "bytes": 23872,
+      "triangles": 84,
+      "meshes": 7,
+      "uvSamples": 168,
+      "clips": [
+        "idle",
+        "walk",
+        "observe",
+        "panic",
+        "preserve"
+      ],
+      "curveCount": 20,
+      "poses": 26,
+      "maxVertexError": 3.0555738510667126e-8,
+      "maxCurveError": 0
+    },
+    {
+      "id": "npc_variant_3",
+      "name": "居民 · 工匠",
+      "sourceSha256": "fdfe2142bc028137e6356d41fc8ad8a1836006bd0f379185b5575f547dc73a9a",
+      "nativeSha256": "81b9b643e6148531ecc33631ba58e4a2ebb72579e92d29618704ec0b0470658c",
+      "bytes": 23832,
+      "triangles": 84,
+      "meshes": 7,
+      "uvSamples": 168,
+      "clips": [
+        "idle",
+        "walk",
+        "observe",
+        "panic",
+        "preserve"
+      ],
+      "curveCount": 20,
+      "poses": 26,
+      "maxVertexError": 4.5446404004399355e-8,
+      "maxCurveError": 0
+    },
+    {
+      "id": "npc_variant_4",
+      "name": "居民 · 信使",
+      "sourceSha256": "2fb598f9ba930fe2e0218e0e8c502fbe38d26ccf85a0bcdfb55d184faffbb12b",
+      "nativeSha256": "ba466783aeb279891a00c08a4de84281695e313ea3092e89d40e519ca9ce71de",
+      "bytes": 23868,
+      "triangles": 84,
+      "meshes": 7,
+      "uvSamples": 168,
+      "clips": [
+        "idle",
+        "walk",
+        "observe",
+        "panic",
+        "preserve"
+      ],
+      "curveCount": 20,
+      "poses": 26,
+      "maxVertexError": 1.7921085795871607e-8,
+      "maxCurveError": 0
+    },
+    {
+      "id": "npc_variant_5",
+      "name": "居民 · 采集者",
+      "sourceSha256": "fa99c13c509b9b327714d251506789bc32f529fb74ad7776772702985705d03c",
+      "nativeSha256": "692d9c5c1c325617796ca5425c2ee4aaf5fb5093ca6672ccc0b2e8192108d549",
+      "bytes": 25596,
+      "triangles": 96,
+      "meshes": 8,
+      "uvSamples": 192,
+      "clips": [
+        "idle",
+        "walk",
+        "observe",
+        "panic",
+        "preserve"
+      ],
+      "curveCount": 20,
+      "poses": 26,
+      "maxVertexError": 1.7921085795871607e-8,
+      "maxCurveError": 0
+    }
+  ]
+}

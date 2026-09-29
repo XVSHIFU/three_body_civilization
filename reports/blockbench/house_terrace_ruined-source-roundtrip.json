@@ -1,0 +1,25 @@
+{
+  "id": "house_terrace_ruined",
+  "passed": true,
+  "sourceSha256": "0ee0c13b633e7c26c0beb2980ed6680b9dde33328dc64ed867312c8febbc09e2",
+  "nativeSha256": "c0837283b664ccf7fcab9faedbd3d17bbe5007f69b8fa8845a80fec33037904b",
+  "bytes": 27268,
+  "triangles": 132,
+  "meshCount": 11,
+  "maxBoundsError": 1.9073486345888568e-7,
+  "uvSamples": 264,
+  "embeddedTextureSize": [
+    512,
+    512
+  ],
+  "exportSettings": {
+    "scale": 16,
+    "encoding": "Binary (glb)",
+    "embedTextures": true
+  },
+  "unverified": [
+    "browser GLTFLoader shading",
+    "runtime collision and interactions",
+    "5/20/50m recognition"
+  ]
+}

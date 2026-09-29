@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "endings": [
+    "lost",
+    "preserved"
+  ],
+  "localOriginalSha256": "d41b2994339e4637098e2a0b7756db2449503f5fc53dd988bdeca46164f0bc4c",
+  "originalUnchangedAfterBoth": true,
+  "evidenceCount": 1,
+  "inheritedObservations": 2,
+  "scope": "Real browser imports in temporary mode, next-civilization button, and downloads of current memory archive and persisted original. Not a complete input-route replay."
+}

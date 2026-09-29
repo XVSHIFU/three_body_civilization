@@ -1,0 +1,31 @@
+id,author,license,source
+ruler_cube,Project original procedural geometry,Project original; public release decision pending,assets/source/ruler_cube.bbmodel
+wall,Project original procedural geometry,Project original; public release decision pending,assets/source/wall.bbmodel
+doorway,Project original procedural geometry,Project original; public release decision pending,assets/source/doorway.bbmodel
+stairs,Project original procedural geometry,Project original; public release decision pending,assets/source/stairs.bbmodel
+observatory_pillar,Project original procedural geometry,Project original; public release decision pending,assets/source/observatory_pillar.bbmodel
+npc,Project original procedural geometry,Project original; public release decision pending,assets/source/npc.bbmodel
+facility,Project original procedural geometry,Project original; public release decision pending,assets/source/facility.bbmodel
+thermometer,Project original geometry,Project original; public release decision pending,assets/source/second-batch/thermometer.bbmodel
+archive_desk,Project original geometry,Project original; public release decision pending,assets/source/second-batch/archive_desk.bbmodel
+house_terrace,Project original geometry,Project original; public release decision pending,assets/source/buildings/house_terrace.bbmodel
+house_tower,Project original geometry,Project original; public release decision pending,assets/source/buildings/house_tower.bbmodel
+house_terrace_ruined,Project original geometry,Project original; public release decision pending,assets/source/buildings/house_terrace_ruined.bbmodel
+house_tower_ruined,Project original geometry,Project original; public release decision pending,assets/source/buildings/house_tower_ruined.bbmodel
+ground_slab,Project original geometry,Project original; public release decision pending,assets/source/environment/ground_slab.bbmodel
+ground_band,Project original geometry,Project original; public release decision pending,assets/source/environment/ground_band.bbmodel
+ground_platform,Project original geometry,Project original; public release decision pending,assets/source/environment/ground_platform.bbmodel
+wall_corner,Project original geometry,Project original; public release decision pending,assets/source/environment/wall_corner.bbmodel
+railing,Project original geometry,Project original; public release decision pending,assets/source/environment/railing.bbmodel
+stone_cluster,Project original geometry,Project original; public release decision pending,assets/source/environment/stone_cluster.bbmodel
+supply_crate,Project original geometry,Project original; public release decision pending,assets/source/environment/supply_crate.bbmodel
+route_flag,Project original geometry,Project original; public release decision pending,assets/source/environment/route_flag.bbmodel
+observatory_assembly,Project original geometry,Project original; public release decision pending,assets/source/observatory/observatory_assembly.bbmodel
+npc_variant_0,Project original geometry,Project original; public release decision pending,assets/source/npc-variants/npc_variant_0.bbmodel
+npc_variant_1,Project original geometry,Project original; public release decision pending,assets/source/npc-variants/npc_variant_1.bbmodel
+npc_variant_2,Project original geometry,Project original; public release decision pending,assets/source/npc-variants/npc_variant_2.bbmodel
+npc_variant_3,Project original geometry,Project original; public release decision pending,assets/source/npc-variants/npc_variant_3.bbmodel
+npc_variant_4,Project original geometry,Project original; public release decision pending,assets/source/npc-variants/npc_variant_4.bbmodel
+npc_variant_5,Project original geometry,Project original; public release decision pending,assets/source/npc-variants/npc_variant_5.bbmodel
+parchment,OpenAI image generation,Generated for this project; public release decision pending,public/assets/materials/parchment.prompt.txt
+noto_serif_sc_title_600,Adobe and Google,SIL Open Font License 1.1,public/assets/fonts/OFL.txt

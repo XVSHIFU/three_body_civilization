@@ -1,0 +1,28 @@
+{
+  "id": "doorway",
+  "path": "assets/models/doorway.glb",
+  "version": 2,
+  "type": "static",
+  "size": [
+    4,
+    3,
+    0.5
+  ],
+  "coordinateSystem": "Y-up, metres, ground-centred",
+  "materials": 1,
+  "triangles": 36,
+  "animations": [],
+  "collider": "content/colliders/doorway.json",
+  "source": "assets/source/doorway.bbmodel",
+  "author": "Project original procedural geometry",
+  "license": "Project original; public release decision pending",
+  "bytes": 12976,
+  "sha256": "bc4f5bd9867a43344f04230f061e4b24cdf726b0268d4796cb482c929abba6a6",
+  "interactionPoints": [],
+  "export": {
+    "kind": "blockbench-native",
+    "report": "reports/blockbench/doorway-palette-roundtrip.json",
+    "sourceSha256": "1902f16cb37cbceabf1140a62b671f249e9ffb33aa3b7df50536f2bacc686bc0",
+    "vertexBaseline": "reports/vertex-assets/doorway.glb"
+  }
+}

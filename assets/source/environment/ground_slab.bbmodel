@@ -1,0 +1,141 @@
+{
+  "meta": {
+    "format_version": "4.10",
+    "model_format": "free",
+    "box_uv": false
+  },
+  "name": "ground_slab",
+  "model_identifier": "ground_slab",
+  "resolution": {
+    "width": 512,
+    "height": 512
+  },
+  "elements": [
+    {
+      "name": "slab",
+      "uuid": "edefcbf5-563a-4806-aac6-fbc456ca2937",
+      "type": "cube",
+      "from": [
+        -32,
+        0,
+        -32
+      ],
+      "to": [
+        32,
+        4,
+        32
+      ],
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "box_uv": false,
+      "color": 0,
+      "faces": {
+        "north": {
+          "uv": [
+            84.33333333333333,
+            255,
+            86.33333333333333,
+            257
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            84.33333333333333,
+            255,
+            86.33333333333333,
+            257
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            84.33333333333333,
+            255,
+            86.33333333333333,
+            257
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            84.33333333333333,
+            255,
+            86.33333333333333,
+            257
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            84.33333333333333,
+            255,
+            86.33333333333333,
+            257
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            84.33333333333333,
+            255,
+            86.33333333333333,
+            257
+          ],
+          "texture": 0
+        }
+      }
+    }
+  ],
+  "outliner": [
+    {
+      "name": "slab",
+      "uuid": "faa5093b-36c7-4be9-a1c9-5b9a35046f6f",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "export": true,
+      "children": [
+        "edefcbf5-563a-4806-aac6-fbc456ca2937"
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "name": "ground_slab_palette",
+      "id": "0",
+      "uuid": "94a2aca6-db3c-46f8-a14d-d804d2eb850c",
+      "path": "",
+      "folder": "",
+      "namespace": "",
+      "width": 512,
+      "height": 512,
+      "uv_width": 512,
+      "uv_height": 512,
+      "particle": false,
+      "use_as_default": false,
+      "layers_enabled": false,
+      "file_format": "png",
+      "render_mode": "default",
+      "render_sides": "auto",
+      "wrap_mode": "limited",
+      "pbr_channel": "color",
+      "visible": true,
+      "internal": true,
+      "saved": true,
+      "source": "data:image/png;base64,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"
+    }
+  ],
+  "animations": [],
+  "notes": "Original environment module. 16 units = 1 metre. Repeatable 4m flat stone floor; place at y=-0.25 for top y=0."
+}

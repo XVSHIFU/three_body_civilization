@@ -1,0 +1,46 @@
+{
+  "name": "three-body-civilization",
+  "private": true,
+  "version": "0.3.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "screen:scenarios": "tsx tools/screen-scenarios.ts",
+    "check:assets": "tsx tools/check-assets.ts",
+    "check:handoff": "tsx tools/generate-observatory-source.ts --check && tsx tools/check-observatory-export.ts && tsx tools/report-observatory.ts && tsx tools/check-npc-variant-exports.ts && tsx tools/check-asset-families.ts",
+    "test:browser": "playwright test",
+    "generate:assets": "tsx tools/generate-assets.ts",
+    "report:build": "tsx tools/report-build.ts",
+    "check:subpath": "tsx tools/check-subpath.ts",
+    "promote:assets": "tsx tools/promote-native-assets.ts"
+  },
+  "dependencies": {
+    "@dimforge/rapier3d-compat": "0.21.0",
+    "@fontsource/noto-sans-sc": "5.3.0",
+    "@fontsource/noto-serif-sc": "5.3.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "three": "0.186.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@types/node": "26.6.3",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@types/three": "0.186.0",
+    "@vitejs/plugin-react": "6.1.1",
+    "fake-indexeddb": "6.2.5",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2",
+    "vite": "8.3.1",
+    "vitest": "5.0.2"
+  }
+}

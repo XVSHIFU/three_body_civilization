@@ -1,0 +1,25 @@
+{
+  "id": "stone_cluster",
+  "passed": true,
+  "sourceSha256": "02c95abe34c4eab38f43602aa6666f4bc3f3640b4b8f14be112a3ec96b8eb17b",
+  "nativeSha256": "63f0f64fd689e7d1799212f350289c63824a3c1f05b7b79d3fddf82eff0a275f",
+  "bytes": 13184,
+  "triangles": 36,
+  "meshCount": 3,
+  "maxBoundsError": 2.384185793236071e-8,
+  "uvSamples": 72,
+  "embeddedTextureSize": [
+    512,
+    512
+  ],
+  "exportSettings": {
+    "scale": 16,
+    "encoding": "Binary (glb)",
+    "embedTextures": true
+  },
+  "unverified": [
+    "browser GLTFLoader shading",
+    "runtime collision and interactions",
+    "5/20/50m recognition"
+  ]
+}

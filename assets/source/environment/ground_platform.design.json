@@ -1,0 +1,53 @@
+{
+  "id": "ground_platform",
+  "status": "source-only",
+  "source": "assets/source/environment/ground_platform.bbmodel",
+  "triangles": 24,
+  "triangleBudget": 200,
+  "materials": 1,
+  "textureSize": 512,
+  "unitsPerMeter": 16,
+  "role": "4m square raised plinth; top remains flat. Needs an approach stair when traversable.",
+  "size": [
+    4,
+    1,
+    4
+  ],
+  "colliders": [
+    {
+      "position": [
+        0,
+        0.4,
+        0
+      ],
+      "halfExtents": [
+        2,
+        0.4,
+        2
+      ]
+    },
+    {
+      "position": [
+        0,
+        0.9,
+        0
+      ],
+      "halfExtents": [
+        2,
+        0.1,
+        2
+      ]
+    }
+  ],
+  "interactionPoints": [],
+  "author": "Project original geometry",
+  "license": "Project original; public release decision pending",
+  "unverified": [
+    "Blockbench native GLB export",
+    "source/native geometry and palette agreement",
+    "browser shading",
+    "internal-face cleanup",
+    "scene placement and route collision",
+    "distance readability"
+  ]
+}

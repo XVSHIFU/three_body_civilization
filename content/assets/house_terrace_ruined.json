@@ -1,0 +1,27 @@
+{
+  "id": "house_terrace_ruined",
+  "path": "assets/models/house_terrace_ruined.glb",
+  "version": 2,
+  "type": "static",
+  "size": [
+    8.5,
+    4.5,
+    8.5
+  ],
+  "coordinateSystem": "Y-up, metres, ground-centred",
+  "materials": 1,
+  "triangles": 132,
+  "animations": [],
+  "collider": "content/colliders/house_terrace_ruined.json",
+  "source": "assets/source/buildings/house_terrace_ruined.bbmodel",
+  "author": "Project original geometry",
+  "license": "Project original; public release decision pending",
+  "bytes": 27268,
+  "sha256": "c0837283b664ccf7fcab9faedbd3d17bbe5007f69b8fa8845a80fec33037904b",
+  "interactionPoints": [],
+  "export": {
+    "kind": "blockbench-native",
+    "report": "reports/blockbench/house_terrace_ruined-source-roundtrip.json",
+    "sourceSha256": "0ee0c13b633e7c26c0beb2980ed6680b9dde33328dc64ed867312c8febbc09e2"
+  }
+}

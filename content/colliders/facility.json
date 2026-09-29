@@ -1,0 +1,89 @@
+{
+  "id": "facility",
+  "boxes": [
+    {
+      "position": [
+        0,
+        2.5,
+        -5
+      ],
+      "halfExtents": [
+        6,
+        2.5,
+        0.25
+      ]
+    },
+    {
+      "position": [
+        -6,
+        2.5,
+        0
+      ],
+      "halfExtents": [
+        0.25,
+        2.5,
+        5
+      ]
+    },
+    {
+      "position": [
+        6,
+        2.5,
+        0
+      ],
+      "halfExtents": [
+        0.25,
+        2.5,
+        5
+      ]
+    },
+    {
+      "position": [
+        -3.5,
+        2.5,
+        5
+      ],
+      "halfExtents": [
+        2.5,
+        2.5,
+        0.25
+      ]
+    },
+    {
+      "position": [
+        3.5,
+        2.5,
+        5
+      ],
+      "halfExtents": [
+        2.5,
+        2.5,
+        0.25
+      ]
+    },
+    {
+      "position": [
+        0,
+        4,
+        5
+      ],
+      "halfExtents": [
+        1,
+        1,
+        0.25
+      ]
+    },
+    {
+      "position": [
+        0,
+        5.25,
+        0
+      ],
+      "halfExtents": [
+        6.5,
+        0.25,
+        5.5
+      ]
+    }
+  ]
+}

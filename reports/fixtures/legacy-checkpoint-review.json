@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "buildId": "legacy-review-fixture",
+  "revision": 0,
+  "civilization": 1,
+  "observations": [
+    {
+      "id": "c1-thermometer-0",
+      "civilization": 1,
+      "tick": 0,
+      "source": "thermometer",
+      "sunIds": [],
+      "directions": {},
+      "temperature": 28
+    },
+    {
+      "id": "c1-thermometer-1",
+      "civilization": 1,
+      "tick": 600,
+      "source": "thermometer",
+      "sunIds": [],
+      "directions": {},
+      "temperature": 40
+    }
+  ],
+  "hypothesis": {
+    "proposed": false,
+    "evidenceIds": [],
+    "status": "tentative"
+  },
+  "settings": {
+    "theme": "b",
+    "fontScale": 1,
+    "quality": "standard",
+    "fov": 65,
+    "sensitivity": 1,
+    "volume": 0.35,
+    "bassVolume": 0.5,
+    "reducedMotion": true,
+    "captions": true,
+    "keys": {
+      "forward": "KeyW",
+      "back": "KeyS",
+      "left": "KeyA",
+      "right": "KeyD",
+      "interact": "KeyE",
+      "journal": "KeyJ"
+    }
+  },
+  "checkpoint": {
+    "celestial": {
+      "time": 0,
+      "stars": [
+        {
+          "id": "s1",
+          "mass": 0.01,
+          "luminosity": 8,
+          "position": [
+            -2,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            -0.03535533905932738
+          ]
+        },
+        {
+          "id": "s2",
+          "mass": 0.01,
+          "luminosity": 8,
+          "position": [
+            2,
+            0,
+            0
+          ],
+          "velocity": [
+            0,
+            0,
+            0.03535533905932738
+          ]
+        },
+        {
+          "id": "s3",
+          "mass": 0.02,
+          "luminosity": 30,
+          "position": [
+            0,
+            0,
+            -10
+          ],
+          "velocity": [
+            0.04472135955,
+            0,
+            0
+          ]
+        }
+      ],
+      "planet": {
+        "id": "p",
+        "mass": 0,
+        "luminosity": 0,
+        "position": [
+          0,
+          0,
+          5
+        ],
+        "velocity": [
+          0.04,
+          0,
+          0
+        ]
+      }
+    },
+    "celestialAccumulator": 0,
+    "temperature": 28,
+    "heatLoad": 0,
+    "dangerDuration": 0,
+    "warning": false,
+    "scenarioId": "screened-001",
+    "scenarioVersion": 1,
+    "integratorVersion": "verlet-1",
+    "tick": 0,
+    "position": [
+      0,
+      0.9,
+      64
+    ],
+    "yaw": 0,
+    "pitch": 0,
+    "preservation": {
+      "phase": "idle",
+      "elapsed": 0,
+      "integrity": 1
+    },
+    "ended": false,
+    "outcome": null
+  },
+  "history": [],
+  "savedAt": null
+}

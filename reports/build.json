@@ -1,0 +1,286 @@
+{
+  "node": "v24.18.0",
+  "buildId": "7a7fd0435986",
+  "dependencies": {
+    "@dimforge/rapier3d-compat": "0.21.0",
+    "@fontsource/noto-sans-sc": "5.3.0",
+    "@fontsource/noto-serif-sc": "5.3.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "three": "0.186.1"
+  },
+  "totalBytes": 12354759,
+  "files": [
+    {
+      "path": "dist\\assets\\fonts\\noto-serif-sc-title-600.woff2",
+      "bytes": 1312,
+      "gzipBytes": 1335,
+      "sha256": "c6e926df451692989af137e8b7e0cea9b5c0d8204885c572df046ef1ac377756"
+    },
+    {
+      "path": "dist\\assets\\fonts\\OFL.txt",
+      "bytes": 4314,
+      "gzipBytes": 1934,
+      "sha256": "18aabf190848725e2576eefb5c29ba06aac1029d02132252a7f312eac2e50cf3"
+    },
+    {
+      "path": "dist\\assets\\index-BE_fN-6x.js",
+      "bytes": 285281,
+      "gzipBytes": 89748,
+      "sha256": "7ac10d041fc5a8910dda8c95189768a57c262787d643fe1a4cf7827c704ea1d6"
+    },
+    {
+      "path": "dist\\assets\\index-DIHkbINJ.css",
+      "bytes": 19943,
+      "gzipBytes": 5060,
+      "sha256": "bea16d6d21081e7bd074c65ac9580be051c219ae8f417283a23cf67b5b3e331d"
+    },
+    {
+      "path": "dist\\assets\\materials\\parchment.prompt.txt",
+      "bytes": 676,
+      "gzipBytes": 417,
+      "sha256": "8eba8661feb928252a2d6d72a504437655f417e80c84b99aff45a44fb79bb71d"
+    },
+    {
+      "path": "dist\\assets\\materials\\parchment.webp",
+      "bytes": 31042,
+      "gzipBytes": 31070,
+      "sha256": "563e3ee111a524659bacd44f713ee7c458d163a254ab979831e7d13d880135cc"
+    },
+    {
+      "path": "dist\\assets\\materials\\parchment.webp.json",
+      "bytes": 736,
+      "gzipBytes": 469,
+      "sha256": "61b373dfb5778cab8c74084c2846e9f405a3b15496952d7df2d2f92dc60306cc"
+    },
+    {
+      "path": "dist\\assets\\models\\archive_desk.glb",
+      "bytes": 26440,
+      "gzipBytes": 7411,
+      "sha256": "199e35e52517809822d7d5bfcfccde681b22de2399780f252a68606a81557d4c"
+    },
+    {
+      "path": "dist\\assets\\models\\doorway.glb",
+      "bytes": 12976,
+      "gzipBytes": 6217,
+      "sha256": "bc4f5bd9867a43344f04230f061e4b24cdf726b0268d4796cb482c929abba6a6"
+    },
+    {
+      "path": "dist\\assets\\models\\facility.glb",
+      "bytes": 19904,
+      "gzipBytes": 6856,
+      "sha256": "eaf7e81a6473a33e242ff9a138cafd8c5b5531d06dfe82a5379759bf7d38deed"
+    },
+    {
+      "path": "dist\\assets\\models\\ground_band.glb",
+      "bytes": 13020,
+      "gzipBytes": 6243,
+      "sha256": "b969839219af4db4ae68cff4b1ee2281b33de2615c7f88999b5ceb8732bf645f"
+    },
+    {
+      "path": "dist\\assets\\models\\ground_platform.glb",
+      "bytes": 11252,
+      "gzipBytes": 6081,
+      "sha256": "1a36b3d91542a96756e9443d8872d1633136e8d3257aa9c264bc918befcb0858"
+    },
+    {
+      "path": "dist\\assets\\models\\ground_slab.glb",
+      "bytes": 9516,
+      "gzipBytes": 5901,
+      "sha256": "1c5ec565719ce1815b83a9f041981ef1389b0329774da5386b627f1f1eec59ad"
+    },
+    {
+      "path": "dist\\assets\\models\\house_terrace.glb",
+      "bytes": 21764,
+      "gzipBytes": 7113,
+      "sha256": "520d6878c23c1d31856eb1c8e81b0a302ea0f3a7b919a9f4f74afcf3711888ae"
+    },
+    {
+      "path": "dist\\assets\\models\\house_terrace_ruined.glb",
+      "bytes": 27268,
+      "gzipBytes": 7737,
+      "sha256": "c0837283b664ccf7fcab9faedbd3d17bbe5007f69b8fa8845a80fec33037904b"
+    },
+    {
+      "path": "dist\\assets\\models\\house_tower.glb",
+      "bytes": 21720,
+      "gzipBytes": 7122,
+      "sha256": "2e5249a20be01c40fd6767bc6524dc79be1b7ef199680a5c4652d602dc04b195"
+    },
+    {
+      "path": "dist\\assets\\models\\house_tower_ruined.glb",
+      "bytes": 29284,
+      "gzipBytes": 7941,
+      "sha256": "c1b2ac37c72aff3681fe096cad035bea990680d21846ea108b6adc61c0b9598b"
+    },
+    {
+      "path": "dist\\assets\\models\\npc.glb",
+      "bytes": 22068,
+      "gzipBytes": 3004,
+      "sha256": "c8b20f5a0ac2b76303bb004434ec9f2995b93cfccf46d8e9fce2251550f1bc12"
+    },
+    {
+      "path": "dist\\assets\\models\\observatory_pillar.glb",
+      "bytes": 13136,
+      "gzipBytes": 6362,
+      "sha256": "01d92784ecff947b080221f3a42f51612451da4f91d13eb77146396ad8995559"
+    },
+    {
+      "path": "dist\\assets\\models\\railing.glb",
+      "bytes": 14988,
+      "gzipBytes": 6484,
+      "sha256": "b4a5e4bf1f97cb97e61a6ac57973aa85bac908fe31d2505f44a4bec7d234116a"
+    },
+    {
+      "path": "dist\\assets\\models\\route_flag.glb",
+      "bytes": 16844,
+      "gzipBytes": 6726,
+      "sha256": "01e46c3656cc3562203a404587c75030fbedd1806bc36e47223ef80029580ac1"
+    },
+    {
+      "path": "dist\\assets\\models\\ruler_cube.glb",
+      "bytes": 9528,
+      "gzipBytes": 5894,
+      "sha256": "de7f292ae9d00c8a387a9618a6ab3cc8a06b2efff88433c146efe3367a5a9f46"
+    },
+    {
+      "path": "dist\\assets\\models\\stairs.glb",
+      "bytes": 21684,
+      "gzipBytes": 6926,
+      "sha256": "ab7c7a23d9e20abe3aa870380cbf93311bebc4ebd2a4e11d5a4fa19d605b3854"
+    },
+    {
+      "path": "dist\\assets\\models\\stone_cluster.glb",
+      "bytes": 13184,
+      "gzipBytes": 6397,
+      "sha256": "63f0f64fd689e7d1799212f350289c63824a3c1f05b7b79d3fddf82eff0a275f"
+    },
+    {
+      "path": "dist\\assets\\models\\supply_crate.glb",
+      "bytes": 18520,
+      "gzipBytes": 6813,
+      "sha256": "f5de90372a2c77db39ac769fbd9ffef7e0db819666bb7075e360e62b8799e70e"
+    },
+    {
+      "path": "dist\\assets\\models\\thermometer.glb",
+      "bytes": 26516,
+      "gzipBytes": 7442,
+      "sha256": "9ab66ce11f4bc5de51f5d5b27d72afc2a325663a6455f2271f10077c92f5638d"
+    },
+    {
+      "path": "dist\\assets\\models\\wall.glb",
+      "bytes": 9512,
+      "gzipBytes": 5892,
+      "sha256": "426eecbeda10a1123fd3626039b495f5804ec5a98d5b2b69e8a27b6adac3c7d0"
+    },
+    {
+      "path": "dist\\assets\\models\\wall_corner.glb",
+      "bytes": 11256,
+      "gzipBytes": 6074,
+      "sha256": "91e83e0dc65a67ca47051de9a9c0c834315132a68287f334c3ee84091a3c6e2b"
+    },
+    {
+      "path": "dist\\assets\\noto-sans-sc-chinese-simplified-300-normal-Dhc7b-47.woff",
+      "bytes": 1540936,
+      "gzipBytes": 1541148,
+      "sha256": "59c58c9fe684aac247066148b0fd6a293620b937890eccab98c6968fc91cb21d"
+    },
+    {
+      "path": "dist\\assets\\noto-sans-sc-chinese-simplified-300-normal-Yr163UWa.woff2",
+      "bytes": 1112552,
+      "gzipBytes": 1112910,
+      "sha256": "a8cff79fbb18b24b6e52d8cd2e9294f9060363ec4a1c54c9e1f968a92f3286eb"
+    },
+    {
+      "path": "dist\\assets\\noto-serif-sc-chinese-simplified-400-normal-hudUdRP0.woff2",
+      "bytes": 1507260,
+      "gzipBytes": 1507714,
+      "sha256": "7dd5aea2df4644e916c2eb558bc8ed6ad6d8925c2c8e251fe68f7206da211696"
+    },
+    {
+      "path": "dist\\assets\\noto-serif-sc-chinese-simplified-400-normal-noNOj8bn.woff",
+      "bytes": 2071172,
+      "gzipBytes": 2071551,
+      "sha256": "64740d1c3fe6c6a5f49e56b7b74d0468ff6756ee6d9d93c3f0dd7397f39ef058"
+    },
+    {
+      "path": "dist\\assets\\noto-serif-sc-latin-400-normal-bWtu-bD9.woff2",
+      "bytes": 18540,
+      "gzipBytes": 18568,
+      "sha256": "af0c95a3e897cfab6a319a789f203dc64b8f81574f8113c7d46240db68c8ff8f"
+    },
+    {
+      "path": "dist\\assets\\noto-serif-sc-latin-400-normal-DtFOq9cQ.woff",
+      "bytes": 22472,
+      "gzipBytes": 22466,
+      "sha256": "4b539e3b35e719f0873bb0c3a165e8c051382474452aadd55c693de0473ebf5f"
+    },
+    {
+      "path": "dist\\assets\\plates\\observatory.prompt.txt",
+      "bytes": 701,
+      "gzipBytes": 465,
+      "sha256": "afcc36e8399b88c8ed7c1691b7b562c4c9dc36efcd0b788a9fa5d37b6c3a3400"
+    },
+    {
+      "path": "dist\\assets\\plates\\observatory.webp",
+      "bytes": 94728,
+      "gzipBytes": 94776,
+      "sha256": "cf7999d2d3161e1443693ee90d80345424450ace8a48d814f5eafb9c95ac5b95"
+    },
+    {
+      "path": "dist\\assets\\plates\\observatory.webp.json",
+      "bytes": 763,
+      "gzipBytes": 519,
+      "sha256": "4b23f7a2c695de1befe44554f9a357c7db75a9793d609c8de70f77cb9a65226b"
+    },
+    {
+      "path": "dist\\assets\\plates\\pulp.prompt.txt",
+      "bytes": 637,
+      "gzipBytes": 425,
+      "sha256": "91cc7528250bb2c042965f221f68717fe25fe6b35d3a519231666ccb4ebd154d"
+    },
+    {
+      "path": "dist\\assets\\plates\\pulp.webp",
+      "bytes": 107992,
+      "gzipBytes": 108045,
+      "sha256": "03e52b9816277233a8efdb3df0cd668b1e78f88a7d993fd41509ee259acee575"
+    },
+    {
+      "path": "dist\\assets\\plates\\pulp.webp.json",
+      "bytes": 699,
+      "gzipBytes": 482,
+      "sha256": "4daad876a412c717a97a363bd23692308ab5c4ce57a50b060662963a460ffde8"
+    },
+    {
+      "path": "dist\\assets\\plates\\survey.prompt.txt",
+      "bytes": 553,
+      "gzipBytes": 361,
+      "sha256": "2d3eb9a0a5eb4479045d45ec44920ece6868ebb71a381203500c2ff4c500eb5a"
+    },
+    {
+      "path": "dist\\assets\\plates\\survey.webp",
+      "bytes": 119208,
+      "gzipBytes": 119266,
+      "sha256": "911e70b351ae5bfee0136bc84b2940ecc57fb33f36dabe2669b20017f99089c7"
+    },
+    {
+      "path": "dist\\assets\\plates\\survey.webp.json",
+      "bytes": 615,
+      "gzipBytes": 418,
+      "sha256": "a067c0709284871d8387a02523b04efb377eb1d49a8a592820248587540377c0"
+    },
+    {
+      "path": "dist\\assets\\runtime-DCnRgDSp.js",
+      "bytes": 5041822,
+      "gzipBytes": 1829317,
+      "sha256": "55c8b58a03c832e040d91d5e2b57857ad563ee4d74ac29588549900f8bf134a2"
+    },
+    {
+      "path": "dist\\index.html",
+      "bytes": 425,
+      "gzipBytes": 334,
+      "sha256": "51fa84480b443a8277377c0251d2938a53f36248caf1d01deb0e2ad2e4b4b340"
+    }
+  ],
+  "scope": "Static build bytes only; not observed browser transfer, load latency, frame performance, or GPU memory."
+}

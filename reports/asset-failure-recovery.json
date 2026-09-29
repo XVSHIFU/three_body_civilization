@@ -1,0 +1,26 @@
+{
+  "test": "critical GLB missing file and in-place initialization retry",
+  "origin": "http://127.0.0.1:4180/?experience=compressed",
+  "asset": "dist/assets/models/wall.glb",
+  "restoredSha256": "94ac1b5b740bdd43a138ec8c935c55acf688289cce294f62cedac41e46e9677a",
+  "fault": "Temporarily moved the generated wall GLB out of the preview directory. Vite SPA fallback returned HTML; GLTFLoader rejected parsing.",
+  "observed": [
+    "Initialization blocked with the actual loader error",
+    "Retry initialization button available at 150% text size",
+    "Model restored byte-for-byte",
+    "Retry reached the real scene ready screen",
+    "Original two fixture observations and inherited calibration remained visible"
+  ],
+  "screenshots": [
+    ".impeccable/review/asset-failure-final.png",
+    ".impeccable/review/asset-failure-recovered.png",
+    ".impeccable/review/asset-recovery-records.png"
+  ],
+  "notCovered": [
+    "WASM failure",
+    "WebGL2 creation failure",
+    "Unexpected context loss",
+    "Every GLB asset independently",
+    "Active gameplay checkpoint failure"
+  ]
+}

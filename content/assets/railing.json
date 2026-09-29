@@ -1,0 +1,27 @@
+{
+  "id": "railing",
+  "path": "assets/models/railing.glb",
+  "version": 1,
+  "type": "static",
+  "size": [
+    2,
+    1.2000000000000002,
+    0.2
+  ],
+  "coordinateSystem": "Y-up, metres, ground-centred",
+  "materials": 1,
+  "triangles": 48,
+  "animations": [],
+  "collider": "content/colliders/railing.json",
+  "source": "assets/source/environment/railing.bbmodel",
+  "author": "Project original geometry",
+  "license": "Project original; public release decision pending",
+  "bytes": 14988,
+  "sha256": "b4a5e4bf1f97cb97e61a6ac57973aa85bac908fe31d2505f44a4bec7d234116a",
+  "interactionPoints": [],
+  "export": {
+    "kind": "blockbench-native",
+    "report": "reports/blockbench/railing-source-roundtrip.json",
+    "sourceSha256": "35b9345a4d3eca33aa4d8db238cdf34ab3bb89313b40abb7fa3b748f0ffa4e52"
+  }
+}

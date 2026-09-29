@@ -1,0 +1,27 @@
+{
+  "id": "house_tower",
+  "path": "assets/models/house_tower.glb",
+  "version": 1,
+  "type": "static",
+  "size": [
+    6.5,
+    9.75,
+    8.55
+  ],
+  "coordinateSystem": "Y-up, metres, ground-centred",
+  "materials": 1,
+  "triangles": 96,
+  "animations": [],
+  "collider": "content/colliders/house_tower.json",
+  "source": "assets/source/buildings/house_tower.bbmodel",
+  "author": "Project original geometry",
+  "license": "Project original; public release decision pending",
+  "bytes": 21720,
+  "sha256": "2e5249a20be01c40fd6767bc6524dc79be1b7ef199680a5c4652d602dc04b195",
+  "interactionPoints": [],
+  "export": {
+    "kind": "blockbench-native",
+    "report": "reports/blockbench/house_tower-source-roundtrip.json",
+    "sourceSha256": "478b6d4bcaf10552aa9a3eb3a48bf33040b75d2901a5c2ae97ce45a8f9c8d1e3"
+  }
+}

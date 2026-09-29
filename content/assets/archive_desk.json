@@ -1,0 +1,37 @@
+{
+  "id": "archive_desk",
+  "path": "assets/models/archive_desk.glb",
+  "version": 1,
+  "type": "static",
+  "size": [
+    2,
+    1.21,
+    1.1
+  ],
+  "coordinateSystem": "Y-up, metres, ground-centred",
+  "materials": 1,
+  "triangles": 120,
+  "animations": [],
+  "collider": "content/colliders/archive_desk.json",
+  "source": "assets/source/second-batch/archive_desk.bbmodel",
+  "author": "Project original geometry",
+  "license": "Project original; public release decision pending",
+  "bytes": 26440,
+  "sha256": "199e35e52517809822d7d5bfcfccde681b22de2399780f252a68606a81557d4c",
+  "interactionPoints": [
+    {
+      "id": "operate",
+      "position": [
+        0,
+        1.15,
+        0.5
+      ],
+      "purpose": "Archive reading surface; approach from positive Z."
+    }
+  ],
+  "export": {
+    "kind": "blockbench-native",
+    "report": "reports/blockbench/archive_desk-source-roundtrip.json",
+    "sourceSha256": "f3ea0950bcd996746fb3df423d3bcd22714aac6556af3841aa736e21a5ba1d19"
+  }
+}

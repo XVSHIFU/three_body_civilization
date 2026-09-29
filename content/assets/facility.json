@@ -1,0 +1,38 @@
+{
+  "id": "facility",
+  "path": "assets/models/facility.glb",
+  "version": 2,
+  "type": "static",
+  "size": [
+    13,
+    5.5,
+    11
+  ],
+  "coordinateSystem": "Y-up, metres, ground-centred",
+  "materials": 1,
+  "triangles": 84,
+  "animations": [],
+  "collider": "content/colliders/facility.json",
+  "source": "assets/source/facility.bbmodel",
+  "author": "Project original procedural geometry",
+  "license": "Project original; public release decision pending",
+  "bytes": 19904,
+  "sha256": "eaf7e81a6473a33e242ff9a138cafd8c5b5531d06dfe82a5379759bf7d38deed",
+  "interactionPoints": [
+    {
+      "id": "console",
+      "purpose": "preservation_console",
+      "position": [
+        -1.5,
+        1,
+        3
+      ]
+    }
+  ],
+  "export": {
+    "kind": "blockbench-native",
+    "report": "reports/blockbench/facility-palette-roundtrip.json",
+    "sourceSha256": "c88802f4d6e1f503faf7baacc130c02282fc007426082b8d8f55eef637785a98",
+    "vertexBaseline": "reports/vertex-assets/facility.glb"
+  }
+}

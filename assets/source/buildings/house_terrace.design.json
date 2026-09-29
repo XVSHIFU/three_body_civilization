@@ -1,0 +1,41 @@
+{
+  "id": "house_terrace",
+  "status": "source-only",
+  "source": "assets/source/buildings/house_terrace.bbmodel",
+  "triangles": 96,
+  "triangleBudget": 1500,
+  "materials": 1,
+  "textureSize": 512,
+  "unitsPerMeter": 16,
+  "role": "Non-enterable backdrop building; no interactive doorway",
+  "statePair": "house_terrace",
+  "destroyed": false,
+  "size": [
+    8.5,
+    8.25,
+    8.5
+  ],
+  "colliders": [
+    {
+      "position": [
+        0,
+        3,
+        0
+      ],
+      "halfExtents": [
+        4,
+        3,
+        4
+      ]
+    }
+  ],
+  "unverified": [
+    "native export",
+    "placement inside original building footprint",
+    "disaster state switch",
+    "collision and route regression",
+    "distance recognition"
+  ],
+  "author": "Project original geometry",
+  "license": "Project original; public release decision pending"
+}

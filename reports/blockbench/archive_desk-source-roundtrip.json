@@ -1,0 +1,25 @@
+{
+  "id": "archive_desk",
+  "passed": true,
+  "sourceSha256": "f3ea0950bcd996746fb3df423d3bcd22714aac6556af3841aa736e21a5ba1d19",
+  "nativeSha256": "199e35e52517809822d7d5bfcfccde681b22de2399780f252a68606a81557d4c",
+  "bytes": 26440,
+  "triangles": 120,
+  "meshCount": 10,
+  "maxBoundsError": 1.1920929021691506e-8,
+  "uvSamples": 240,
+  "embeddedTextureSize": [
+    512,
+    512
+  ],
+  "exportSettings": {
+    "scale": 16,
+    "encoding": "Binary (glb)",
+    "embedTextures": true
+  },
+  "unverified": [
+    "browser GLTFLoader shading",
+    "runtime collision and interactions",
+    "5/20/50m recognition"
+  ]
+}

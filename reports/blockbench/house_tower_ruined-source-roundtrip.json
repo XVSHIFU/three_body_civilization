@@ -1,0 +1,25 @@
+{
+  "id": "house_tower_ruined",
+  "passed": true,
+  "sourceSha256": "78e1d1364fcceb7182aa6c1c14cc04f4190806d1b668b9bc0726f48b75a8ca79",
+  "nativeSha256": "c1b2ac37c72aff3681fe096cad035bea990680d21846ea108b6adc61c0b9598b",
+  "bytes": 29284,
+  "triangles": 144,
+  "meshCount": 12,
+  "maxBoundsError": 1.9073486345888568e-7,
+  "uvSamples": 288,
+  "embeddedTextureSize": [
+    512,
+    512
+  ],
+  "exportSettings": {
+    "scale": 16,
+    "encoding": "Binary (glb)",
+    "embedTextures": true
+  },
+  "unverified": [
+    "browser GLTFLoader shading",
+    "runtime collision and interactions",
+    "5/20/50m recognition"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "stone_cluster",
+  "path": "assets/models/stone_cluster.glb",
+  "version": 1,
+  "type": "static",
+  "size": [
+    1.6,
+    0.7,
+    1.2000000000000002
+  ],
+  "coordinateSystem": "Y-up, metres, ground-centred",
+  "materials": 1,
+  "triangles": 36,
+  "animations": [],
+  "collider": "content/colliders/stone_cluster.json",
+  "source": "assets/source/environment/stone_cluster.bbmodel",
+  "author": "Project original geometry",
+  "license": "Project original; public release decision pending",
+  "bytes": 13184,
+  "sha256": "63f0f64fd689e7d1799212f350289c63824a3c1f05b7b79d3fddf82eff0a275f",
+  "interactionPoints": [],
+  "export": {
+    "kind": "blockbench-native",
+    "report": "reports/blockbench/stone_cluster-source-roundtrip.json",
+    "sourceSha256": "02c95abe34c4eab38f43602aa6666f4bc3f3640b4b8f14be112a3ec96b8eb17b"
+  }
+}

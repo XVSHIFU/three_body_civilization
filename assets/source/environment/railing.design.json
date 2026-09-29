@@ -1,0 +1,41 @@
+{
+  "id": "railing",
+  "status": "source-only",
+  "source": "assets/source/environment/railing.bbmodel",
+  "triangles": 48,
+  "triangleBudget": 600,
+  "materials": 1,
+  "textureSize": 512,
+  "unitsPerMeter": 16,
+  "role": "2m repeatable safety rail, 1.2m high. One simple collision volume should guard the full span.",
+  "size": [
+    2,
+    1.2000000000000002,
+    0.2
+  ],
+  "colliders": [
+    {
+      "position": [
+        0,
+        0.6,
+        0
+      ],
+      "halfExtents": [
+        1,
+        0.6,
+        0.1
+      ]
+    }
+  ],
+  "interactionPoints": [],
+  "author": "Project original geometry",
+  "license": "Project original; public release decision pending",
+  "unverified": [
+    "Blockbench native GLB export",
+    "source/native geometry and palette agreement",
+    "browser shading",
+    "internal-face cleanup",
+    "scene placement and route collision",
+    "distance readability"
+  ]
+}

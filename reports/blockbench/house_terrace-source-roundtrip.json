@@ -1,0 +1,25 @@
+{
+  "id": "house_terrace",
+  "passed": true,
+  "sourceSha256": "980211092b740b9358617307f0f7ce593648d05c4061b8f9ac134ff4581edfab",
+  "nativeSha256": "520d6878c23c1d31856eb1c8e81b0a302ea0f3a7b919a9f4f74afcf3711888ae",
+  "bytes": 21764,
+  "triangles": 96,
+  "meshCount": 8,
+  "maxBoundsError": 7.629394538355427e-8,
+  "uvSamples": 192,
+  "embeddedTextureSize": [
+    512,
+    512
+  ],
+  "exportSettings": {
+    "scale": 16,
+    "encoding": "Binary (glb)",
+    "embedTextures": true
+  },
+  "unverified": [
+    "browser GLTFLoader shading",
+    "runtime collision and interactions",
+    "5/20/50m recognition"
+  ]
+}

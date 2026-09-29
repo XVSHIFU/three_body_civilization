@@ -1,0 +1,386 @@
+{
+  "date": "2026-09-29",
+  "scope": "Development harness uses formal GameRuntime and 21 production GLBs. Environment states computed using the formal 60Hz updater; camera/NPC poses staged. No movement, audio, live transition, target hardware or performance claims.",
+  "checks": [
+    {
+      "scope": "Paused formal runtime; staged camera and NPCs. Not an input replay or FPS benchmark.",
+      "stage": "initial",
+      "view": "platform",
+      "quality": "low",
+      "tick": 0,
+      "checkpointUnchanged": true,
+      "visibleBuildings": [
+        "building:0:house_terrace",
+        "building:1:house_tower",
+        "building:2:house_terrace",
+        "building:3:house_tower",
+        "building:4:house_terrace",
+        "building:5:house_tower"
+      ],
+      "lights": [
+        {
+          "intensity": 1.3171443566225824,
+          "castShadow": false,
+          "shadowStrength": 1
+        },
+        {
+          "intensity": 0,
+          "castShadow": false,
+          "shadowStrength": 1
+        },
+        {
+          "intensity": 0,
+          "castShadow": false,
+          "shadowStrength": 1
+        }
+      ],
+      "drawCalls": 128,
+      "triangles": 5230,
+      "render": {
+        "width": 1280,
+        "height": 720,
+        "dpr": 1,
+        "renderRatio": 0.9316949906249123
+      }
+    },
+    {
+      "scope": "Paused formal runtime; staged camera and NPCs. Not an input replay or FPS benchmark.",
+      "stage": "initial",
+      "view": "platform",
+      "quality": "standard",
+      "tick": 0,
+      "checkpointUnchanged": true,
+      "visibleBuildings": [
+        "building:0:house_terrace",
+        "building:1:house_tower",
+        "building:2:house_terrace",
+        "building:3:house_tower",
+        "building:4:house_terrace",
+        "building:5:house_tower"
+      ],
+      "lights": [
+        {
+          "intensity": 1.3171443566225824,
+          "castShadow": true,
+          "shadowStrength": 1
+        },
+        {
+          "intensity": 0,
+          "castShadow": false,
+          "shadowStrength": 1
+        },
+        {
+          "intensity": 0,
+          "castShadow": false,
+          "shadowStrength": 1
+        }
+      ],
+      "drawCalls": 228,
+      "triangles": 9796,
+      "render": {
+        "width": 1280,
+        "height": 720,
+        "dpr": 1,
+        "renderRatio": 1
+      }
+    },
+    {
+      "scope": "Paused formal runtime; staged camera and NPCs. Not an input replay or FPS benchmark.",
+      "stage": "initial",
+      "view": "platform",
+      "quality": "high",
+      "tick": 0,
+      "checkpointUnchanged": true,
+      "visibleBuildings": [
+        "building:0:house_terrace",
+        "building:1:house_tower",
+        "building:2:house_terrace",
+        "building:3:house_tower",
+        "building:4:house_terrace",
+        "building:5:house_tower"
+      ],
+      "lights": [
+        {
+          "intensity": 1.3171443566225824,
+          "castShadow": true,
+          "shadowStrength": 1
+        },
+        {
+          "intensity": 0,
+          "castShadow": false,
+          "shadowStrength": 1
+        },
+        {
+          "intensity": 0,
+          "castShadow": false,
+          "shadowStrength": 1
+        }
+      ],
+      "drawCalls": 228,
+      "triangles": 9796,
+      "render": {
+        "width": 1280,
+        "height": 720,
+        "dpr": 1,
+        "renderRatio": 1
+      }
+    },
+    {
+      "scope": "Paused formal runtime; staged camera and NPCs. Not an input replay or FPS benchmark.",
+      "stage": "dual",
+      "view": "platform",
+      "quality": "low",
+      "tick": 10806,
+      "checkpointUnchanged": true,
+      "visibleBuildings": [
+        "building:0:house_terrace",
+        "building:1:house_tower",
+        "building:2:house_terrace",
+        "building:3:house_tower",
+        "building:4:house_terrace",
+        "building:5:house_tower"
+      ],
+      "lights": [
+        {
+          "intensity": 1.2766131666341698,
+          "castShadow": false,
+          "shadowStrength": 1
+        },
+        {
+          "intensity": 0,
+          "castShadow": false,
+          "shadowStrength": 1
+        },
+        {
+          "intensity": 0.6367459524800729,
+          "castShadow": false,
+          "shadowStrength": 1
+        }
+      ],
+      "drawCalls": 129,
+      "triangles": 5242,
+      "render": {
+        "width": 1280,
+        "height": 720,
+        "dpr": 1,
+        "renderRatio": 0.9316949906249123
+      }
+    },
+    {
+      "scope": "Paused formal runtime; staged camera and NPCs. Not an input replay or FPS benchmark.",
+      "stage": "dual",
+      "view": "platform",
+      "quality": "standard",
+      "tick": 10806,
+      "checkpointUnchanged": true,
+      "visibleBuildings": [
+        "building:0:house_terrace",
+        "building:1:house_tower",
+        "building:2:house_terrace",
+        "building:3:house_tower",
+        "building:4:house_terrace",
+        "building:5:house_tower"
+      ],
+      "lights": [
+        {
+          "intensity": 1.2766131666341698,
+          "castShadow": true,
+          "shadowStrength": 1
+        },
+        {
+          "intensity": 0,
+          "castShadow": false,
+          "shadowStrength": 1
+        },
+        {
+          "intensity": 0.6367459524800729,
+          "castShadow": false,
+          "shadowStrength": 1
+        }
+      ],
+      "drawCalls": 229,
+      "triangles": 9808,
+      "render": {
+        "width": 1280,
+        "height": 720,
+        "dpr": 1,
+        "renderRatio": 1
+      }
+    },
+    {
+      "scope": "Paused formal runtime; staged camera and NPCs. Not an input replay or FPS benchmark.",
+      "stage": "dual",
+      "view": "platform",
+      "quality": "high",
+      "tick": 10806,
+      "checkpointUnchanged": true,
+      "visibleBuildings": [
+        "building:0:house_terrace",
+        "building:1:house_tower",
+        "building:2:house_terrace",
+        "building:3:house_tower",
+        "building:4:house_terrace",
+        "building:5:house_tower"
+      ],
+      "lights": [
+        {
+          "intensity": 1.2766131666341698,
+          "castShadow": true,
+          "shadowStrength": 1
+        },
+        {
+          "intensity": 0,
+          "castShadow": false,
+          "shadowStrength": 1
+        },
+        {
+          "intensity": 0.6367459524800729,
+          "castShadow": false,
+          "shadowStrength": 1
+        }
+      ],
+      "drawCalls": 229,
+      "triangles": 9808,
+      "render": {
+        "width": 1280,
+        "height": 720,
+        "dpr": 1,
+        "renderRatio": 1
+      }
+    },
+    {
+      "scope": "Paused formal runtime; staged camera and NPCs. Not an input replay or FPS benchmark.",
+      "stage": "ended",
+      "view": "platform",
+      "quality": "low",
+      "tick": 36867,
+      "checkpointUnchanged": true,
+      "visibleBuildings": [
+        "building:0:house_terrace_ruined",
+        "building:1:house_tower_ruined",
+        "building:2:house_terrace_ruined",
+        "building:3:house_tower_ruined",
+        "building:4:house_terrace_ruined",
+        "building:5:house_tower_ruined"
+      ],
+      "lights": [
+        {
+          "intensity": 1.1900774866977875,
+          "castShadow": false,
+          "shadowStrength": 1
+        },
+        {
+          "intensity": 1.4796926353992856,
+          "castShadow": false,
+          "shadowStrength": 1
+        },
+        {
+          "intensity": 0.6380933434727818,
+          "castShadow": false,
+          "shadowStrength": 1
+        }
+      ],
+      "drawCalls": 88,
+      "triangles": 4924,
+      "render": {
+        "width": 1280,
+        "height": 720,
+        "dpr": 1,
+        "renderRatio": 0.9316949906249123
+      }
+    },
+    {
+      "scope": "Paused formal runtime; staged camera and NPCs. Not an input replay or FPS benchmark.",
+      "stage": "ended",
+      "view": "platform",
+      "quality": "standard",
+      "tick": 36867,
+      "checkpointUnchanged": true,
+      "visibleBuildings": [
+        "building:0:house_terrace_ruined",
+        "building:1:house_tower_ruined",
+        "building:2:house_terrace_ruined",
+        "building:3:house_tower_ruined",
+        "building:4:house_terrace_ruined",
+        "building:5:house_tower_ruined"
+      ],
+      "lights": [
+        {
+          "intensity": 1.1900774866977875,
+          "castShadow": true,
+          "shadowStrength": 1
+        },
+        {
+          "intensity": 1.4796926353992856,
+          "castShadow": false,
+          "shadowStrength": 1
+        },
+        {
+          "intensity": 0.6380933434727818,
+          "castShadow": false,
+          "shadowStrength": 1
+        }
+      ],
+      "drawCalls": 121,
+      "triangles": 8428,
+      "render": {
+        "width": 1280,
+        "height": 720,
+        "dpr": 1,
+        "renderRatio": 1
+      }
+    },
+    {
+      "scope": "Paused formal runtime; staged camera and NPCs. Not an input replay or FPS benchmark.",
+      "stage": "ended",
+      "view": "platform",
+      "quality": "high",
+      "tick": 36867,
+      "checkpointUnchanged": true,
+      "visibleBuildings": [
+        "building:0:house_terrace_ruined",
+        "building:1:house_tower_ruined",
+        "building:2:house_terrace_ruined",
+        "building:3:house_tower_ruined",
+        "building:4:house_terrace_ruined",
+        "building:5:house_tower_ruined"
+      ],
+      "lights": [
+        {
+          "intensity": 1.1900774866977875,
+          "castShadow": true,
+          "shadowStrength": 1
+        },
+        {
+          "intensity": 1.4796926353992856,
+          "castShadow": false,
+          "shadowStrength": 1
+        },
+        {
+          "intensity": 0.6380933434727818,
+          "castShadow": false,
+          "shadowStrength": 1
+        }
+      ],
+      "drawCalls": 121,
+      "triangles": 8428,
+      "render": {
+        "width": 1280,
+        "height": 720,
+        "dpr": 1,
+        "renderRatio": 1
+      }
+    }
+  ],
+  "observations": [
+    "Initial paused standard/high shadow strength is 1",
+    "All nine quality-stage combinations preserve the full checkpoint",
+    "Six intact buildings visible in initial/dual state and six ruined variants in ended state",
+    "Ended terrace and tower inspected at staged ground-level positions"
+  ],
+  "limitations": [
+    "Continuous disaster transition not observed",
+    "5/20/50m function recognition and moving texture filtering remain open",
+    "Static draw counters are not a frame-rate benchmark"
+  ]
+}

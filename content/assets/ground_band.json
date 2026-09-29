@@ -1,0 +1,27 @@
+{
+  "id": "ground_band",
+  "path": "assets/models/ground_band.glb",
+  "version": 1,
+  "type": "static",
+  "size": [
+    4,
+    0.25,
+    4
+  ],
+  "coordinateSystem": "Y-up, metres, ground-centred",
+  "materials": 1,
+  "triangles": 36,
+  "animations": [],
+  "collider": "content/colliders/ground_band.json",
+  "source": "assets/source/environment/ground_band.bbmodel",
+  "author": "Project original geometry",
+  "license": "Project original; public release decision pending",
+  "bytes": 13020,
+  "sha256": "b969839219af4db4ae68cff4b1ee2281b33de2615c7f88999b5ceb8732bf645f",
+  "interactionPoints": [],
+  "export": {
+    "kind": "blockbench-native",
+    "report": "reports/blockbench/ground_band-source-roundtrip.json",
+    "sourceSha256": "5216eeaa885dd73051258f74ead3f54e282f68959c95ac91d01c14c1a7440247"
+  }
+}

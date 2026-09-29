@@ -1,0 +1,632 @@
+[
+  {
+    "id": "ruler_cube",
+    "path": "assets/models/ruler_cube.glb",
+    "version": 2,
+    "type": "static",
+    "size": [
+      1,
+      1,
+      1
+    ],
+    "coordinateSystem": "Y-up, metres, ground-centred",
+    "materials": 1,
+    "triangles": 12,
+    "animations": [],
+    "collider": "content/colliders/ruler_cube.json",
+    "source": "assets/source/ruler_cube.bbmodel",
+    "author": "Project original procedural geometry",
+    "license": "Project original; public release decision pending",
+    "bytes": 9528,
+    "sha256": "de7f292ae9d00c8a387a9618a6ab3cc8a06b2efff88433c146efe3367a5a9f46",
+    "interactionPoints": [],
+    "export": {
+      "kind": "blockbench-native",
+      "report": "reports/blockbench/ruler_cube-palette-roundtrip.json",
+      "sourceSha256": "97c216c8b17228f1c81447be9043ee8f73d90abc9563c1f5c3dee83ea15d8257",
+      "vertexBaseline": "reports/vertex-assets/ruler_cube.glb"
+    }
+  },
+  {
+    "id": "wall",
+    "path": "assets/models/wall.glb",
+    "version": 2,
+    "type": "static",
+    "size": [
+      4,
+      3,
+      0.5
+    ],
+    "coordinateSystem": "Y-up, metres, ground-centred",
+    "materials": 1,
+    "triangles": 12,
+    "animations": [],
+    "collider": "content/colliders/wall.json",
+    "source": "assets/source/wall.bbmodel",
+    "author": "Project original procedural geometry",
+    "license": "Project original; public release decision pending",
+    "bytes": 9512,
+    "sha256": "426eecbeda10a1123fd3626039b495f5804ec5a98d5b2b69e8a27b6adac3c7d0",
+    "interactionPoints": [],
+    "export": {
+      "kind": "blockbench-native",
+      "report": "reports/blockbench/wall-palette-roundtrip.json",
+      "sourceSha256": "2cfb53926100b58afac9fabc81c79f24a3adba0cc8593531a4dfa85f846e369c",
+      "vertexBaseline": "reports/vertex-assets/wall.glb"
+    }
+  },
+  {
+    "id": "doorway",
+    "path": "assets/models/doorway.glb",
+    "version": 2,
+    "type": "static",
+    "size": [
+      4,
+      3,
+      0.5
+    ],
+    "coordinateSystem": "Y-up, metres, ground-centred",
+    "materials": 1,
+    "triangles": 36,
+    "animations": [],
+    "collider": "content/colliders/doorway.json",
+    "source": "assets/source/doorway.bbmodel",
+    "author": "Project original procedural geometry",
+    "license": "Project original; public release decision pending",
+    "bytes": 12976,
+    "sha256": "bc4f5bd9867a43344f04230f061e4b24cdf726b0268d4796cb482c929abba6a6",
+    "interactionPoints": [],
+    "export": {
+      "kind": "blockbench-native",
+      "report": "reports/blockbench/doorway-palette-roundtrip.json",
+      "sourceSha256": "1902f16cb37cbceabf1140a62b671f249e9ffb33aa3b7df50536f2bacc686bc0",
+      "vertexBaseline": "reports/vertex-assets/doorway.glb"
+    }
+  },
+  {
+    "id": "stairs",
+    "path": "assets/models/stairs.glb",
+    "version": 2,
+    "type": "static",
+    "size": [
+      2,
+      2,
+      4
+    ],
+    "coordinateSystem": "Y-up, metres, ground-centred",
+    "materials": 1,
+    "triangles": 96,
+    "animations": [],
+    "collider": "content/colliders/stairs.json",
+    "source": "assets/source/stairs.bbmodel",
+    "author": "Project original procedural geometry",
+    "license": "Project original; public release decision pending",
+    "bytes": 21684,
+    "sha256": "ab7c7a23d9e20abe3aa870380cbf93311bebc4ebd2a4e11d5a4fa19d605b3854",
+    "interactionPoints": [],
+    "export": {
+      "kind": "blockbench-native",
+      "report": "reports/blockbench/stairs-palette-roundtrip.json",
+      "sourceSha256": "4849afaa8181c7bb04205c814c2a6a0341764fc75f57bd759d6cf4eb098ad9ed",
+      "vertexBaseline": "reports/vertex-assets/stairs.glb"
+    }
+  },
+  {
+    "id": "observatory_pillar",
+    "path": "assets/models/observatory_pillar.glb",
+    "version": 2,
+    "type": "static",
+    "size": [
+      1.5,
+      3.0000000007450582,
+      1.5
+    ],
+    "coordinateSystem": "Y-up, metres, ground-centred",
+    "materials": 1,
+    "triangles": 36,
+    "animations": [],
+    "collider": "content/colliders/observatory_pillar.json",
+    "source": "assets/source/observatory_pillar.bbmodel",
+    "author": "Project original procedural geometry",
+    "license": "Project original; public release decision pending",
+    "bytes": 13136,
+    "sha256": "01d92784ecff947b080221f3a42f51612451da4f91d13eb77146396ad8995559",
+    "interactionPoints": [
+      {
+        "id": "sky_sample",
+        "purpose": "observation_origin",
+        "position": [
+          0,
+          3.15,
+          0
+        ]
+      }
+    ],
+    "export": {
+      "kind": "blockbench-native",
+      "report": "reports/blockbench/observatory_pillar-palette-roundtrip.json",
+      "sourceSha256": "752b07fa8c27903ea390f3c3fe07050f3ff3d1a2be6669652618510d576d2a02",
+      "vertexBaseline": "reports/vertex-assets/observatory_pillar.glb"
+    }
+  },
+  {
+    "id": "npc",
+    "path": "assets/models/npc.glb",
+    "version": 2,
+    "type": "character",
+    "size": [
+      0.8399999964237214,
+      1.749999997019768,
+      0.3499999940395355
+    ],
+    "coordinateSystem": "Y-up, metres, ground-centred",
+    "materials": 1,
+    "triangles": 72,
+    "animations": [
+      "idle",
+      "walk",
+      "observe",
+      "panic",
+      "preserve"
+    ],
+    "collider": "content/colliders/npc.json",
+    "source": "assets/source/npc.bbmodel",
+    "author": "Project original procedural geometry",
+    "license": "Project original; public release decision pending",
+    "bytes": 22068,
+    "sha256": "c8b20f5a0ac2b76303bb004434ec9f2995b93cfccf46d8e9fce2251550f1bc12",
+    "interactionPoints": [
+      {
+        "id": "conversation",
+        "purpose": "conversation",
+        "position": [
+          0,
+          1.55,
+          0
+        ]
+      }
+    ],
+    "export": {
+      "kind": "blockbench-native",
+      "report": "reports/blockbench/npc-palette-roundtrip.json",
+      "sourceSha256": "4fe885a8f369803681bd878b69821a504d615ae1a96b8215798999b4eb713a51",
+      "vertexBaseline": "reports/vertex-assets/npc.glb"
+    }
+  },
+  {
+    "id": "facility",
+    "path": "assets/models/facility.glb",
+    "version": 2,
+    "type": "static",
+    "size": [
+      13,
+      5.5,
+      11
+    ],
+    "coordinateSystem": "Y-up, metres, ground-centred",
+    "materials": 1,
+    "triangles": 84,
+    "animations": [],
+    "collider": "content/colliders/facility.json",
+    "source": "assets/source/facility.bbmodel",
+    "author": "Project original procedural geometry",
+    "license": "Project original; public release decision pending",
+    "bytes": 19904,
+    "sha256": "eaf7e81a6473a33e242ff9a138cafd8c5b5531d06dfe82a5379759bf7d38deed",
+    "interactionPoints": [
+      {
+        "id": "console",
+        "purpose": "preservation_console",
+        "position": [
+          -1.5,
+          1,
+          3
+        ]
+      }
+    ],
+    "export": {
+      "kind": "blockbench-native",
+      "report": "reports/blockbench/facility-palette-roundtrip.json",
+      "sourceSha256": "c88802f4d6e1f503faf7baacc130c02282fc007426082b8d8f55eef637785a98",
+      "vertexBaseline": "reports/vertex-assets/facility.glb"
+    }
+  },
+  {
+    "id": "thermometer",
+    "path": "assets/models/thermometer.glb",
+    "version": 1,
+    "type": "instrument",
+    "size": [
+      0.65,
+      2.05,
+      0.55
+    ],
+    "coordinateSystem": "Y-up, metres, ground-centred",
+    "materials": 1,
+    "triangles": 120,
+    "animations": [],
+    "collider": "content/colliders/thermometer.json",
+    "source": "assets/source/second-batch/thermometer.bbmodel",
+    "author": "Project original geometry",
+    "license": "Project original; public release decision pending",
+    "bytes": 26516,
+    "sha256": "9ab66ce11f4bc5de51f5d5b27d72afc2a325663a6455f2271f10077c92f5638d",
+    "interactionPoints": [
+      {
+        "id": "operate",
+        "position": [
+          0,
+          1.2,
+          0.18
+        ],
+        "purpose": "Temperature snapshot at the instrument; pointer is an independent visual node."
+      }
+    ],
+    "export": {
+      "kind": "blockbench-native",
+      "report": "reports/blockbench/thermometer-source-roundtrip.json",
+      "sourceSha256": "9977f7a91265484858f8556546619558da86dc13af7efcdf755e79eb7a5c02ad"
+    }
+  },
+  {
+    "id": "archive_desk",
+    "path": "assets/models/archive_desk.glb",
+    "version": 1,
+    "type": "static",
+    "size": [
+      2,
+      1.21,
+      1.1
+    ],
+    "coordinateSystem": "Y-up, metres, ground-centred",
+    "materials": 1,
+    "triangles": 120,
+    "animations": [],
+    "collider": "content/colliders/archive_desk.json",
+    "source": "assets/source/second-batch/archive_desk.bbmodel",
+    "author": "Project original geometry",
+    "license": "Project original; public release decision pending",
+    "bytes": 26440,
+    "sha256": "199e35e52517809822d7d5bfcfccde681b22de2399780f252a68606a81557d4c",
+    "interactionPoints": [
+      {
+        "id": "operate",
+        "position": [
+          0,
+          1.15,
+          0.5
+        ],
+        "purpose": "Archive reading surface; approach from positive Z."
+      }
+    ],
+    "export": {
+      "kind": "blockbench-native",
+      "report": "reports/blockbench/archive_desk-source-roundtrip.json",
+      "sourceSha256": "f3ea0950bcd996746fb3df423d3bcd22714aac6556af3841aa736e21a5ba1d19"
+    }
+  },
+  {
+    "id": "house_terrace",
+    "path": "assets/models/house_terrace.glb",
+    "version": 1,
+    "type": "static",
+    "size": [
+      8.5,
+      8.25,
+      8.5
+    ],
+    "coordinateSystem": "Y-up, metres, ground-centred",
+    "materials": 1,
+    "triangles": 96,
+    "animations": [],
+    "collider": "content/colliders/house_terrace.json",
+    "source": "assets/source/buildings/house_terrace.bbmodel",
+    "author": "Project original geometry",
+    "license": "Project original; public release decision pending",
+    "bytes": 21764,
+    "sha256": "520d6878c23c1d31856eb1c8e81b0a302ea0f3a7b919a9f4f74afcf3711888ae",
+    "interactionPoints": [],
+    "export": {
+      "kind": "blockbench-native",
+      "report": "reports/blockbench/house_terrace-source-roundtrip.json",
+      "sourceSha256": "980211092b740b9358617307f0f7ce593648d05c4061b8f9ac134ff4581edfab"
+    }
+  },
+  {
+    "id": "house_tower",
+    "path": "assets/models/house_tower.glb",
+    "version": 1,
+    "type": "static",
+    "size": [
+      6.5,
+      9.75,
+      8.55
+    ],
+    "coordinateSystem": "Y-up, metres, ground-centred",
+    "materials": 1,
+    "triangles": 96,
+    "animations": [],
+    "collider": "content/colliders/house_tower.json",
+    "source": "assets/source/buildings/house_tower.bbmodel",
+    "author": "Project original geometry",
+    "license": "Project original; public release decision pending",
+    "bytes": 21720,
+    "sha256": "2e5249a20be01c40fd6767bc6524dc79be1b7ef199680a5c4652d602dc04b195",
+    "interactionPoints": [],
+    "export": {
+      "kind": "blockbench-native",
+      "report": "reports/blockbench/house_tower-source-roundtrip.json",
+      "sourceSha256": "478b6d4bcaf10552aa9a3eb3a48bf33040b75d2901a5c2ae97ce45a8f9c8d1e3"
+    }
+  },
+  {
+    "id": "house_terrace_ruined",
+    "path": "assets/models/house_terrace_ruined.glb",
+    "version": 2,
+    "type": "static",
+    "size": [
+      8.5,
+      4.5,
+      8.5
+    ],
+    "coordinateSystem": "Y-up, metres, ground-centred",
+    "materials": 1,
+    "triangles": 132,
+    "animations": [],
+    "collider": "content/colliders/house_terrace_ruined.json",
+    "source": "assets/source/buildings/house_terrace_ruined.bbmodel",
+    "author": "Project original geometry",
+    "license": "Project original; public release decision pending",
+    "bytes": 27268,
+    "sha256": "c0837283b664ccf7fcab9faedbd3d17bbe5007f69b8fa8845a80fec33037904b",
+    "interactionPoints": [],
+    "export": {
+      "kind": "blockbench-native",
+      "report": "reports/blockbench/house_terrace_ruined-source-roundtrip.json",
+      "sourceSha256": "0ee0c13b633e7c26c0beb2980ed6680b9dde33328dc64ed867312c8febbc09e2"
+    }
+  },
+  {
+    "id": "house_tower_ruined",
+    "path": "assets/models/house_tower_ruined.glb",
+    "version": 2,
+    "type": "static",
+    "size": [
+      6.5,
+      5.6000000000000005,
+      8.55
+    ],
+    "coordinateSystem": "Y-up, metres, ground-centred",
+    "materials": 1,
+    "triangles": 144,
+    "animations": [],
+    "collider": "content/colliders/house_tower_ruined.json",
+    "source": "assets/source/buildings/house_tower_ruined.bbmodel",
+    "author": "Project original geometry",
+    "license": "Project original; public release decision pending",
+    "bytes": 29284,
+    "sha256": "c1b2ac37c72aff3681fe096cad035bea990680d21846ea108b6adc61c0b9598b",
+    "interactionPoints": [],
+    "export": {
+      "kind": "blockbench-native",
+      "report": "reports/blockbench/house_tower_ruined-source-roundtrip.json",
+      "sourceSha256": "78e1d1364fcceb7182aa6c1c14cc04f4190806d1b668b9bc0726f48b75a8ca79"
+    }
+  },
+  {
+    "id": "ground_slab",
+    "path": "assets/models/ground_slab.glb",
+    "version": 1,
+    "type": "static",
+    "size": [
+      4,
+      0.25,
+      4
+    ],
+    "coordinateSystem": "Y-up, metres, ground-centred",
+    "materials": 1,
+    "triangles": 12,
+    "animations": [],
+    "collider": "content/colliders/ground_slab.json",
+    "source": "assets/source/environment/ground_slab.bbmodel",
+    "author": "Project original geometry",
+    "license": "Project original; public release decision pending",
+    "bytes": 9516,
+    "sha256": "1c5ec565719ce1815b83a9f041981ef1389b0329774da5386b627f1f1eec59ad",
+    "interactionPoints": [],
+    "export": {
+      "kind": "blockbench-native",
+      "report": "reports/blockbench/ground_slab-source-roundtrip.json",
+      "sourceSha256": "72f7f11744d2b0c32d391b882c409f2ef14a44f75041dc889ec64a635e70ce57"
+    }
+  },
+  {
+    "id": "ground_band",
+    "path": "assets/models/ground_band.glb",
+    "version": 1,
+    "type": "static",
+    "size": [
+      4,
+      0.25,
+      4
+    ],
+    "coordinateSystem": "Y-up, metres, ground-centred",
+    "materials": 1,
+    "triangles": 36,
+    "animations": [],
+    "collider": "content/colliders/ground_band.json",
+    "source": "assets/source/environment/ground_band.bbmodel",
+    "author": "Project original geometry",
+    "license": "Project original; public release decision pending",
+    "bytes": 13020,
+    "sha256": "b969839219af4db4ae68cff4b1ee2281b33de2615c7f88999b5ceb8732bf645f",
+    "interactionPoints": [],
+    "export": {
+      "kind": "blockbench-native",
+      "report": "reports/blockbench/ground_band-source-roundtrip.json",
+      "sourceSha256": "5216eeaa885dd73051258f74ead3f54e282f68959c95ac91d01c14c1a7440247"
+    }
+  },
+  {
+    "id": "ground_platform",
+    "path": "assets/models/ground_platform.glb",
+    "version": 1,
+    "type": "static",
+    "size": [
+      4,
+      1,
+      4
+    ],
+    "coordinateSystem": "Y-up, metres, ground-centred",
+    "materials": 1,
+    "triangles": 24,
+    "animations": [],
+    "collider": "content/colliders/ground_platform.json",
+    "source": "assets/source/environment/ground_platform.bbmodel",
+    "author": "Project original geometry",
+    "license": "Project original; public release decision pending",
+    "bytes": 11252,
+    "sha256": "1a36b3d91542a96756e9443d8872d1633136e8d3257aa9c264bc918befcb0858",
+    "interactionPoints": [],
+    "export": {
+      "kind": "blockbench-native",
+      "report": "reports/blockbench/ground_platform-source-roundtrip.json",
+      "sourceSha256": "815fb530154544261029de5606a72cf8e2e2fd5a5ac95c38d298daa926e9c3d1"
+    }
+  },
+  {
+    "id": "wall_corner",
+    "path": "assets/models/wall_corner.glb",
+    "version": 1,
+    "type": "static",
+    "size": [
+      4,
+      3,
+      4
+    ],
+    "coordinateSystem": "Y-up, metres, ground-centred",
+    "materials": 1,
+    "triangles": 24,
+    "animations": [],
+    "collider": "content/colliders/wall_corner.json",
+    "source": "assets/source/environment/wall_corner.bbmodel",
+    "author": "Project original geometry",
+    "license": "Project original; public release decision pending",
+    "bytes": 11256,
+    "sha256": "91e83e0dc65a67ca47051de9a9c0c834315132a68287f334c3ee84091a3c6e2b",
+    "interactionPoints": [],
+    "export": {
+      "kind": "blockbench-native",
+      "report": "reports/blockbench/wall_corner-source-roundtrip.json",
+      "sourceSha256": "3f0b63cbe5dac72d2ec523191c886a94b14be3552a0247084d93cfef45f4836a"
+    }
+  },
+  {
+    "id": "railing",
+    "path": "assets/models/railing.glb",
+    "version": 1,
+    "type": "static",
+    "size": [
+      2,
+      1.2000000000000002,
+      0.2
+    ],
+    "coordinateSystem": "Y-up, metres, ground-centred",
+    "materials": 1,
+    "triangles": 48,
+    "animations": [],
+    "collider": "content/colliders/railing.json",
+    "source": "assets/source/environment/railing.bbmodel",
+    "author": "Project original geometry",
+    "license": "Project original; public release decision pending",
+    "bytes": 14988,
+    "sha256": "b4a5e4bf1f97cb97e61a6ac57973aa85bac908fe31d2505f44a4bec7d234116a",
+    "interactionPoints": [],
+    "export": {
+      "kind": "blockbench-native",
+      "report": "reports/blockbench/railing-source-roundtrip.json",
+      "sourceSha256": "35b9345a4d3eca33aa4d8db238cdf34ab3bb89313b40abb7fa3b748f0ffa4e52"
+    }
+  },
+  {
+    "id": "stone_cluster",
+    "path": "assets/models/stone_cluster.glb",
+    "version": 1,
+    "type": "static",
+    "size": [
+      1.6,
+      0.7,
+      1.2000000000000002
+    ],
+    "coordinateSystem": "Y-up, metres, ground-centred",
+    "materials": 1,
+    "triangles": 36,
+    "animations": [],
+    "collider": "content/colliders/stone_cluster.json",
+    "source": "assets/source/environment/stone_cluster.bbmodel",
+    "author": "Project original geometry",
+    "license": "Project original; public release decision pending",
+    "bytes": 13184,
+    "sha256": "63f0f64fd689e7d1799212f350289c63824a3c1f05b7b79d3fddf82eff0a275f",
+    "interactionPoints": [],
+    "export": {
+      "kind": "blockbench-native",
+      "report": "reports/blockbench/stone_cluster-source-roundtrip.json",
+      "sourceSha256": "02c95abe34c4eab38f43602aa6666f4bc3f3640b4b8f14be112a3ec96b8eb17b"
+    }
+  },
+  {
+    "id": "supply_crate",
+    "path": "assets/models/supply_crate.glb",
+    "version": 1,
+    "type": "static",
+    "size": [
+      1,
+      1.0299999999999998,
+      0.86
+    ],
+    "coordinateSystem": "Y-up, metres, ground-centred",
+    "materials": 1,
+    "triangles": 72,
+    "animations": [],
+    "collider": "content/colliders/supply_crate.json",
+    "source": "assets/source/environment/supply_crate.bbmodel",
+    "author": "Project original geometry",
+    "license": "Project original; public release decision pending",
+    "bytes": 18520,
+    "sha256": "f5de90372a2c77db39ac769fbd9ffef7e0db819666bb7075e360e62b8799e70e",
+    "interactionPoints": [],
+    "export": {
+      "kind": "blockbench-native",
+      "report": "reports/blockbench/supply_crate-source-roundtrip.json",
+      "sourceSha256": "315c7272cc0d75fee2e9fc63a3e0b8859d7e178b6c1934a69e7d612e6ad6faf9"
+    }
+  },
+  {
+    "id": "route_flag",
+    "path": "assets/models/route_flag.glb",
+    "version": 1,
+    "type": "static",
+    "size": [
+      1.51,
+      2.8,
+      0.5
+    ],
+    "coordinateSystem": "Y-up, metres, ground-centred",
+    "materials": 1,
+    "triangles": 60,
+    "animations": [],
+    "collider": "content/colliders/route_flag.json",
+    "source": "assets/source/environment/route_flag.bbmodel",
+    "author": "Project original geometry",
+    "license": "Project original; public release decision pending",
+    "bytes": 16844,
+    "sha256": "01e46c3656cc3562203a404587c75030fbedd1806bc36e47223ef80029580ac1",
+    "interactionPoints": [],
+    "export": {
+      "kind": "blockbench-native",
+      "report": "reports/blockbench/route_flag-source-roundtrip.json",
+      "sourceSha256": "ce4498921cbb2c05dc831417ca077a7266ee6d52fe54a1c16a226fe40d1ca9af"
+    }
+  }
+]

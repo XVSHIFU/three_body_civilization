@@ -1,0 +1,53 @@
+{
+  "id": "house_terrace",
+  "boxes": [
+    {
+      "position": [
+        0,
+        3,
+        0
+      ],
+      "halfExtents": [
+        4,
+        3,
+        4
+      ]
+    },
+    {
+      "position": [
+        0,
+        6.25,
+        0
+      ],
+      "halfExtents": [
+        4.25,
+        0.25,
+        4.25
+      ]
+    },
+    {
+      "position": [
+        -1.5,
+        7.25,
+        -1
+      ],
+      "halfExtents": [
+        2,
+        0.75,
+        2
+      ]
+    },
+    {
+      "position": [
+        -1.5,
+        8.125,
+        -1
+      ],
+      "halfExtents": [
+        2.25,
+        0.125,
+        2.25
+      ]
+    }
+  ]
+}

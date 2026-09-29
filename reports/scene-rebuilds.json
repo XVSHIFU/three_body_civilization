@@ -1,0 +1,118 @@
+{
+  "build": "07607ef43aaa57e1",
+  "scenario": "compressed-001",
+  "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+  "cycles": [
+    {
+      "before": {
+        "geometries": 53,
+        "textures": 3,
+        "programs": 10,
+        "heapBytes": 42214988
+      },
+      "released": {
+        "geometries": 0,
+        "textures": 1,
+        "programs": 1,
+        "heapBytes": 42214988
+      },
+      "retiredContextLost": true,
+      "after": {
+        "geometries": 0,
+        "textures": 0,
+        "programs": 5,
+        "heapBytes": 39958126
+      },
+      "checkpointExact": true
+    },
+    {
+      "before": {
+        "geometries": 53,
+        "textures": 3,
+        "programs": 10,
+        "heapBytes": 41214795
+      },
+      "released": {
+        "geometries": 0,
+        "textures": 1,
+        "programs": 1,
+        "heapBytes": 41214795
+      },
+      "retiredContextLost": true,
+      "after": {
+        "geometries": 0,
+        "textures": 0,
+        "programs": 5,
+        "heapBytes": 40768758
+      },
+      "checkpointExact": true
+    },
+    {
+      "before": {
+        "geometries": 53,
+        "textures": 3,
+        "programs": 10,
+        "heapBytes": 41414332
+      },
+      "released": {
+        "geometries": 0,
+        "textures": 1,
+        "programs": 1,
+        "heapBytes": 41414332
+      },
+      "retiredContextLost": true,
+      "after": {
+        "geometries": 0,
+        "textures": 0,
+        "programs": 5,
+        "heapBytes": 46432943
+      },
+      "checkpointExact": true
+    },
+    {
+      "before": {
+        "geometries": 53,
+        "textures": 3,
+        "programs": 10,
+        "heapBytes": 40599828
+      },
+      "released": {
+        "geometries": 0,
+        "textures": 1,
+        "programs": 1,
+        "heapBytes": 40599828
+      },
+      "retiredContextLost": true,
+      "after": {
+        "geometries": 0,
+        "textures": 0,
+        "programs": 5,
+        "heapBytes": 41012326
+      },
+      "checkpointExact": true
+    },
+    {
+      "before": {
+        "geometries": 53,
+        "textures": 3,
+        "programs": 10,
+        "heapBytes": 48298112
+      },
+      "released": {
+        "geometries": 0,
+        "textures": 1,
+        "programs": 1,
+        "heapBytes": 48298112
+      },
+      "retiredContextLost": true,
+      "after": {
+        "geometries": 0,
+        "textures": 0,
+        "programs": 5,
+        "heapBytes": 41459022
+      },
+      "checkpointExact": true
+    }
+  ],
+  "scope": "Resource counts before disposal, after owned-resource disposal (before renderer disposal), and immediately after new renderer initialization (may precede first frame). Retired WebGL context loss and checkpoint equality are recorded. Optional JS heap is browser-wide and approximate. Not a GPU-memory or retained-heap measurement; no forced GC."
+}

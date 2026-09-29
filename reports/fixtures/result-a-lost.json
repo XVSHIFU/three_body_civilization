@@ -1,0 +1,247 @@
+{
+  "schemaVersion": 1,
+  "buildId": "2b2f43fe5172f100",
+  "revision": 0,
+  "civilization": 2,
+  "observations": [
+    {
+      "id": "c1-pillar-2",
+      "civilization": 1,
+      "tick": 1200,
+      "source": "pillar",
+      "sunIds": [
+        "s1",
+        "s2"
+      ],
+      "directions": {
+        "s1": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0
+        ],
+        "s2": [
+          -0.7071067811865476,
+          0.7071067811865476,
+          0
+        ]
+      },
+      "temperature": null
+    },
+    {
+      "id": "c2-pillar-0",
+      "civilization": 2,
+      "tick": 0,
+      "source": "pillar",
+      "sunIds": [
+        "s1"
+      ],
+      "directions": {
+        "s1": [
+          0.8660254037844386,
+          0.5,
+          0
+        ]
+      },
+      "temperature": null
+    }
+  ],
+  "hypothesis": {
+    "proposed": false,
+    "evidenceIds": [],
+    "status": "tentative"
+  },
+  "settings": {
+    "theme": "a",
+    "fontScale": 1.5,
+    "quality": "standard",
+    "fov": 65,
+    "sensitivity": 1,
+    "volume": 0.35,
+    "bassVolume": 0.5,
+    "reducedMotion": true,
+    "captions": true,
+    "keys": {
+      "forward": "KeyW",
+      "back": "KeyS",
+      "left": "KeyA",
+      "right": "KeyD",
+      "interact": "KeyE",
+      "journal": "KeyJ"
+    }
+  },
+  "checkpoint": {
+    "celestial": {
+      "time": 6.143999999999545,
+      "stars": [
+        {
+          "id": "s1",
+          "mass": 0.01,
+          "luminosity": 8,
+          "position": [
+            -1.987457812068946,
+            0,
+            -0.22038585229705096
+          ],
+          "velocity": [
+            0.004086653940697911,
+            0,
+            -0.03632044714133192
+          ]
+        },
+        {
+          "id": "s2",
+          "mass": 0.01,
+          "luminosity": 8,
+          "position": [
+            1.9875452427585893,
+            0,
+            0.21326614331114896
+          ],
+          "velocity": [
+            -0.004043956568544414,
+            0,
+            0.03400240735884603
+          ]
+        },
+        {
+          "id": "s3",
+          "mass": 0.02,
+          "luminosity": 30,
+          "position": [
+            0.2747243177303773,
+            0,
+            -9.996440145507119
+          ],
+          "velocity": [
+            0.044700010863923355,
+            0,
+            0.001159019891242904
+          ]
+        }
+      ],
+      "planet": {
+        "id": "p",
+        "mass": 0,
+        "luminosity": 0,
+        "position": [
+          0.2458254033953777,
+          0,
+          4.986204788684446
+        ],
+        "velocity": [
+          0.04003171925802702,
+          0,
+          -0.00450097431300776
+        ]
+      }
+    },
+    "celestialAccumulator": 0.0005000000000013323,
+    "temperature": 69.11134040540182,
+    "warning": true,
+    "dangerDuration": 105.01666666666199,
+    "heatLoad": 3.1447392891644315,
+    "scenarioId": "validation-001",
+    "scenarioVersion": 1,
+    "integratorVersion": "verlet-1",
+    "runtimeId": "99414967dca455af",
+    "tick": 36867,
+    "position": [
+      24,
+      12.9,
+      -35
+    ],
+    "yaw": 0,
+    "pitch": 0,
+    "motion": {
+      "verticalSpeed": 0,
+      "grounded": true,
+      "safePosition": [
+        24,
+        12.9,
+        -35
+      ]
+    },
+    "npcs": [
+      {
+        "position": [
+          -27,
+          0,
+          -30
+        ],
+        "yaw": 0,
+        "state": "preserved",
+        "waypoint": 3,
+        "preserveElapsed": 3
+      },
+      {
+        "position": [
+          -26,
+          0,
+          -30
+        ],
+        "yaw": 0,
+        "state": "preserved",
+        "waypoint": 3,
+        "preserveElapsed": 3
+      },
+      {
+        "position": [
+          -25,
+          0,
+          -30
+        ],
+        "yaw": 0,
+        "state": "preserved",
+        "waypoint": 3,
+        "preserveElapsed": 3
+      },
+      {
+        "position": [
+          -24,
+          0,
+          -30
+        ],
+        "yaw": 0,
+        "state": "preserved",
+        "waypoint": 3,
+        "preserveElapsed": 3
+      },
+      {
+        "position": [
+          -23,
+          0,
+          -30
+        ],
+        "yaw": 0,
+        "state": "preserved",
+        "waypoint": 3,
+        "preserveElapsed": 3
+      },
+      {
+        "position": [
+          -22,
+          0,
+          -30
+        ],
+        "yaw": 0,
+        "state": "preserved",
+        "waypoint": 3,
+        "preserveElapsed": 3
+      }
+    ],
+    "preservation": {
+      "phase": "idle",
+      "elapsed": 0,
+      "integrity": 1
+    },
+    "ended": true,
+    "outcome": {
+      "city": "destroyed",
+      "individual": "lost",
+      "reason": "灾变抵达时未完成有效保存。",
+      "evidenceCount": 1
+    }
+  },
+  "history": [],
+  "savedAt": null
+}

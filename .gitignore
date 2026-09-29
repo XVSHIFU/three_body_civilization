@@ -1,0 +1,17 @@
+node_modules/
+dist/
+test-results/
+playwright-report/
+*.local
+*.tsbuildinfo
+
+.validation/
+
+# Local agent session state, experiments and redundant captures
+.handoff-local/
+.impeccable/
+.env
+.env.*
+!.env.example
+*.log
+__pycache__/

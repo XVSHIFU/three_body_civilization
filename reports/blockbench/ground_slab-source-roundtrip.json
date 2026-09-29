@@ -1,0 +1,25 @@
+{
+  "id": "ground_slab",
+  "passed": true,
+  "sourceSha256": "72f7f11744d2b0c32d391b882c409f2ef14a44f75041dc889ec64a635e70ce57",
+  "nativeSha256": "1c5ec565719ce1815b83a9f041981ef1389b0329774da5386b627f1f1eec59ad",
+  "bytes": 9516,
+  "triangles": 12,
+  "meshCount": 1,
+  "maxBoundsError": 0,
+  "uvSamples": 24,
+  "embeddedTextureSize": [
+    512,
+    512
+  ],
+  "exportSettings": {
+    "scale": 16,
+    "encoding": "Binary (glb)",
+    "embedTextures": true
+  },
+  "unverified": [
+    "browser GLTFLoader shading",
+    "runtime collision and interactions",
+    "5/20/50m recognition"
+  ]
+}

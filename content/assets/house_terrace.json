@@ -1,0 +1,27 @@
+{
+  "id": "house_terrace",
+  "path": "assets/models/house_terrace.glb",
+  "version": 1,
+  "type": "static",
+  "size": [
+    8.5,
+    8.25,
+    8.5
+  ],
+  "coordinateSystem": "Y-up, metres, ground-centred",
+  "materials": 1,
+  "triangles": 96,
+  "animations": [],
+  "collider": "content/colliders/house_terrace.json",
+  "source": "assets/source/buildings/house_terrace.bbmodel",
+  "author": "Project original geometry",
+  "license": "Project original; public release decision pending",
+  "bytes": 21764,
+  "sha256": "520d6878c23c1d31856eb1c8e81b0a302ea0f3a7b919a9f4f74afcf3711888ae",
+  "interactionPoints": [],
+  "export": {
+    "kind": "blockbench-native",
+    "report": "reports/blockbench/house_terrace-source-roundtrip.json",
+    "sourceSha256": "980211092b740b9358617307f0f7ce593648d05c4061b8f9ac134ff4581edfab"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "date": "2026-09-29",
+  "browser": "Chrome extension-controlled session",
+  "method": "Real UI actions through CUA; not execution of the Playwright runner",
+  "regressionBuild": "ea802b010839",
+  "cases": [
+    {"name":"themes-and-empty-journal","result":"passed","observed":"A selected, C selected with correct copy, zero evidence and insufficient knowledge"},
+    {"name":"settings-keyboard","result":"passed","observed":"150% font scale, Tab from forward to backward binding, close returns focus to Settings, no page errors"},
+    {"name":"mobile-entry-guard","result":"passed","viewport":[390,844],"observed":"Minimum desktop size message; no canvas after Start"},
+    {"name":"critical-model-http-failure","result":"passed","observed":"Actual versioned ruler_cube.glb returned HTTP 503; error details displayed; canvas count zero"},
+    {"name":"critical-model-retry","result":"passed","observed":"After removing server fault marker, Retry initializes all models and reaches Civilization Ready without reload"}
+  ],
+  "pointerLock": {
+    "result":"blocked",
+    "bundle":"runtime-DCnRgDSp.js",
+    "error":"WrongDocumentError: The root document of this element is not valid for pointer lock.",
+    "interpretation":"Does not establish a user permission denial. Foreground manual click requested to distinguish control environment from app failure."
+  },
+  "remaining":["Playwright runner and Firefox coverage", "real keyboard movement and routes", "125% browser zoom", "target hardware performance"]
+}

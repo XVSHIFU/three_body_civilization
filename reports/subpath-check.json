@@ -1,0 +1,242 @@
+{
+  "base": "/three-body-civilization/",
+  "passed": true,
+  "scope": "HTTP byte equality for every built resource, CSS URL references and HTML entry references; not browser execution or deployment.",
+  "cssReferences": [
+    "/three-body-civilization/assets/noto-serif-sc-chinese-simplified-400-normal-hudUdRP0.woff2",
+    "/three-body-civilization/assets/noto-serif-sc-chinese-simplified-400-normal-noNOj8bn.woff",
+    "/three-body-civilization/assets/noto-serif-sc-latin-400-normal-bWtu-bD9.woff2",
+    "/three-body-civilization/assets/noto-serif-sc-latin-400-normal-DtFOq9cQ.woff",
+    "/three-body-civilization/assets/noto-sans-sc-chinese-simplified-300-normal-Yr163UWa.woff2",
+    "/three-body-civilization/assets/noto-sans-sc-chinese-simplified-300-normal-Dhc7b-47.woff",
+    "/three-body-civilization/assets/fonts/noto-serif-sc-title-600.woff2",
+    "/three-body-civilization/assets/materials/parchment.webp"
+  ],
+  "files": [
+    {
+      "path": "assets/fonts/noto-serif-sc-title-600.woff2",
+      "bytes": 1312,
+      "status": 200
+    },
+    {
+      "path": "assets/fonts/OFL.txt",
+      "bytes": 4314,
+      "status": 200
+    },
+    {
+      "path": "assets/index-3a_V6Fww.js",
+      "bytes": 285297,
+      "status": 200
+    },
+    {
+      "path": "assets/index-CBDJfT2g.css",
+      "bytes": 20167,
+      "status": 200
+    },
+    {
+      "path": "assets/materials/parchment.prompt.txt",
+      "bytes": 676,
+      "status": 200
+    },
+    {
+      "path": "assets/materials/parchment.webp",
+      "bytes": 31042,
+      "status": 200
+    },
+    {
+      "path": "assets/materials/parchment.webp.json",
+      "bytes": 736,
+      "status": 200
+    },
+    {
+      "path": "assets/models/archive_desk.glb",
+      "bytes": 26440,
+      "status": 200
+    },
+    {
+      "path": "assets/models/doorway.glb",
+      "bytes": 12976,
+      "status": 200
+    },
+    {
+      "path": "assets/models/facility.glb",
+      "bytes": 19904,
+      "status": 200
+    },
+    {
+      "path": "assets/models/ground_band.glb",
+      "bytes": 13020,
+      "status": 200
+    },
+    {
+      "path": "assets/models/ground_platform.glb",
+      "bytes": 11252,
+      "status": 200
+    },
+    {
+      "path": "assets/models/ground_slab.glb",
+      "bytes": 9516,
+      "status": 200
+    },
+    {
+      "path": "assets/models/house_terrace.glb",
+      "bytes": 21764,
+      "status": 200
+    },
+    {
+      "path": "assets/models/house_terrace_ruined.glb",
+      "bytes": 27268,
+      "status": 200
+    },
+    {
+      "path": "assets/models/house_tower.glb",
+      "bytes": 21720,
+      "status": 200
+    },
+    {
+      "path": "assets/models/house_tower_ruined.glb",
+      "bytes": 29284,
+      "status": 200
+    },
+    {
+      "path": "assets/models/npc.glb",
+      "bytes": 22068,
+      "status": 200
+    },
+    {
+      "path": "assets/models/observatory_pillar.glb",
+      "bytes": 13136,
+      "status": 200
+    },
+    {
+      "path": "assets/models/railing.glb",
+      "bytes": 14988,
+      "status": 200
+    },
+    {
+      "path": "assets/models/route_flag.glb",
+      "bytes": 16844,
+      "status": 200
+    },
+    {
+      "path": "assets/models/ruler_cube.glb",
+      "bytes": 9528,
+      "status": 200
+    },
+    {
+      "path": "assets/models/stairs.glb",
+      "bytes": 21684,
+      "status": 200
+    },
+    {
+      "path": "assets/models/stone_cluster.glb",
+      "bytes": 13184,
+      "status": 200
+    },
+    {
+      "path": "assets/models/supply_crate.glb",
+      "bytes": 18520,
+      "status": 200
+    },
+    {
+      "path": "assets/models/thermometer.glb",
+      "bytes": 26516,
+      "status": 200
+    },
+    {
+      "path": "assets/models/wall.glb",
+      "bytes": 9512,
+      "status": 200
+    },
+    {
+      "path": "assets/models/wall_corner.glb",
+      "bytes": 11256,
+      "status": 200
+    },
+    {
+      "path": "assets/noto-sans-sc-chinese-simplified-300-normal-Dhc7b-47.woff",
+      "bytes": 1540936,
+      "status": 200
+    },
+    {
+      "path": "assets/noto-sans-sc-chinese-simplified-300-normal-Yr163UWa.woff2",
+      "bytes": 1112552,
+      "status": 200
+    },
+    {
+      "path": "assets/noto-serif-sc-chinese-simplified-400-normal-hudUdRP0.woff2",
+      "bytes": 1507260,
+      "status": 200
+    },
+    {
+      "path": "assets/noto-serif-sc-chinese-simplified-400-normal-noNOj8bn.woff",
+      "bytes": 2071172,
+      "status": 200
+    },
+    {
+      "path": "assets/noto-serif-sc-latin-400-normal-bWtu-bD9.woff2",
+      "bytes": 18540,
+      "status": 200
+    },
+    {
+      "path": "assets/noto-serif-sc-latin-400-normal-DtFOq9cQ.woff",
+      "bytes": 22472,
+      "status": 200
+    },
+    {
+      "path": "assets/plates/observatory.prompt.txt",
+      "bytes": 701,
+      "status": 200
+    },
+    {
+      "path": "assets/plates/observatory.webp",
+      "bytes": 94728,
+      "status": 200
+    },
+    {
+      "path": "assets/plates/observatory.webp.json",
+      "bytes": 763,
+      "status": 200
+    },
+    {
+      "path": "assets/plates/pulp.prompt.txt",
+      "bytes": 637,
+      "status": 200
+    },
+    {
+      "path": "assets/plates/pulp.webp",
+      "bytes": 107992,
+      "status": 200
+    },
+    {
+      "path": "assets/plates/pulp.webp.json",
+      "bytes": 699,
+      "status": 200
+    },
+    {
+      "path": "assets/plates/survey.prompt.txt",
+      "bytes": 553,
+      "status": 200
+    },
+    {
+      "path": "assets/plates/survey.webp",
+      "bytes": 119208,
+      "status": 200
+    },
+    {
+      "path": "assets/plates/survey.webp.json",
+      "bytes": 615,
+      "status": 200
+    },
+    {
+      "path": "assets/runtime-CF9UMFW0.js",
+      "bytes": 5041796,
+      "status": 200
+    },
+    {
+      "path": "index.html",
+      "bytes": 471,
+      "status": 200
+    }
+  ]
+}

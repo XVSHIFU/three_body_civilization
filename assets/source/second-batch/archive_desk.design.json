@@ -1,0 +1,117 @@
+{
+  "id": "archive_desk",
+  "status": "source-only",
+  "source": "assets/source/second-batch/archive_desk.bbmodel",
+  "triangles": 120,
+  "triangleBudget": 3000,
+  "materials": 1,
+  "textureSize": 512,
+  "unitsPerMeter": 16,
+  "approach": "positive Z",
+  "interactionPoints": [
+    {
+      "id": "operate",
+      "position": [
+        0,
+        1.15,
+        0.5
+      ],
+      "purpose": "Archive reading surface; approach from positive Z."
+    }
+  ],
+  "movableNodes": [],
+  "colliders": [
+    {
+      "position": [
+        -0.7,
+        0.45,
+        0
+      ],
+      "halfExtents": [
+        0.15,
+        0.45,
+        0.375
+      ]
+    },
+    {
+      "position": [
+        0.7,
+        0.45,
+        0
+      ],
+      "halfExtents": [
+        0.15,
+        0.45,
+        0.375
+      ]
+    },
+    {
+      "position": [
+        0,
+        0.25,
+        0
+      ],
+      "halfExtents": [
+        0.7,
+        0.1,
+        0.175
+      ]
+    },
+    {
+      "position": [
+        0,
+        1,
+        0
+      ],
+      "halfExtents": [
+        1,
+        0.1,
+        0.55
+      ]
+    },
+    {
+      "position": [
+        -0.43,
+        1.14,
+        0
+      ],
+      "halfExtents": [
+        0.325,
+        0.04,
+        0.325
+      ]
+    },
+    {
+      "position": [
+        0.32,
+        1.14,
+        0
+      ],
+      "halfExtents": [
+        0.325,
+        0.04,
+        0.325
+      ]
+    },
+    {
+      "position": [
+        0.32,
+        1.195,
+        0
+      ],
+      "halfExtents": [
+        0.075,
+        0.015,
+        0.075
+      ]
+    }
+  ],
+  "author": "Project original geometry",
+  "license": "Project original; public release decision pending",
+  "unverified": [
+    "native export",
+    "5/20/50m recognition",
+    "runtime collision and interaction",
+    "production integration"
+  ]
+}

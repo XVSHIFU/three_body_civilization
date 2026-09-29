@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "buildId": "0.3.0",
+  "revision": 0,
+  "civilization": 1,
+  "observations": [],
+  "hypothesis": {
+    "proposed": false,
+    "evidenceIds": [],
+    "status": "tentative"
+  },
+  "settings": {
+    "theme": "b",
+    "fontScale": 1,
+    "quality": "standard",
+    "fov": 65,
+    "sensitivity": 1,
+    "volume": 0.35,
+    "bassVolume": 0.5,
+    "reducedMotion": true,
+    "captions": true,
+    "keys": {
+      "forward": "KeyW",
+      "back": "KeyS",
+      "left": "KeyA",
+      "right": "KeyD",
+      "interact": "KeyE",
+      "journal": "KeyJ"
+    }
+  },
+  "checkpoint": null,
+  "history": [],
+  "savedAt": null
+}

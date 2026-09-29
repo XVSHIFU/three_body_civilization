@@ -1,0 +1,73 @@
+{
+  "ruler_cube": [],
+  "wall": [],
+  "doorway": [],
+  "stairs": [],
+  "observatory_pillar": [
+    {
+      "id": "sky_sample",
+      "purpose": "observation_origin",
+      "position": [
+        0,
+        3.15,
+        0
+      ]
+    }
+  ],
+  "npc": [
+    {
+      "id": "conversation",
+      "purpose": "conversation",
+      "position": [
+        0,
+        1.55,
+        0
+      ]
+    }
+  ],
+  "facility": [
+    {
+      "id": "console",
+      "purpose": "preservation_console",
+      "position": [
+        -1.5,
+        1,
+        3
+      ]
+    }
+  ],
+  "thermometer": [
+    {
+      "id": "operate",
+      "position": [
+        0,
+        1.2,
+        0.18
+      ],
+      "purpose": "Temperature snapshot at the instrument; pointer is an independent visual node."
+    }
+  ],
+  "archive_desk": [
+    {
+      "id": "operate",
+      "position": [
+        0,
+        1.15,
+        0.5
+      ],
+      "purpose": "Archive reading surface; approach from positive Z."
+    }
+  ],
+  "house_terrace": [],
+  "house_tower": [],
+  "house_terrace_ruined": [],
+  "house_tower_ruined": [],
+  "ground_slab": [],
+  "ground_band": [],
+  "ground_platform": [],
+  "wall_corner": [],
+  "railing": [],
+  "stone_cluster": [],
+  "supply_crate": [],
+  "route_flag": []
+}

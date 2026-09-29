@@ -1,0 +1,22 @@
+{
+  "model": "observatory_pillar",
+  "nativeFile": "reports/blockbench/observatory_pillar-native-palette.glb",
+  "nativeSha256": "01d92784ecff947b080221f3a42f51612451da4f91d13eb77146396ad8995559",
+  "runtimeSha256": "e5c9b3d7024afd3702c480d3bc5fd85439147989fac158a42d535bbc5282f264",
+  "sourceSha256": "752b07fa8c27903ea390f3c3fe07050f3ff3d1a2be6669652618510d576d2a02",
+  "textureSize": [
+    512,
+    512
+  ],
+  "palettePixelsIdentical": true,
+  "uvVertexColorSamples": 72,
+  "meshCount": 3,
+  "maxBoundsErrorMetres": 9.61124895226817e-08,
+  "animationTracks": 0,
+  "maxCurveComponentError": 0.0,
+  "passed": true,
+  "unverified": [
+    "browser lighting/material shading parity",
+    "moving-view mip filtering"
+  ]
+}

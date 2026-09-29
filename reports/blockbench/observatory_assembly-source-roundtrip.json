@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "sourceSha256": "906ae62bfe88097d598470a72f3dc3d998f1fd2927a121645bb5419ddfcab868",
+  "nativeSha256": "a0a621ae5d72ce915569d0e20a51c26d4695bab98c0dc9ca1b592f6585ffd54f",
+  "bytes": 388900,
+  "meshCount": 212,
+  "triangles": 2544,
+  "maxVertexError": 1.9075814600148826e-7,
+  "uvSamples": 5088,
+  "embeddedTextureSize": [
+    512,
+    512
+  ],
+  "exportSettings": {
+    "scale": 16,
+    "encoding": "Binary (glb)",
+    "embedTextures": true
+  },
+  "scope": "Native assembly compared against every transformed source cube corner and palette sample. Handoff asset; runtime uses modular assets."
+}

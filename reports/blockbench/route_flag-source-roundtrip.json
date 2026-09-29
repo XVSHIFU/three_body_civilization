@@ -1,0 +1,25 @@
+{
+  "id": "route_flag",
+  "passed": true,
+  "sourceSha256": "ce4498921cbb2c05dc831417ca077a7266ee6d52fe54a1c16a226fe40d1ca9af",
+  "nativeSha256": "01e46c3656cc3562203a404587c75030fbedd1806bc36e47223ef80029580ac1",
+  "bytes": 16844,
+  "triangles": 60,
+  "meshCount": 5,
+  "maxBoundsError": 9.536743172944284e-8,
+  "uvSamples": 120,
+  "embeddedTextureSize": [
+    512,
+    512
+  ],
+  "exportSettings": {
+    "scale": 16,
+    "encoding": "Binary (glb)",
+    "embedTextures": true
+  },
+  "unverified": [
+    "browser GLTFLoader shading",
+    "runtime collision and interactions",
+    "5/20/50m recognition"
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "build": "cde546d8ee5132e5",
+  "scenario": "validation-001",
+  "attempts": [
+    {
+      "error": "物理引擎未能启动。请重试初始化；若仍失败，请在支持 WebAssembly 的桌面浏览器中重新打开。你仍可阅读玩法说明或导出当前档案。",
+      "details": "CompileError: WebAssembly.instantiate(): Compiling or instantiating WebAssembly module violates the following Content Security policy directive because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: \"script-src 'self'\".",
+      "before": {
+        "geometries": 0,
+        "textures": 0,
+        "programs": 0,
+        "heapBytes": 26864616
+      },
+      "cleanup": {
+        "disposed": true,
+        "listenersAborted": true,
+        "canvasConnected": false,
+        "retiredContextLost": true,
+        "releasedResources": {
+          "geometries": 0,
+          "textures": 0,
+          "programs": 0,
+          "heapBytes": 26864616
+        }
+      }
+    },
+    {
+      "error": "物理引擎未能启动。请重试初始化；若仍失败，请在支持 WebAssembly 的桌面浏览器中重新打开。你仍可阅读玩法说明或导出当前档案。",
+      "details": "CompileError: WebAssembly.instantiate(): Compiling or instantiating WebAssembly module violates the following Content Security policy directive because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: \"script-src 'self'\".",
+      "before": {
+        "geometries": 0,
+        "textures": 0,
+        "programs": 0,
+        "heapBytes": 22176220
+      },
+      "cleanup": {
+        "disposed": true,
+        "listenersAborted": true,
+        "canvasConnected": false,
+        "retiredContextLost": true,
+        "releasedResources": {
+          "geometries": 0,
+          "textures": 0,
+          "programs": 0,
+          "heapBytes": 22176220
+        }
+      }
+    },
+    {
+      "error": "物理引擎未能启动。请重试初始化；若仍失败，请在支持 WebAssembly 的桌面浏览器中重新打开。你仍可阅读玩法说明或导出当前档案。",
+      "details": "CompileError: WebAssembly.instantiate(): Compiling or instantiating WebAssembly module violates the following Content Security policy directive because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: \"script-src 'self'\".",
+      "before": {
+        "geometries": 0,
+        "textures": 0,
+        "programs": 0,
+        "heapBytes": 22617750
+      },
+      "cleanup": {
+        "disposed": true,
+        "listenersAborted": true,
+        "canvasConnected": false,
+        "retiredContextLost": true,
+        "releasedResources": {
+          "geometries": 0,
+          "textures": 0,
+          "programs": 0,
+          "heapBytes": 22617750
+        }
+      }
+    },
+    {
+      "error": "物理引擎未能启动。请重试初始化；若仍失败，请在支持 WebAssembly 的桌面浏览器中重新打开。你仍可阅读玩法说明或导出当前档案。",
+      "details": "CompileError: WebAssembly.instantiate(): Compiling or instantiating WebAssembly module violates the following Content Security policy directive because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: \"script-src 'self'\".",
+      "before": {
+        "geometries": 0,
+        "textures": 0,
+        "programs": 0,
+        "heapBytes": 22432562
+      },
+      "cleanup": {
+        "disposed": true,
+        "listenersAborted": true,
+        "canvasConnected": false,
+        "retiredContextLost": true,
+        "releasedResources": {
+          "geometries": 0,
+          "textures": 0,
+          "programs": 0,
+          "heapBytes": 22432562
+        }
+      }
+    },
+    {
+      "error": "物理引擎未能启动。请重试初始化；若仍失败，请在支持 WebAssembly 的桌面浏览器中重新打开。你仍可阅读玩法说明或导出当前档案。",
+      "details": "CompileError: WebAssembly.instantiate(): Compiling or instantiating WebAssembly module violates the following Content Security policy directive because 'unsafe-eval' is not an allowed source of script in the following Content Security Policy directive: \"script-src 'self'\".",
+      "before": {
+        "geometries": 0,
+        "textures": 0,
+        "programs": 0,
+        "heapBytes": 22468518
+      },
+      "cleanup": {
+        "disposed": true,
+        "listenersAborted": true,
+        "canvasConnected": false,
+        "retiredContextLost": true,
+        "releasedResources": {
+          "geometries": 0,
+          "textures": 0,
+          "programs": 0,
+          "heapBytes": 22468518
+        }
+      }
+    }
+  ],
+  "scope": "Initialization failures in this page, up to 20. Cleanup records actual abort signal, canvas connection and retired WebGL context state. Resource counts are not GPU memory or retained heap; null means runtime construction did not complete."
+}

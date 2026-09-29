@@ -1,0 +1,17 @@
+{
+  "id": "railing",
+  "boxes": [
+    {
+      "position": [
+        0,
+        0.6,
+        0
+      ],
+      "halfExtents": [
+        1,
+        0.6,
+        0.1
+      ]
+    }
+  ]
+}

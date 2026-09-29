@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "productionEntry": "index-Bb665tvb.js",
+  "originalCheckpoint": null,
+  "exportedCheckpoint": {
+    "tick": 0,
+    "position": [
+      0,
+      0.8999999761581421,
+      64
+    ],
+    "npcs": 6,
+    "runtimeId": "495e2a0e9166a945"
+  },
+  "originalUnchanged": true,
+  "observationsUnchanged": true,
+  "savedAtUnchanged": true,
+  "originalSha256": "e52149bc42d2f2d9b7a5943e3e9d0a0fc21ced9acddb533f4666b4f5ac3db05f",
+  "exportSha256": "2379158238f0061dc08b07783aa29b4b68c3d15ce53ac7c93a7b16c21cc4f62a",
+  "scope": "Real production browser download after world initialization and before autosave. Confirms export captures current runtime state without writing the database. Movement between autosaves covered by a data-level regression, not real Pointer Lock input."
+}

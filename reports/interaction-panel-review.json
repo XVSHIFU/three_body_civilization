@@ -1,0 +1,38 @@
+{
+  "page": "tools/interaction-panel-preview.html",
+  "sharedComponents": [
+    "Dialog",
+    "InstrumentReading",
+    "InstrumentActions",
+    "FacilityReading",
+    "PreservationConfirm",
+    "CalibrationPanel"
+  ],
+  "fontScale": 1.5,
+  "viewports": [
+    [
+      1280,
+      720
+    ],
+    [
+      600,
+      720
+    ]
+  ],
+  "cases": [
+    "B inherited sky calibration with previous-civilization sample",
+    "A empty first sky reading; no calibration region",
+    "A temperature with no previous thermometer sample",
+    "B available preservation confirmation",
+    "C disabled preservation confirmation"
+  ],
+  "checks": {
+    "duplicateRecord": "Previous sample plus current sample remained 2 after repeat click",
+    "shortKeyPress": "A short E press left confirmation count 0",
+    "clickConfirmation": "Click invoked callback once, counter 1 and dialog closed",
+    "disabledConfirmation": "Button disabled; E did not change counter 1",
+    "focusReturn": "Return and Escape restored focus to the opening button",
+    "layout": "Screenshots inspected: independently scrolling reading area and visible footer; calibration table fits narrow window"
+  },
+  "scope": "Uses the same production UI components with explicitly staged samples in memory. No game runtime, no save database, no Pointer Lock. Does not verify reaching the objects, actual preservation stages, continuous 800 ms key hold, 125% browser zoom, or production scene overlays."
+}

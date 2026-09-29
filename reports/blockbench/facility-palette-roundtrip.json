@@ -1,0 +1,22 @@
+{
+  "model": "facility",
+  "nativeFile": "reports/blockbench/facility-native-palette.glb",
+  "nativeSha256": "eaf7e81a6473a33e242ff9a138cafd8c5b5531d06dfe82a5379759bf7d38deed",
+  "runtimeSha256": "3c6e675a1ad54acbdef03aaa46331a5c99e915e1b8e5ee3f66d82ed5ebdca0c6",
+  "sourceSha256": "c88802f4d6e1f503faf7baacc130c02282fc007426082b8d8f55eef637785a98",
+  "textureSize": [
+    512,
+    512
+  ],
+  "palettePixelsIdentical": true,
+  "uvVertexColorSamples": 168,
+  "meshCount": 7,
+  "maxBoundsErrorMetres": 0.0,
+  "animationTracks": 0,
+  "maxCurveComponentError": 0.0,
+  "passed": true,
+  "unverified": [
+    "browser lighting/material shading parity",
+    "moving-view mip filtering"
+  ]
+}

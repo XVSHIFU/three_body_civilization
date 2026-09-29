@@ -1,0 +1,100 @@
+{
+  "productionEntry": "index-xrejEx1G.js",
+  "productionStyles": "index-VB_eWUcN.css",
+  "fontScale": 1.5,
+  "resultAt1280x720": {
+    "body": {
+      "height": 313,
+      "scrollHeight": 587,
+      "top": 0
+    },
+    "buttons": [
+      {
+        "rect": {
+          "bottom": 588.40625,
+          "height": 61.59375,
+          "left": 442,
+          "right": 796,
+          "top": 526.8125,
+          "width": 354,
+          "x": 442,
+          "y": 526.8125
+        },
+        "text": "保留页面副本并读取最新档案"
+      },
+      {
+        "rect": {
+          "bottom": 588.40625,
+          "height": 61.59375,
+          "left": 810,
+          "right": 948,
+          "top": 526.8125,
+          "width": 138,
+          "x": 810,
+          "y": 526.8125
+        },
+        "text": "导出档案"
+      },
+      {
+        "rect": {
+          "bottom": 664,
+          "height": 61.59375,
+          "left": 762,
+          "right": 948,
+          "top": 602.40625,
+          "width": 186,
+          "x": 762,
+          "y": 602.40625
+        },
+        "text": "进入下一文明"
+      }
+    ],
+    "footer": {
+      "bottom": 688,
+      "height": 182.1875,
+      "left": 300,
+      "right": 980,
+      "top": 505.8125,
+      "width": 680,
+      "x": 300,
+      "y": 505.8125
+    },
+    "viewport": [
+      1280,
+      720
+    ]
+  },
+  "resultAt600x720": "Inspected screenshot: result-fixed-actions-narrow-150.png; buttons wrap by content and remain visible.",
+  "introBefore": {
+    "footer": {
+      "bottom": 688,
+      "height": 106.59375,
+      "left": 300,
+      "right": 980,
+      "top": 581.40625,
+      "width": 680,
+      "x": 300,
+      "y": 581.40625
+    },
+    "top": 0
+  },
+  "introAfter": {
+    "focused": "panel-content",
+    "footer": {
+      "bottom": 688,
+      "height": 106.59375,
+      "left": 300,
+      "right": 980,
+      "top": 581.40625,
+      "width": 680,
+      "x": 300,
+      "y": 581.40625
+    },
+    "height": 389,
+    "scrollHeight": 764,
+    "top": 375
+  },
+  "keyboard": "Tab focused the scrolling body; End reached scrollTop 375; Tab reached the fixed action; Enter opened settings.",
+  "resultAction": "Clicked the fixed next-civilization action in the production app; civilization 003 loaded with the ready overlay.",
+  "scope": "Production result and intro only. Instrument, preservation, plaque and NPC actions use the same footer but their in-world interaction route was not exercised. Not a 125% browser zoom check."
+}

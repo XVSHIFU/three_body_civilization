@@ -1,0 +1,25 @@
+{
+  "id": "house_tower",
+  "passed": true,
+  "sourceSha256": "478b6d4bcaf10552aa9a3eb3a48bf33040b75d2901a5c2ae97ce45a8f9c8d1e3",
+  "nativeSha256": "2e5249a20be01c40fd6767bc6524dc79be1b7ef199680a5c4652d602dc04b195",
+  "bytes": 21720,
+  "triangles": 96,
+  "meshCount": 8,
+  "maxBoundsError": 1.9073486257070726e-7,
+  "uvSamples": 192,
+  "embeddedTextureSize": [
+    512,
+    512
+  ],
+  "exportSettings": {
+    "scale": 16,
+    "encoding": "Binary (glb)",
+    "embedTextures": true
+  },
+  "unverified": [
+    "browser GLTFLoader shading",
+    "runtime collision and interactions",
+    "5/20/50m recognition"
+  ]
+}

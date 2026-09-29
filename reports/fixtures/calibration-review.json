@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "buildId": "0.3.0",
+  "revision": 0,
+  "civilization": 2,
+  "observations": [
+    {
+      "id": "c1-pillar-2",
+      "civilization": 1,
+      "tick": 1200,
+      "source": "pillar",
+      "sunIds": [
+        "s1",
+        "s2"
+      ],
+      "directions": {
+        "s1": [
+          0.7071067811865476,
+          0.7071067811865476,
+          0
+        ],
+        "s2": [
+          -0.7071067811865476,
+          0.7071067811865476,
+          0
+        ]
+      },
+      "temperature": null
+    },
+    {
+      "id": "c2-pillar-0",
+      "civilization": 2,
+      "tick": 0,
+      "source": "pillar",
+      "sunIds": [
+        "s1"
+      ],
+      "directions": {
+        "s1": [
+          0.8660254037844386,
+          0.5,
+          0
+        ]
+      },
+      "temperature": null
+    }
+  ],
+  "hypothesis": {
+    "proposed": false,
+    "evidenceIds": [],
+    "status": "tentative"
+  },
+  "settings": {
+    "theme": "b",
+    "fontScale": 1.5,
+    "quality": "standard",
+    "fov": 65,
+    "sensitivity": 1,
+    "volume": 0.35,
+    "bassVolume": 0.5,
+    "reducedMotion": true,
+    "captions": true,
+    "keys": {
+      "forward": "KeyW",
+      "back": "KeyS",
+      "left": "KeyA",
+      "right": "KeyD",
+      "interact": "KeyE",
+      "journal": "KeyJ"
+    }
+  },
+  "checkpoint": null,
+  "history": [],
+  "savedAt": null
+}

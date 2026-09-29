@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "download": "civilization-backup-retired-checkpoint-4b8dd7bb.json",
+  "civilization": 1,
+  "checkpointIdentical": true,
+  "observationsIdentical": true,
+  "scope": "Isolated 4180 preview UI backup export; metadata revision and savedAt reflect initial import."
+}

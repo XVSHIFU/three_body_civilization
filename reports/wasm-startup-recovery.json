@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "fault": "Actual WebAssembly compilation rejected by response CSP: script-src self; no wasm compilation permission",
+  "origin": "http://127.0.0.1:4191",
+  "fixture": "reports/fixtures/calibration-review.json",
+  "archiveExport": "reports/wasm-failure-archive.json",
+  "archiveFieldsCompared": [
+    "civilization",
+    "observations",
+    "knowledge",
+    "hypothesis",
+    "history",
+    "checkpoint",
+    "settings"
+  ],
+  "retryWhileBlocked": "Returned to usable error dialog",
+  "recovery": "Removed test marker; ordinary reload retained prior CSP; a fresh index.html?validation=wasm-recovery document initialized 21 production assets and reached civilization-ready state",
+  "screenshots": [
+    ".impeccable/review/wasm-startup-failure.png",
+    ".impeccable/review/wasm-startup-recovered.png"
+  ],
+  "productionJavascript": [
+    {
+      "file": "dist/assets/index-CbLvJ4PP.js",
+      "sha256": "b64d33c4b7bcc0860e1d9c0f047536cf37267d725f18add0ad33e989d844b66b"
+    },
+    {
+      "file": "dist/assets/runtime-v8QbvwAm.js",
+      "sha256": "6abc45da993aa255242d788d5e2a397d8b8e9308f9acaa5e36e90ef99e85b738"
+    }
+  ],
+  "notVerified": [
+    "WebGL2-unavailable hardware",
+    "WASM binary corruption or out-of-memory",
+    "Recovery without document reload",
+    "Active keyboard and pointer-lock gameplay"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "house_tower",
+  "boxes": [
+    {
+      "position": [
+        0,
+        4,
+        0
+      ],
+      "halfExtents": [
+        3,
+        4,
+        4
+      ]
+    },
+    {
+      "position": [
+        0,
+        8.25,
+        0
+      ],
+      "halfExtents": [
+        3.25,
+        0.25,
+        4.25
+      ]
+    },
+    {
+      "position": [
+        0,
+        9,
+        0
+      ],
+      "halfExtents": [
+        2,
+        0.5,
+        2.5
+      ]
+    },
+    {
+      "position": [
+        0,
+        9.625,
+        0
+      ],
+      "halfExtents": [
+        2.25,
+        0.125,
+        2.75
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "model": "ruler_cube",
+  "nativeFile": "reports/blockbench/ruler_cube-native-palette.glb",
+  "nativeSha256": "de7f292ae9d00c8a387a9618a6ab3cc8a06b2efff88433c146efe3367a5a9f46",
+  "runtimeSha256": "b93290ca990e440bead542ad261b4f889e584ab806995a13f3d59f878b62fde4",
+  "sourceSha256": "97c216c8b17228f1c81447be9043ee8f73d90abc9563c1f5c3dee83ea15d8257",
+  "textureSize": [
+    512,
+    512
+  ],
+  "palettePixelsIdentical": true,
+  "uvVertexColorSamples": 24,
+  "meshCount": 1,
+  "maxBoundsErrorMetres": 0.0,
+  "animationTracks": 0,
+  "maxCurveComponentError": 0.0,
+  "passed": true,
+  "unverified": [
+    "browser lighting/material shading parity",
+    "moving-view mip filtering"
+  ]
+}

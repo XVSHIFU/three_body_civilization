@@ -1,0 +1,28 @@
+{
+  "id": "ruler_cube",
+  "path": "assets/models/ruler_cube.glb",
+  "version": 2,
+  "type": "static",
+  "size": [
+    1,
+    1,
+    1
+  ],
+  "coordinateSystem": "Y-up, metres, ground-centred",
+  "materials": 1,
+  "triangles": 12,
+  "animations": [],
+  "collider": "content/colliders/ruler_cube.json",
+  "source": "assets/source/ruler_cube.bbmodel",
+  "author": "Project original procedural geometry",
+  "license": "Project original; public release decision pending",
+  "bytes": 9528,
+  "sha256": "de7f292ae9d00c8a387a9618a6ab3cc8a06b2efff88433c146efe3367a5a9f46",
+  "interactionPoints": [],
+  "export": {
+    "kind": "blockbench-native",
+    "report": "reports/blockbench/ruler_cube-palette-roundtrip.json",
+    "sourceSha256": "97c216c8b17228f1c81447be9043ee8f73d90abc9563c1f5c3dee83ea15d8257",
+    "vertexBaseline": "reports/vertex-assets/ruler_cube.glb"
+  }
+}

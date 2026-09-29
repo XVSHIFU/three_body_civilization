@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "database": "three-body-validation:cas:ed8b5571-e68f-4c40-a44d-c5aa6b981b0e",
+  "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+  "writerResults": [
+    "fulfilled",
+    "rejected"
+  ],
+  "winnerRevision": 2,
+  "winnerTheme": "a",
+  "conflictCopyRevision": 1,
+  "conflictCopyTheme": "c",
+  "lastGoodRevision": 1,
+  "recoveryExact": true,
+  "scope": "Two independent real IndexedDB connections in one browser page using production ArchiveStore; not a full two-tab application workflow."
+}

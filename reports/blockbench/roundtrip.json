@@ -1,0 +1,11 @@
+{
+  "height": 1.7499999940395357,
+  "animations": 5,
+  "comparedTracks": 20,
+  "maxQuaternionComponentError": 0,
+  "passed": true,
+  "unverified": [
+    "texture/material parity",
+    "all other modules native export"
+  ]
+}

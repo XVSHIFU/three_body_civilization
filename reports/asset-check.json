@@ -1,0 +1,258 @@
+{
+  "passed": true,
+  "measured": [
+    {
+      "id": "ruler_cube",
+      "triangles": 12,
+      "materials": 1,
+      "textures": [
+        {
+          "width": 512,
+          "height": 512
+        }
+      ]
+    },
+    {
+      "id": "wall",
+      "triangles": 12,
+      "materials": 1,
+      "textures": [
+        {
+          "width": 512,
+          "height": 512
+        }
+      ]
+    },
+    {
+      "id": "doorway",
+      "triangles": 36,
+      "materials": 1,
+      "textures": [
+        {
+          "width": 512,
+          "height": 512
+        }
+      ]
+    },
+    {
+      "id": "stairs",
+      "triangles": 96,
+      "materials": 1,
+      "textures": [
+        {
+          "width": 512,
+          "height": 512
+        }
+      ]
+    },
+    {
+      "id": "observatory_pillar",
+      "triangles": 36,
+      "materials": 1,
+      "textures": [
+        {
+          "width": 512,
+          "height": 512
+        }
+      ]
+    },
+    {
+      "id": "npc",
+      "triangles": 72,
+      "materials": 1,
+      "textures": [
+        {
+          "width": 64,
+          "height": 64
+        }
+      ]
+    },
+    {
+      "id": "facility",
+      "triangles": 84,
+      "materials": 1,
+      "textures": [
+        {
+          "width": 512,
+          "height": 512
+        }
+      ]
+    },
+    {
+      "id": "thermometer",
+      "triangles": 120,
+      "materials": 1,
+      "textures": [
+        {
+          "width": 512,
+          "height": 512
+        }
+      ]
+    },
+    {
+      "id": "archive_desk",
+      "triangles": 120,
+      "materials": 1,
+      "textures": [
+        {
+          "width": 512,
+          "height": 512
+        }
+      ]
+    },
+    {
+      "id": "house_terrace",
+      "triangles": 96,
+      "materials": 1,
+      "textures": [
+        {
+          "width": 512,
+          "height": 512
+        }
+      ]
+    },
+    {
+      "id": "house_tower",
+      "triangles": 96,
+      "materials": 1,
+      "textures": [
+        {
+          "width": 512,
+          "height": 512
+        }
+      ]
+    },
+    {
+      "id": "house_terrace_ruined",
+      "triangles": 132,
+      "materials": 1,
+      "textures": [
+        {
+          "width": 512,
+          "height": 512
+        }
+      ]
+    },
+    {
+      "id": "house_tower_ruined",
+      "triangles": 144,
+      "materials": 1,
+      "textures": [
+        {
+          "width": 512,
+          "height": 512
+        }
+      ]
+    },
+    {
+      "id": "ground_slab",
+      "triangles": 12,
+      "materials": 1,
+      "textures": [
+        {
+          "width": 512,
+          "height": 512
+        }
+      ]
+    },
+    {
+      "id": "ground_band",
+      "triangles": 36,
+      "materials": 1,
+      "textures": [
+        {
+          "width": 512,
+          "height": 512
+        }
+      ]
+    },
+    {
+      "id": "ground_platform",
+      "triangles": 24,
+      "materials": 1,
+      "textures": [
+        {
+          "width": 512,
+          "height": 512
+        }
+      ]
+    },
+    {
+      "id": "wall_corner",
+      "triangles": 24,
+      "materials": 1,
+      "textures": [
+        {
+          "width": 512,
+          "height": 512
+        }
+      ]
+    },
+    {
+      "id": "railing",
+      "triangles": 48,
+      "materials": 1,
+      "textures": [
+        {
+          "width": 512,
+          "height": 512
+        }
+      ]
+    },
+    {
+      "id": "stone_cluster",
+      "triangles": 36,
+      "materials": 1,
+      "textures": [
+        {
+          "width": 512,
+          "height": 512
+        }
+      ]
+    },
+    {
+      "id": "supply_crate",
+      "triangles": 72,
+      "materials": 1,
+      "textures": [
+        {
+          "width": 512,
+          "height": 512
+        }
+      ]
+    },
+    {
+      "id": "route_flag",
+      "triangles": 60,
+      "materials": 1,
+      "textures": [
+        {
+          "width": 512,
+          "height": 512
+        }
+      ]
+    }
+  ],
+  "modules": 21,
+  "totalModelBytes": 370380,
+  "checks": [
+    "native production export/source provenance",
+    "finite named interaction points",
+    "individual/aggregate manifest agreement",
+    "interaction point definition agreement",
+    "unique IDs",
+    "case-sensitive paths",
+    "license fields",
+    "actual GLB triangle/material counts match manifest",
+    "per-family triangle limits",
+    "embedded PNG dimensions",
+    "GLB headers",
+    "SHA-256 content hashes",
+    "NPC clip names"
+  ],
+  "unverified": [
+    "moving-view texture filtering",
+    "runtime mesh dimensions (covered separately by asset tests)",
+    "manual appearance and collisions"
+  ]
+}

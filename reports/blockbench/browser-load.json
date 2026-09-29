@@ -1,0 +1,172 @@
+{
+  "scope": "Actual browser GLTFLoader loads; dimensions and decoded texture metadata. Not gameplay or GPU performance acceptance.",
+  "assets": [
+    {
+      "id": "ruler_cube",
+      "runtimeSize": [
+        1,
+        1,
+        1
+      ],
+      "nativeSize": [
+        1,
+        1,
+        1
+      ],
+      "maxSizeError": 0,
+      "animations": [],
+      "textures": [
+        {
+          "width": 512,
+          "height": 512,
+          "colorSpace": "srgb",
+          "generateMipmaps": false
+        }
+      ]
+    },
+    {
+      "id": "wall",
+      "runtimeSize": [
+        4,
+        3,
+        0.5
+      ],
+      "nativeSize": [
+        4,
+        3,
+        0.5
+      ],
+      "maxSizeError": 0,
+      "animations": [],
+      "textures": [
+        {
+          "width": 512,
+          "height": 512,
+          "colorSpace": "srgb",
+          "generateMipmaps": false
+        }
+      ]
+    },
+    {
+      "id": "doorway",
+      "runtimeSize": [
+        4,
+        3,
+        0.5
+      ],
+      "nativeSize": [
+        4,
+        3,
+        0.5
+      ],
+      "maxSizeError": 0,
+      "animations": [],
+      "textures": [
+        {
+          "width": 512,
+          "height": 512,
+          "colorSpace": "srgb",
+          "generateMipmaps": false
+        }
+      ]
+    },
+    {
+      "id": "stairs",
+      "runtimeSize": [
+        2,
+        2,
+        4
+      ],
+      "nativeSize": [
+        2,
+        2,
+        4
+      ],
+      "maxSizeError": 0,
+      "animations": [],
+      "textures": [
+        {
+          "width": 512,
+          "height": 512,
+          "colorSpace": "srgb",
+          "generateMipmaps": false
+        }
+      ]
+    },
+    {
+      "id": "observatory_pillar",
+      "runtimeSize": [
+        1.5,
+        3.0000000007450582,
+        1.5
+      ],
+      "nativeSize": [
+        1.5,
+        3,
+        1.5
+      ],
+      "maxSizeError": 7.450582373280668e-10,
+      "animations": [],
+      "textures": [
+        {
+          "width": 512,
+          "height": 512,
+          "colorSpace": "srgb",
+          "generateMipmaps": false
+        }
+      ]
+    },
+    {
+      "id": "npc",
+      "runtimeSize": [
+        0.8399999964237214,
+        1.749999997019768,
+        0.3499999940395355
+      ],
+      "nativeSize": [
+        0.8399999964237214,
+        1.7499999940395357,
+        0.3499999940395355
+      ],
+      "maxSizeError": 2.9802322831784522e-9,
+      "animations": [
+        "idle",
+        "walk",
+        "observe",
+        "panic",
+        "preserve"
+      ],
+      "textures": [
+        {
+          "width": 64,
+          "height": 64,
+          "colorSpace": "srgb",
+          "generateMipmaps": false
+        }
+      ]
+    },
+    {
+      "id": "facility",
+      "runtimeSize": [
+        13,
+        5.5,
+        11
+      ],
+      "nativeSize": [
+        13,
+        5.5,
+        11
+      ],
+      "maxSizeError": 0,
+      "animations": [],
+      "textures": [
+        {
+          "width": 512,
+          "height": 512,
+          "colorSpace": "srgb",
+          "generateMipmaps": false
+        }
+      ]
+    }
+  ]
+}

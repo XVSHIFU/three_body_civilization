@@ -1,0 +1,41 @@
+{
+  "id": "supply_crate",
+  "status": "source-only",
+  "source": "assets/source/environment/supply_crate.bbmodel",
+  "triangles": 72,
+  "triangleBudget": 250,
+  "materials": 1,
+  "textureSize": 512,
+  "unitsPerMeter": 16,
+  "role": "Sealed supply crate; static decoration, no inventory or interaction implied.",
+  "size": [
+    1,
+    1.0299999999999998,
+    0.86
+  ],
+  "colliders": [
+    {
+      "position": [
+        0,
+        0.5,
+        0
+      ],
+      "halfExtents": [
+        0.5,
+        0.5,
+        0.4
+      ]
+    }
+  ],
+  "interactionPoints": [],
+  "author": "Project original geometry",
+  "license": "Project original; public release decision pending",
+  "unverified": [
+    "Blockbench native GLB export",
+    "source/native geometry and palette agreement",
+    "browser shading",
+    "internal-face cleanup",
+    "scene placement and route collision",
+    "distance readability"
+  ]
+}

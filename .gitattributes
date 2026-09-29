@@ -1,0 +1,3 @@
+# Preserve exact bytes: source JSON/model hashes are part of asset provenance.
+# Automatic CRLF conversion would invalidate those hashes on another OS.
+* -text whitespace=cr-at-eol,-blank-at-eof

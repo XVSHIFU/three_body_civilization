@@ -1,0 +1,25 @@
+{
+  "id": "supply_crate",
+  "passed": true,
+  "sourceSha256": "315c7272cc0d75fee2e9fc63a3e0b8859d7e178b6c1934a69e7d612e6ad6faf9",
+  "nativeSha256": "f5de90372a2c77db39ac769fbd9ffef7e0db819666bb7075e360e62b8799e70e",
+  "bytes": 18520,
+  "triangles": 72,
+  "meshCount": 6,
+  "maxBoundsError": 2.8610229296788248e-8,
+  "uvSamples": 144,
+  "embeddedTextureSize": [
+    512,
+    512
+  ],
+  "exportSettings": {
+    "scale": 16,
+    "encoding": "Binary (glb)",
+    "embedTextures": true
+  },
+  "unverified": [
+    "browser GLTFLoader shading",
+    "runtime collision and interactions",
+    "5/20/50m recognition"
+  ]
+}

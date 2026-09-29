@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "buildId": "0.3.0",
+  "revision": 0,
+  "civilization": 1,
+  "observations": [
+    {
+      "id": "c1-thermometer-0",
+      "civilization": 1,
+      "tick": 0,
+      "source": "thermometer",
+      "sunIds": [],
+      "directions": {},
+      "temperature": 28
+    },
+    {
+      "id": "c1-thermometer-1-thermometer",
+      "civilization": 1,
+      "tick": 600,
+      "source": "thermometer",
+      "sunIds": [],
+      "directions": {},
+      "temperature": 40,
+      "location": {
+        "instrumentId": "thermometer",
+        "instrumentName": "温度仪",
+        "name": "荒原广场",
+        "position": [
+          -7.8,
+          2.15,
+          -6
+        ]
+      }
+    }
+  ],
+  "hypothesis": {
+    "proposed": false,
+    "evidenceIds": [],
+    "status": "tentative"
+  },
+  "settings": {
+    "theme": "b",
+    "fontScale": 1.5,
+    "quality": "standard",
+    "fov": 65,
+    "sensitivity": 1,
+    "volume": 0.35,
+    "bassVolume": 0.5,
+    "reducedMotion": true,
+    "captions": true,
+    "keys": {
+      "forward": "KeyW",
+      "back": "KeyS",
+      "left": "KeyA",
+      "right": "KeyD",
+      "interact": "KeyE",
+      "journal": "KeyJ"
+    }
+  },
+  "checkpoint": null,
+  "history": [],
+  "savedAt": null
+}

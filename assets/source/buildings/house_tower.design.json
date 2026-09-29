@@ -1,0 +1,41 @@
+{
+  "id": "house_tower",
+  "status": "source-only",
+  "source": "assets/source/buildings/house_tower.bbmodel",
+  "triangles": 96,
+  "triangleBudget": 1500,
+  "materials": 1,
+  "textureSize": 512,
+  "unitsPerMeter": 16,
+  "role": "Non-enterable backdrop building; no interactive doorway",
+  "statePair": "house_tower",
+  "destroyed": false,
+  "size": [
+    6.5,
+    9.75,
+    8.55
+  ],
+  "colliders": [
+    {
+      "position": [
+        0,
+        4,
+        0
+      ],
+      "halfExtents": [
+        3,
+        4,
+        4
+      ]
+    }
+  ],
+  "unverified": [
+    "native export",
+    "placement inside original building footprint",
+    "disaster state switch",
+    "collision and route regression",
+    "distance recognition"
+  ],
+  "author": "Project original geometry",
+  "license": "Project original; public release decision pending"
+}

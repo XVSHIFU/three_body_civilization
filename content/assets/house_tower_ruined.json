@@ -1,0 +1,27 @@
+{
+  "id": "house_tower_ruined",
+  "path": "assets/models/house_tower_ruined.glb",
+  "version": 2,
+  "type": "static",
+  "size": [
+    6.5,
+    5.6000000000000005,
+    8.55
+  ],
+  "coordinateSystem": "Y-up, metres, ground-centred",
+  "materials": 1,
+  "triangles": 144,
+  "animations": [],
+  "collider": "content/colliders/house_tower_ruined.json",
+  "source": "assets/source/buildings/house_tower_ruined.bbmodel",
+  "author": "Project original geometry",
+  "license": "Project original; public release decision pending",
+  "bytes": 29284,
+  "sha256": "c1b2ac37c72aff3681fe096cad035bea990680d21846ea108b6adc61c0b9598b",
+  "interactionPoints": [],
+  "export": {
+    "kind": "blockbench-native",
+    "report": "reports/blockbench/house_tower_ruined-source-roundtrip.json",
+    "sourceSha256": "78e1d1364fcceb7182aa6c1c14cc04f4190806d1b668b9bc0726f48b75a8ca79"
+  }
+}

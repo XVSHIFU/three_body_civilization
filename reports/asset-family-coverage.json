@@ -1,0 +1,334 @@
+{
+  "passed": true,
+  "scope": "Plan section 11: all 11 named families plus the unit ruler. File coverage, provenance, budget and current handoff reports only; not a visual or hardware acceptance.",
+  "productionAssets": 21,
+  "familyCount": 11,
+  "families": [
+    {
+      "name": "地面板／台地",
+      "budget": 200,
+      "members": [
+        {
+          "id": "ground_slab",
+          "source": "assets/source/environment/ground_slab.bbmodel",
+          "sourceSha256": "72f7f11744d2b0c32d391b882c409f2ef14a44f75041dc889ec64a635e70ce57",
+          "glb": "public/assets/models/ground_slab.glb",
+          "sha256": "1c5ec565719ce1815b83a9f041981ef1389b0329774da5386b627f1f1eec59ad",
+          "collider": "content/colliders/ground_slab.json",
+          "triangles": 12
+        },
+        {
+          "id": "ground_band",
+          "source": "assets/source/environment/ground_band.bbmodel",
+          "sourceSha256": "5216eeaa885dd73051258f74ead3f54e282f68959c95ac91d01c14c1a7440247",
+          "glb": "public/assets/models/ground_band.glb",
+          "sha256": "b969839219af4db4ae68cff4b1ee2281b33de2615c7f88999b5ceb8732bf645f",
+          "collider": "content/colliders/ground_band.json",
+          "triangles": 36
+        },
+        {
+          "id": "ground_platform",
+          "source": "assets/source/environment/ground_platform.bbmodel",
+          "sourceSha256": "815fb530154544261029de5606a72cf8e2e2fd5a5ac95c38d298daa926e9c3d1",
+          "glb": "public/assets/models/ground_platform.glb",
+          "sha256": "1a36b3d91542a96756e9443d8872d1633136e8d3257aa9c264bc918befcb0858",
+          "collider": "content/colliders/ground_platform.json",
+          "triangles": 24
+        }
+      ]
+    },
+    {
+      "name": "墙／角墙／门洞",
+      "budget": 500,
+      "members": [
+        {
+          "id": "wall",
+          "source": "assets/source/wall.bbmodel",
+          "sourceSha256": "2cfb53926100b58afac9fabc81c79f24a3adba0cc8593531a4dfa85f846e369c",
+          "glb": "public/assets/models/wall.glb",
+          "sha256": "426eecbeda10a1123fd3626039b495f5804ec5a98d5b2b69e8a27b6adac3c7d0",
+          "collider": "content/colliders/wall.json",
+          "triangles": 12
+        },
+        {
+          "id": "wall_corner",
+          "source": "assets/source/environment/wall_corner.bbmodel",
+          "sourceSha256": "3f0b63cbe5dac72d2ec523191c886a94b14be3552a0247084d93cfef45f4836a",
+          "glb": "public/assets/models/wall_corner.glb",
+          "sha256": "91e83e0dc65a67ca47051de9a9c0c834315132a68287f334c3ee84091a3c6e2b",
+          "collider": "content/colliders/wall_corner.json",
+          "triangles": 24
+        },
+        {
+          "id": "doorway",
+          "source": "assets/source/doorway.bbmodel",
+          "sourceSha256": "1902f16cb37cbceabf1140a62b671f249e9ffb33aa3b7df50536f2bacc686bc0",
+          "glb": "public/assets/models/doorway.glb",
+          "sha256": "bc4f5bd9867a43344f04230f061e4b24cdf726b0268d4796cb482c929abba6a6",
+          "collider": "content/colliders/doorway.json",
+          "triangles": 36
+        }
+      ]
+    },
+    {
+      "name": "台阶／栏杆",
+      "budget": 600,
+      "members": [
+        {
+          "id": "stairs",
+          "source": "assets/source/stairs.bbmodel",
+          "sourceSha256": "4849afaa8181c7bb04205c814c2a6a0341764fc75f57bd759d6cf4eb098ad9ed",
+          "glb": "public/assets/models/stairs.glb",
+          "sha256": "ab7c7a23d9e20abe3aa870380cbf93311bebc4ebd2a4e11d5a4fa19d605b3854",
+          "collider": "content/colliders/stairs.json",
+          "triangles": 96
+        },
+        {
+          "id": "railing",
+          "source": "assets/source/environment/railing.bbmodel",
+          "sourceSha256": "35b9345a4d3eca33aa4d8db238cdf34ab3bb89313b40abb7fa3b748f0ffa4e52",
+          "glb": "public/assets/models/railing.glb",
+          "sha256": "b4a5e4bf1f97cb97e61a6ac57973aa85bac908fe31d2505f44a4bec7d234116a",
+          "collider": "content/colliders/railing.json",
+          "triangles": 48
+        }
+      ]
+    },
+    {
+      "name": "房屋外壳",
+      "budget": 1500,
+      "members": [
+        {
+          "id": "house_terrace",
+          "source": "assets/source/buildings/house_terrace.bbmodel",
+          "sourceSha256": "980211092b740b9358617307f0f7ce593648d05c4061b8f9ac134ff4581edfab",
+          "glb": "public/assets/models/house_terrace.glb",
+          "sha256": "520d6878c23c1d31856eb1c8e81b0a302ea0f3a7b919a9f4f74afcf3711888ae",
+          "collider": "content/colliders/house_terrace.json",
+          "triangles": 96
+        },
+        {
+          "id": "house_tower",
+          "source": "assets/source/buildings/house_tower.bbmodel",
+          "sourceSha256": "478b6d4bcaf10552aa9a3eb3a48bf33040b75d2901a5c2ae97ce45a8f9c8d1e3",
+          "glb": "public/assets/models/house_tower.glb",
+          "sha256": "2e5249a20be01c40fd6767bc6524dc79be1b7ef199680a5c4652d602dc04b195",
+          "collider": "content/colliders/house_tower.json",
+          "triangles": 96
+        }
+      ]
+    },
+    {
+      "name": "观象柱／温度仪",
+      "budget": 1000,
+      "members": [
+        {
+          "id": "observatory_pillar",
+          "source": "assets/source/observatory_pillar.bbmodel",
+          "sourceSha256": "752b07fa8c27903ea390f3c3fe07050f3ff3d1a2be6669652618510d576d2a02",
+          "glb": "public/assets/models/observatory_pillar.glb",
+          "sha256": "01d92784ecff947b080221f3a42f51612451da4f91d13eb77146396ad8995559",
+          "collider": "content/colliders/observatory_pillar.json",
+          "triangles": 36
+        },
+        {
+          "id": "thermometer",
+          "source": "assets/source/second-batch/thermometer.bbmodel",
+          "sourceSha256": "9977f7a91265484858f8556546619558da86dc13af7efcdf755e79eb7a5c02ad",
+          "glb": "public/assets/models/thermometer.glb",
+          "sha256": "9ab66ce11f4bc5de51f5d5b27d72afc2a325663a6455f2271f10077c92f5638d",
+          "collider": "content/colliders/thermometer.json",
+          "triangles": 120
+        }
+      ]
+    },
+    {
+      "name": "保存设施／档案台",
+      "budget": 3000,
+      "members": [
+        {
+          "id": "facility",
+          "source": "assets/source/facility.bbmodel",
+          "sourceSha256": "c88802f4d6e1f503faf7baacc130c02282fc007426082b8d8f55eef637785a98",
+          "glb": "public/assets/models/facility.glb",
+          "sha256": "eaf7e81a6473a33e242ff9a138cafd8c5b5531d06dfe82a5379759bf7d38deed",
+          "collider": "content/colliders/facility.json",
+          "triangles": 84
+        },
+        {
+          "id": "archive_desk",
+          "source": "assets/source/second-batch/archive_desk.bbmodel",
+          "sourceSha256": "f3ea0950bcd996746fb3df423d3bcd22714aac6556af3841aa736e21a5ba1d19",
+          "glb": "public/assets/models/archive_desk.glb",
+          "sha256": "199e35e52517809822d7d5bfcfccde681b22de2399780f252a68606a81557d4c",
+          "collider": "content/colliders/archive_desk.json",
+          "triangles": 120
+        }
+      ]
+    },
+    {
+      "name": "人物基础体",
+      "budget": 1200,
+      "members": [
+        {
+          "id": "npc",
+          "source": "assets/source/npc.bbmodel",
+          "sourceSha256": "4fe885a8f369803681bd878b69821a504d615ae1a96b8215798999b4eb713a51",
+          "glb": "public/assets/models/npc.glb",
+          "sha256": "c8b20f5a0ac2b76303bb004434ec9f2995b93cfccf46d8e9fce2251550f1bc12",
+          "collider": "content/colliders/npc.json",
+          "triangles": 72
+        }
+      ]
+    },
+    {
+      "name": "石块／木箱／旗帜",
+      "budget": 250,
+      "members": [
+        {
+          "id": "stone_cluster",
+          "source": "assets/source/environment/stone_cluster.bbmodel",
+          "sourceSha256": "02c95abe34c4eab38f43602aa6666f4bc3f3640b4b8f14be112a3ec96b8eb17b",
+          "glb": "public/assets/models/stone_cluster.glb",
+          "sha256": "63f0f64fd689e7d1799212f350289c63824a3c1f05b7b79d3fddf82eff0a275f",
+          "collider": "content/colliders/stone_cluster.json",
+          "triangles": 36
+        },
+        {
+          "id": "supply_crate",
+          "source": "assets/source/environment/supply_crate.bbmodel",
+          "sourceSha256": "315c7272cc0d75fee2e9fc63a3e0b8859d7e178b6c1934a69e7d612e6ad6faf9",
+          "glb": "public/assets/models/supply_crate.glb",
+          "sha256": "f5de90372a2c77db39ac769fbd9ffef7e0db819666bb7075e360e62b8799e70e",
+          "collider": "content/colliders/supply_crate.json",
+          "triangles": 72
+        },
+        {
+          "id": "route_flag",
+          "source": "assets/source/environment/route_flag.bbmodel",
+          "sourceSha256": "ce4498921cbb2c05dc831417ca077a7266ee6d52fe54a1c16a226fe40d1ca9af",
+          "glb": "public/assets/models/route_flag.glb",
+          "sha256": "01e46c3656cc3562203a404587c75030fbedd1806bc36e47223ef80029580ac1",
+          "collider": "content/colliders/route_flag.json",
+          "triangles": 60
+        }
+      ]
+    },
+    {
+      "name": "毁灭后轮廓",
+      "budget": 1500,
+      "members": [
+        {
+          "id": "house_terrace_ruined",
+          "source": "assets/source/buildings/house_terrace_ruined.bbmodel",
+          "sourceSha256": "0ee0c13b633e7c26c0beb2980ed6680b9dde33328dc64ed867312c8febbc09e2",
+          "glb": "public/assets/models/house_terrace_ruined.glb",
+          "sha256": "c0837283b664ccf7fcab9faedbd3d17bbe5007f69b8fa8845a80fec33037904b",
+          "collider": "content/colliders/house_terrace_ruined.json",
+          "triangles": 132
+        },
+        {
+          "id": "house_tower_ruined",
+          "source": "assets/source/buildings/house_tower_ruined.bbmodel",
+          "sourceSha256": "78e1d1364fcceb7182aa6c1c14cc04f4190806d1b668b9bc0726f48b75a8ca79",
+          "glb": "public/assets/models/house_tower_ruined.glb",
+          "sha256": "c1b2ac37c72aff3681fe096cad035bea990680d21846ea108b6adc61c0b9598b",
+          "collider": "content/colliders/house_tower_ruined.json",
+          "triangles": 144
+        }
+      ]
+    }
+  ],
+  "observatory": {
+    "name": "观象台",
+    "budget": 6000,
+    "triangles": 2544,
+    "source": "assets/source/observatory/observatory_assembly.bbmodel",
+    "glb": "reports/blockbench/observatory_assembly-native.glb",
+    "sourceSha256": "906ae62bfe88097d598470a72f3dc3d998f1fd2927a121645bb5419ddfcab868",
+    "nativeSha256": "a0a621ae5d72ce915569d0e20a51c26d4695bab98c0dc9ca1b592f6585ffd54f",
+    "runtime": "Shared layout with instanced modules; handoff GLB is not loaded again"
+  },
+  "clothing": {
+    "name": "人物服装变化",
+    "addedTriangleBudget": 200,
+    "variants": [
+      {
+        "id": "npc_variant_0",
+        "name": "观测员",
+        "source": "assets/source/npc-variants/npc_variant_0.bbmodel",
+        "glb": "reports/blockbench/npc_variant_0-native.glb",
+        "sourceSha256": "3b1efacbd04c2be437cc241d51066369d1ce83b9b575e6ce01a8cace0cfc026c",
+        "nativeSha256": "d9395f4be35fb819b8274965a92aacebb75c82fd92253d64c9bd05579790f345",
+        "triangles": 96,
+        "addedTriangles": 24
+      },
+      {
+        "id": "npc_variant_1",
+        "name": "设施看守",
+        "source": "assets/source/npc-variants/npc_variant_1.bbmodel",
+        "glb": "reports/blockbench/npc_variant_1-native.glb",
+        "sourceSha256": "477dfade6274d343e806dacbdb7b71ff5171266dcfb070d094648d0eaac94b20",
+        "nativeSha256": "35d4441cb24b0b02f51f64a41733d1b32d556ac679b7da28eaf7bf91840bb998",
+        "triangles": 96,
+        "addedTriangles": 24
+      },
+      {
+        "id": "npc_variant_2",
+        "name": "居民 · 旅人",
+        "source": "assets/source/npc-variants/npc_variant_2.bbmodel",
+        "glb": "reports/blockbench/npc_variant_2-native.glb",
+        "sourceSha256": "0cc0f582405f3a3b6100499814a3d5f1ca5cfe1eaed03cbe393a1b83ae2deba8",
+        "nativeSha256": "96224609cb5e069025b52e4ebba7a9202a39008c7990bc847b716483a3a12b68",
+        "triangles": 84,
+        "addedTriangles": 12
+      },
+      {
+        "id": "npc_variant_3",
+        "name": "居民 · 工匠",
+        "source": "assets/source/npc-variants/npc_variant_3.bbmodel",
+        "glb": "reports/blockbench/npc_variant_3-native.glb",
+        "sourceSha256": "fdfe2142bc028137e6356d41fc8ad8a1836006bd0f379185b5575f547dc73a9a",
+        "nativeSha256": "81b9b643e6148531ecc33631ba58e4a2ebb72579e92d29618704ec0b0470658c",
+        "triangles": 84,
+        "addedTriangles": 12
+      },
+      {
+        "id": "npc_variant_4",
+        "name": "居民 · 信使",
+        "source": "assets/source/npc-variants/npc_variant_4.bbmodel",
+        "glb": "reports/blockbench/npc_variant_4-native.glb",
+        "sourceSha256": "2fb598f9ba930fe2e0218e0e8c502fbe38d26ccf85a0bcdfb55d184faffbb12b",
+        "nativeSha256": "ba466783aeb279891a00c08a4de84281695e313ea3092e89d40e519ca9ce71de",
+        "triangles": 84,
+        "addedTriangles": 12
+      },
+      {
+        "id": "npc_variant_5",
+        "name": "居民 · 采集者",
+        "source": "assets/source/npc-variants/npc_variant_5.bbmodel",
+        "glb": "reports/blockbench/npc_variant_5-native.glb",
+        "sourceSha256": "fa99c13c509b9b327714d251506789bc32f529fb74ad7776772702985705d03c",
+        "nativeSha256": "692d9c5c1c325617796ca5425c2ee4aaf5fb5093ca6672ccc0b2e8192108d549",
+        "triangles": 96,
+        "addedTriangles": 24
+      }
+    ]
+  },
+  "ruler": {
+    "id": "ruler_cube",
+    "source": "assets/source/ruler_cube.bbmodel",
+    "sourceSha256": "97c216c8b17228f1c81447be9043ee8f73d90abc9563c1f5c3dee83ea15d8257",
+    "glb": "public/assets/models/ruler_cube.glb",
+    "sha256": "de7f292ae9d00c8a387a9618a6ab3cc8a06b2efff88433c146efe3367a5a9f46",
+    "collider": "content/colliders/ruler_cube.json",
+    "triangles": 12
+  },
+  "unverified": [
+    "5/20/50m functional recognition for all assets",
+    "moving-view texture filtering",
+    "full city disaster visuals",
+    "first-person route and performance on target hardware",
+    "public release rights confirmation"
+  ]
+}

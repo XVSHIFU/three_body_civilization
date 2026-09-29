@@ -1,0 +1,22 @@
+{
+  "model": "wall",
+  "nativeFile": "reports/blockbench/wall-native-palette.glb",
+  "nativeSha256": "426eecbeda10a1123fd3626039b495f5804ec5a98d5b2b69e8a27b6adac3c7d0",
+  "runtimeSha256": "94ac1b5b740bdd43a138ec8c935c55acf688289cce294f62cedac41e46e9677a",
+  "sourceSha256": "2cfb53926100b58afac9fabc81c79f24a3adba0cc8593531a4dfa85f846e369c",
+  "textureSize": [
+    512,
+    512
+  ],
+  "palettePixelsIdentical": true,
+  "uvVertexColorSamples": 24,
+  "meshCount": 1,
+  "maxBoundsErrorMetres": 0.0,
+  "animationTracks": 0,
+  "maxCurveComponentError": 0.0,
+  "passed": true,
+  "unverified": [
+    "browser lighting/material shading parity",
+    "moving-view mip filtering"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "stairs",
+  "path": "assets/models/stairs.glb",
+  "version": 2,
+  "type": "static",
+  "size": [
+    2,
+    2,
+    4
+  ],
+  "coordinateSystem": "Y-up, metres, ground-centred",
+  "materials": 1,
+  "triangles": 96,
+  "animations": [],
+  "collider": "content/colliders/stairs.json",
+  "source": "assets/source/stairs.bbmodel",
+  "author": "Project original procedural geometry",
+  "license": "Project original; public release decision pending",
+  "bytes": 21684,
+  "sha256": "ab7c7a23d9e20abe3aa870380cbf93311bebc4ebd2a4e11d5a4fa19d605b3854",
+  "interactionPoints": [],
+  "export": {
+    "kind": "blockbench-native",
+    "report": "reports/blockbench/stairs-palette-roundtrip.json",
+    "sourceSha256": "4849afaa8181c7bb04205c814c2a6a0341764fc75f57bd759d6cf4eb098ad9ed",
+    "vertexBaseline": "reports/vertex-assets/stairs.glb"
+  }
+}

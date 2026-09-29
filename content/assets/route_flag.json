@@ -1,0 +1,27 @@
+{
+  "id": "route_flag",
+  "path": "assets/models/route_flag.glb",
+  "version": 1,
+  "type": "static",
+  "size": [
+    1.51,
+    2.8,
+    0.5
+  ],
+  "coordinateSystem": "Y-up, metres, ground-centred",
+  "materials": 1,
+  "triangles": 60,
+  "animations": [],
+  "collider": "content/colliders/route_flag.json",
+  "source": "assets/source/environment/route_flag.bbmodel",
+  "author": "Project original geometry",
+  "license": "Project original; public release decision pending",
+  "bytes": 16844,
+  "sha256": "01e46c3656cc3562203a404587c75030fbedd1806bc36e47223ef80029580ac1",
+  "interactionPoints": [],
+  "export": {
+    "kind": "blockbench-native",
+    "report": "reports/blockbench/route_flag-source-roundtrip.json",
+    "sourceSha256": "ce4498921cbb2c05dc831417ca077a7266ee6d52fe54a1c16a226fe40d1ca9af"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "wall_corner",
+  "passed": true,
+  "sourceSha256": "3f0b63cbe5dac72d2ec523191c886a94b14be3552a0247084d93cfef45f4836a",
+  "nativeSha256": "91e83e0dc65a67ca47051de9a9c0c834315132a68287f334c3ee84091a3c6e2b",
+  "bytes": 11256,
+  "triangles": 24,
+  "meshCount": 2,
+  "maxBoundsError": 0,
+  "uvSamples": 48,
+  "embeddedTextureSize": [
+    512,
+    512
+  ],
+  "exportSettings": {
+    "scale": 16,
+    "encoding": "Binary (glb)",
+    "embedTextures": true
+  },
+  "unverified": [
+    "browser GLTFLoader shading",
+    "runtime collision and interactions",
+    "5/20/50m recognition"
+  ]
+}

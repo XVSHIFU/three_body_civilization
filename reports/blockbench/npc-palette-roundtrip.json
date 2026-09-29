@@ -1,0 +1,22 @@
+{
+  "model": "npc",
+  "nativeFile": "reports/blockbench/npc-native-palette.glb",
+  "nativeSha256": "c8b20f5a0ac2b76303bb004434ec9f2995b93cfccf46d8e9fce2251550f1bc12",
+  "runtimeSha256": "f803a616a9ba3332a3e4de88f46a5b8ad010f4ed586a89e9495892ef2f755b49",
+  "sourceSha256": "4fe885a8f369803681bd878b69821a504d615ae1a96b8215798999b4eb713a51",
+  "textureSize": [
+    64,
+    64
+  ],
+  "palettePixelsIdentical": true,
+  "uvVertexColorSamples": 144,
+  "meshCount": 6,
+  "maxBoundsErrorMetres": 3.576278695405222e-08,
+  "animationTracks": 20,
+  "maxCurveComponentError": 0.0,
+  "passed": true,
+  "unverified": [
+    "browser lighting/material shading parity",
+    "moving-view mip filtering"
+  ]
+}

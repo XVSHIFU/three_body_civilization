@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>人物原生导出检视</title>
+<style>
+body{margin:0;background:#202b35;color:#eee7d9;font:16px/1.6 system-ui}header{padding:24px 32px}h1{margin:0;font-size:26px}p{max-width:72ch;margin:8px 0 20px}.controls{display:flex;gap:20px;flex-wrap:wrap;align-items:end}label{display:flex;flex-direction:column;gap:6px}select,button{font:inherit;color:inherit;background:#26343d;border:1px solid #607078;min-height:44px;padding:4px 12px}button{cursor:pointer}button:hover{background:#3b4b55}button:disabled{opacity:.5}select:focus-visible,button:focus-visible{outline:3px solid #e5d4b5;outline-offset:3px}::selection{background:#e5d4b5;color:#1d2931}#scene{height:60vh;min-height:330px}canvas{display:block}#status{padding:12px 32px;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}footer{padding:0 32px 24px;color:#c0c9cb}
+</style>
+<header><h1>人物原生导出检视</h1><p>六份 Blockbench 原生 GLB，包含各自配件、嵌入纹理和五段动画。动作固定在周期的 37%，用于比较姿态；不代表完整场景性能或连续动画验收。</p><div class="controls"><label>动作<select id="clip"><option value="rest">静止</option><option value="idle">待机</option><option value="walk">行走</option><option value="observe">观察</option><option value="panic">慌乱</option><option value="preserve">保存</option></select></label><label>视角<select id="angle"><option value="0.25">正面</option><option value="3.391592653589793">背面</option></select></label><button id="reload">重新加载</button></div></header>
+<div id="scene" aria-label="六名原生人物模型"></div><div id="status" role="status">加载中</div><footer>从左至右：观测员、设施看守、旅人、工匠、信使、采集者。</footer><script type="module" src="./npc-native-preview.ts"></script></html>

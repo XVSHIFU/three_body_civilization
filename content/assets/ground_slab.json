@@ -1,0 +1,27 @@
+{
+  "id": "ground_slab",
+  "path": "assets/models/ground_slab.glb",
+  "version": 1,
+  "type": "static",
+  "size": [
+    4,
+    0.25,
+    4
+  ],
+  "coordinateSystem": "Y-up, metres, ground-centred",
+  "materials": 1,
+  "triangles": 12,
+  "animations": [],
+  "collider": "content/colliders/ground_slab.json",
+  "source": "assets/source/environment/ground_slab.bbmodel",
+  "author": "Project original geometry",
+  "license": "Project original; public release decision pending",
+  "bytes": 9516,
+  "sha256": "1c5ec565719ce1815b83a9f041981ef1389b0329774da5386b627f1f1eec59ad",
+  "interactionPoints": [],
+  "export": {
+    "kind": "blockbench-native",
+    "report": "reports/blockbench/ground_slab-source-roundtrip.json",
+    "sourceSha256": "72f7f11744d2b0c32d391b882c409f2ef14a44f75041dc889ec64a635e70ce57"
+  }
+}

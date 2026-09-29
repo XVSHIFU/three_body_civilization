@@ -1,0 +1,1275 @@
+{
+  "scope": "Complete observatory, both stairs, retaining walls, platform rails, high instrument, flag and reading plaque; before runtime face culling",
+  "budget": 6000,
+  "triangles": 2544,
+  "generatedBoxes": 79,
+  "assets": [
+    {
+      "id": "stairs",
+      "instances": 6,
+      "trianglesPerInstance": 96,
+      "sha256": "ab7c7a23d9e20abe3aa870380cbf93311bebc4ebd2a4e11d5a4fa19d605b3854"
+    },
+    {
+      "id": "railing",
+      "instances": 20,
+      "trianglesPerInstance": 48,
+      "sha256": "b4a5e4bf1f97cb97e61a6ac57973aa85bac908fe31d2505f44a4bec7d234116a"
+    },
+    {
+      "id": "route_flag",
+      "instances": 1,
+      "trianglesPerInstance": 60,
+      "sha256": "01e46c3656cc3562203a404587c75030fbedd1806bc36e47223ef80029580ac1"
+    }
+  ],
+  "layout": {
+    "stairs": [
+      {
+        "position": [
+          24,
+          0,
+          -8
+        ],
+        "scale": [
+          1.5,
+          1,
+          1
+        ]
+      },
+      {
+        "position": [
+          24,
+          2,
+          -12
+        ],
+        "scale": [
+          1.5,
+          1,
+          1
+        ]
+      },
+      {
+        "position": [
+          24,
+          4,
+          -16
+        ],
+        "scale": [
+          1.5,
+          1,
+          1
+        ]
+      },
+      {
+        "position": [
+          24,
+          6,
+          -20
+        ],
+        "scale": [
+          1.5,
+          1,
+          1
+        ]
+      },
+      {
+        "position": [
+          24,
+          8,
+          -24
+        ],
+        "scale": [
+          1.5,
+          1,
+          1
+        ]
+      },
+      {
+        "position": [
+          24,
+          10,
+          -28
+        ],
+        "scale": [
+          1.5,
+          1,
+          1
+        ]
+      }
+    ],
+    "boxes": [
+      {
+        "position": [
+          24,
+          6,
+          -36
+        ],
+        "size": [
+          16,
+          12,
+          8
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          24,
+          13.5,
+          -36
+        ],
+        "size": [
+          0.65,
+          3,
+          0.65
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          18,
+          12.8,
+          -32.8
+        ],
+        "size": [
+          0.8,
+          1.6,
+          0.8
+        ],
+        "material": "gold",
+        "target": "high-pillar"
+      },
+      {
+        "position": [
+          15.75,
+          6,
+          -34
+        ],
+        "size": [
+          0.5,
+          12,
+          2.5
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          15.25,
+          5.875,
+          -34
+        ],
+        "size": [
+          0.5,
+          11.75,
+          2.5
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          14.75,
+          5.75,
+          -34
+        ],
+        "size": [
+          0.5,
+          11.5,
+          2.5
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          14.25,
+          5.625,
+          -34
+        ],
+        "size": [
+          0.5,
+          11.25,
+          2.5
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          13.75,
+          5.5,
+          -34
+        ],
+        "size": [
+          0.5,
+          11,
+          2.5
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          13.25,
+          5.375,
+          -34
+        ],
+        "size": [
+          0.5,
+          10.75,
+          2.5
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          12.75,
+          5.25,
+          -34
+        ],
+        "size": [
+          0.5,
+          10.5,
+          2.5
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          12.25,
+          5.125,
+          -34
+        ],
+        "size": [
+          0.5,
+          10.25,
+          2.5
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          11.75,
+          5,
+          -34
+        ],
+        "size": [
+          0.5,
+          10,
+          2.5
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          11.25,
+          4.875,
+          -34
+        ],
+        "size": [
+          0.5,
+          9.75,
+          2.5
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          10.75,
+          4.75,
+          -34
+        ],
+        "size": [
+          0.5,
+          9.5,
+          2.5
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          10.25,
+          4.625,
+          -34
+        ],
+        "size": [
+          0.5,
+          9.25,
+          2.5
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          9.75,
+          4.5,
+          -34
+        ],
+        "size": [
+          0.5,
+          9,
+          2.5
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          9.25,
+          4.375,
+          -34
+        ],
+        "size": [
+          0.5,
+          8.75,
+          2.5
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          8.75,
+          4.25,
+          -34
+        ],
+        "size": [
+          0.5,
+          8.5,
+          2.5
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          8.25,
+          4.125,
+          -34
+        ],
+        "size": [
+          0.5,
+          8.25,
+          2.5
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          7.75,
+          4,
+          -34
+        ],
+        "size": [
+          0.5,
+          8,
+          2.5
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          7.25,
+          3.875,
+          -34
+        ],
+        "size": [
+          0.5,
+          7.75,
+          2.5
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          6.75,
+          3.75,
+          -34
+        ],
+        "size": [
+          0.5,
+          7.5,
+          2.5
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          6.25,
+          3.625,
+          -34
+        ],
+        "size": [
+          0.5,
+          7.25,
+          2.5
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          5.75,
+          3.5,
+          -34
+        ],
+        "size": [
+          0.5,
+          7,
+          2.5
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          5.25,
+          3.375,
+          -34
+        ],
+        "size": [
+          0.5,
+          6.75,
+          2.5
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          4.75,
+          3.25,
+          -34
+        ],
+        "size": [
+          0.5,
+          6.5,
+          2.5
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          4.25,
+          3.125,
+          -34
+        ],
+        "size": [
+          0.5,
+          6.25,
+          2.5
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          3.75,
+          3,
+          -34
+        ],
+        "size": [
+          0.5,
+          6,
+          2.5
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          3.25,
+          2.875,
+          -34
+        ],
+        "size": [
+          0.5,
+          5.75,
+          2.5
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          2.75,
+          2.75,
+          -34
+        ],
+        "size": [
+          0.5,
+          5.5,
+          2.5
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          2.25,
+          2.625,
+          -34
+        ],
+        "size": [
+          0.5,
+          5.25,
+          2.5
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          1.75,
+          2.5,
+          -34
+        ],
+        "size": [
+          0.5,
+          5,
+          2.5
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          1.25,
+          2.375,
+          -34
+        ],
+        "size": [
+          0.5,
+          4.75,
+          2.5
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          0.75,
+          2.25,
+          -34
+        ],
+        "size": [
+          0.5,
+          4.5,
+          2.5
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          0.25,
+          2.125,
+          -34
+        ],
+        "size": [
+          0.5,
+          4.25,
+          2.5
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          -0.25,
+          2,
+          -34
+        ],
+        "size": [
+          0.5,
+          4,
+          2.5
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          -0.75,
+          1.875,
+          -34
+        ],
+        "size": [
+          0.5,
+          3.75,
+          2.5
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          -1.25,
+          1.75,
+          -34
+        ],
+        "size": [
+          0.5,
+          3.5,
+          2.5
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          -1.75,
+          1.625,
+          -34
+        ],
+        "size": [
+          0.5,
+          3.25,
+          2.5
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          -2.25,
+          1.5,
+          -34
+        ],
+        "size": [
+          0.5,
+          3,
+          2.5
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          -2.75,
+          1.375,
+          -34
+        ],
+        "size": [
+          0.5,
+          2.75,
+          2.5
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          -3.25,
+          1.25,
+          -34
+        ],
+        "size": [
+          0.5,
+          2.5,
+          2.5
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          -3.75,
+          1.125,
+          -34
+        ],
+        "size": [
+          0.5,
+          2.25,
+          2.5
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          -4.25,
+          1,
+          -34
+        ],
+        "size": [
+          0.5,
+          2,
+          2.5
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          -4.75,
+          0.875,
+          -34
+        ],
+        "size": [
+          0.5,
+          1.75,
+          2.5
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          -5.25,
+          0.75,
+          -34
+        ],
+        "size": [
+          0.5,
+          1.5,
+          2.5
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          -5.75,
+          0.625,
+          -34
+        ],
+        "size": [
+          0.5,
+          1.25,
+          2.5
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          -6.25,
+          0.5,
+          -34
+        ],
+        "size": [
+          0.5,
+          1,
+          2.5
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          -6.75,
+          0.375,
+          -34
+        ],
+        "size": [
+          0.5,
+          0.75,
+          2.5
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          -7.25,
+          0.25,
+          -34
+        ],
+        "size": [
+          0.5,
+          0.5,
+          2.5
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          -7.75,
+          0.125,
+          -34
+        ],
+        "size": [
+          0.5,
+          0.25,
+          2.5
+        ],
+        "material": "stone"
+      },
+      {
+        "position": [
+          22,
+          0.8,
+          -8
+        ],
+        "size": [
+          0.35,
+          1.6,
+          2
+        ],
+        "material": "dark"
+      },
+      {
+        "position": [
+          26,
+          0.8,
+          -8
+        ],
+        "size": [
+          0.35,
+          1.6,
+          2
+        ],
+        "material": "dark"
+      },
+      {
+        "position": [
+          22,
+          1.3,
+          -10
+        ],
+        "size": [
+          0.35,
+          2.6,
+          2
+        ],
+        "material": "dark"
+      },
+      {
+        "position": [
+          26,
+          1.3,
+          -10
+        ],
+        "size": [
+          0.35,
+          2.6,
+          2
+        ],
+        "material": "dark"
+      },
+      {
+        "position": [
+          22,
+          1.8,
+          -12
+        ],
+        "size": [
+          0.35,
+          3.6,
+          2
+        ],
+        "material": "dark"
+      },
+      {
+        "position": [
+          26,
+          1.8,
+          -12
+        ],
+        "size": [
+          0.35,
+          3.6,
+          2
+        ],
+        "material": "dark"
+      },
+      {
+        "position": [
+          22,
+          2.3,
+          -14
+        ],
+        "size": [
+          0.35,
+          4.6,
+          2
+        ],
+        "material": "dark"
+      },
+      {
+        "position": [
+          26,
+          2.3,
+          -14
+        ],
+        "size": [
+          0.35,
+          4.6,
+          2
+        ],
+        "material": "dark"
+      },
+      {
+        "position": [
+          22,
+          2.8,
+          -16
+        ],
+        "size": [
+          0.35,
+          5.6,
+          2
+        ],
+        "material": "dark"
+      },
+      {
+        "position": [
+          26,
+          2.8,
+          -16
+        ],
+        "size": [
+          0.35,
+          5.6,
+          2
+        ],
+        "material": "dark"
+      },
+      {
+        "position": [
+          22,
+          3.3,
+          -18
+        ],
+        "size": [
+          0.35,
+          6.6,
+          2
+        ],
+        "material": "dark"
+      },
+      {
+        "position": [
+          26,
+          3.3,
+          -18
+        ],
+        "size": [
+          0.35,
+          6.6,
+          2
+        ],
+        "material": "dark"
+      },
+      {
+        "position": [
+          22,
+          3.8,
+          -20
+        ],
+        "size": [
+          0.35,
+          7.6,
+          2
+        ],
+        "material": "dark"
+      },
+      {
+        "position": [
+          26,
+          3.8,
+          -20
+        ],
+        "size": [
+          0.35,
+          7.6,
+          2
+        ],
+        "material": "dark"
+      },
+      {
+        "position": [
+          22,
+          4.3,
+          -22
+        ],
+        "size": [
+          0.35,
+          8.6,
+          2
+        ],
+        "material": "dark"
+      },
+      {
+        "position": [
+          26,
+          4.3,
+          -22
+        ],
+        "size": [
+          0.35,
+          8.6,
+          2
+        ],
+        "material": "dark"
+      },
+      {
+        "position": [
+          22,
+          4.8,
+          -24
+        ],
+        "size": [
+          0.35,
+          9.6,
+          2
+        ],
+        "material": "dark"
+      },
+      {
+        "position": [
+          26,
+          4.8,
+          -24
+        ],
+        "size": [
+          0.35,
+          9.6,
+          2
+        ],
+        "material": "dark"
+      },
+      {
+        "position": [
+          22,
+          5.3,
+          -26
+        ],
+        "size": [
+          0.35,
+          10.6,
+          2
+        ],
+        "material": "dark"
+      },
+      {
+        "position": [
+          26,
+          5.3,
+          -26
+        ],
+        "size": [
+          0.35,
+          10.6,
+          2
+        ],
+        "material": "dark"
+      },
+      {
+        "position": [
+          22,
+          5.8,
+          -28
+        ],
+        "size": [
+          0.35,
+          11.6,
+          2
+        ],
+        "material": "dark"
+      },
+      {
+        "position": [
+          26,
+          5.8,
+          -28
+        ],
+        "size": [
+          0.35,
+          11.6,
+          2
+        ],
+        "material": "dark"
+      },
+      {
+        "position": [
+          22,
+          6.3,
+          -30
+        ],
+        "size": [
+          0.35,
+          12.6,
+          2
+        ],
+        "material": "dark"
+      },
+      {
+        "position": [
+          26,
+          6.3,
+          -30
+        ],
+        "size": [
+          0.35,
+          12.6,
+          2
+        ],
+        "material": "dark"
+      }
+    ],
+    "rails": [
+      {
+        "position": [
+          17,
+          12,
+          -39.9
+        ],
+        "yaw": 0
+      },
+      {
+        "position": [
+          17,
+          12,
+          -32.1
+        ],
+        "yaw": 0
+      },
+      {
+        "position": [
+          19,
+          12,
+          -39.9
+        ],
+        "yaw": 0
+      },
+      {
+        "position": [
+          19,
+          12,
+          -32.1
+        ],
+        "yaw": 0
+      },
+      {
+        "position": [
+          21,
+          12,
+          -39.9
+        ],
+        "yaw": 0
+      },
+      {
+        "position": [
+          21,
+          12,
+          -32.1
+        ],
+        "yaw": 0
+      },
+      {
+        "position": [
+          23,
+          12,
+          -39.9
+        ],
+        "yaw": 0
+      },
+      {
+        "position": [
+          25,
+          12,
+          -39.9
+        ],
+        "yaw": 0
+      },
+      {
+        "position": [
+          27,
+          12,
+          -39.9
+        ],
+        "yaw": 0
+      },
+      {
+        "position": [
+          27,
+          12,
+          -32.1
+        ],
+        "yaw": 0
+      },
+      {
+        "position": [
+          29,
+          12,
+          -39.9
+        ],
+        "yaw": 0
+      },
+      {
+        "position": [
+          29,
+          12,
+          -32.1
+        ],
+        "yaw": 0
+      },
+      {
+        "position": [
+          31,
+          12,
+          -39.9
+        ],
+        "yaw": 0
+      },
+      {
+        "position": [
+          31,
+          12,
+          -32.1
+        ],
+        "yaw": 0
+      },
+      {
+        "position": [
+          31.9,
+          12,
+          -39
+        ],
+        "yaw": 1.5707963267948966
+      },
+      {
+        "position": [
+          31.9,
+          12,
+          -37
+        ],
+        "yaw": 1.5707963267948966
+      },
+      {
+        "position": [
+          31.9,
+          12,
+          -35
+        ],
+        "yaw": 1.5707963267948966
+      },
+      {
+        "position": [
+          31.9,
+          12,
+          -33
+        ],
+        "yaw": 1.5707963267948966
+      },
+      {
+        "position": [
+          16.1,
+          12,
+          -39
+        ],
+        "yaw": 1.5707963267948966
+      },
+      {
+        "position": [
+          16.1,
+          12,
+          -37
+        ],
+        "yaw": 1.5707963267948966
+      }
+    ]
+  },
+  "flags": [
+    {
+      "id": "route_flag",
+      "position": [
+        17,
+        12,
+        -37
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "yaw": -3.0146198639757142,
+      "collision": true
+    }
+  ],
+  "plaques": [
+    {
+      "id": "observatory-plaque",
+      "title": "观象台石牌",
+      "position": [
+        21,
+        12,
+        -36
+      ],
+      "lines": [
+        "高处视野更开阔，但一次平静不能保证下一刻的天空。观测后，请与广场留下的记录比较。",
+        "保存设施在西北侧。沿高台西侧楼梯下行，经路标前往设施南侧入口，无需绕回城门。",
+        "保存流程约需十二秒。先确认路线，再决定何时停止观察。"
+      ]
+    }
+  ]
+}

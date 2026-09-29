@@ -1,0 +1,113 @@
+{
+  "build": "4a2604aa2f6a039e",
+  "scenario": "compressed-001",
+  "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+  "cycles": [
+    {
+      "before": {
+        "geometries": 53,
+        "textures": 3,
+        "programs": 10,
+        "heapBytes": 31082030
+      },
+      "released": {
+        "geometries": 0,
+        "textures": 1,
+        "programs": 1,
+        "heapBytes": 31082030
+      },
+      "after": {
+        "geometries": 0,
+        "textures": 0,
+        "programs": 5,
+        "heapBytes": 31690922
+      },
+      "checkpointExact": true
+    },
+    {
+      "before": {
+        "geometries": 53,
+        "textures": 3,
+        "programs": 10,
+        "heapBytes": 33062619
+      },
+      "released": {
+        "geometries": 0,
+        "textures": 1,
+        "programs": 1,
+        "heapBytes": 33062619
+      },
+      "after": {
+        "geometries": 0,
+        "textures": 0,
+        "programs": 5,
+        "heapBytes": 41768077
+      },
+      "checkpointExact": true
+    },
+    {
+      "before": {
+        "geometries": 53,
+        "textures": 3,
+        "programs": 10,
+        "heapBytes": 38710864
+      },
+      "released": {
+        "geometries": 0,
+        "textures": 1,
+        "programs": 1,
+        "heapBytes": 38710864
+      },
+      "after": {
+        "geometries": 0,
+        "textures": 0,
+        "programs": 5,
+        "heapBytes": 35838536
+      },
+      "checkpointExact": true
+    },
+    {
+      "before": {
+        "geometries": 53,
+        "textures": 3,
+        "programs": 10,
+        "heapBytes": 39921918
+      },
+      "released": {
+        "geometries": 0,
+        "textures": 1,
+        "programs": 1,
+        "heapBytes": 39921918
+      },
+      "after": {
+        "geometries": 0,
+        "textures": 0,
+        "programs": 5,
+        "heapBytes": 32902037
+      },
+      "checkpointExact": true
+    },
+    {
+      "before": {
+        "geometries": 53,
+        "textures": 3,
+        "programs": 10,
+        "heapBytes": 40092338
+      },
+      "released": {
+        "geometries": 0,
+        "textures": 1,
+        "programs": 1,
+        "heapBytes": 40092338
+      },
+      "after": {
+        "geometries": 0,
+        "textures": 0,
+        "programs": 5,
+        "heapBytes": 33072117
+      },
+      "checkpointExact": true
+    }
+  ],
+  "scope": "Renderer-owned resource counts, checkpoint equality, and optional browser-wide approximate JS heap. Not a GPU-memory or retained-heap measurement; no forced GC."
+}

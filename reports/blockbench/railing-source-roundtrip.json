@@ -1,0 +1,25 @@
+{
+  "id": "railing",
+  "passed": true,
+  "sourceSha256": "35b9345a4d3eca33aa4d8db238cdf34ab3bb89313b40abb7fa3b748f0ffa4e52",
+  "nativeSha256": "b4a5e4bf1f97cb97e61a6ac57973aa85bac908fe31d2505f44a4bec7d234116a",
+  "bytes": 14988,
+  "triangles": 48,
+  "meshCount": 4,
+  "maxBoundsError": 4.768371586472142e-8,
+  "uvSamples": 96,
+  "embeddedTextureSize": [
+    512,
+    512
+  ],
+  "exportSettings": {
+    "scale": 16,
+    "encoding": "Binary (glb)",
+    "embedTextures": true
+  },
+  "unverified": [
+    "browser GLTFLoader shading",
+    "runtime collision and interactions",
+    "5/20/50m recognition"
+  ]
+}

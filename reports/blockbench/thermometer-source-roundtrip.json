@@ -1,0 +1,25 @@
+{
+  "id": "thermometer",
+  "passed": true,
+  "sourceSha256": "9977f7a91265484858f8556546619558da86dc13af7efcdf755e79eb7a5c02ad",
+  "nativeSha256": "9ab66ce11f4bc5de51f5d5b27d72afc2a325663a6455f2271f10077c92f5638d",
+  "bytes": 26516,
+  "triangles": 120,
+  "meshCount": 10,
+  "maxBoundsError": 2.384185793236071e-8,
+  "uvSamples": 240,
+  "embeddedTextureSize": [
+    512,
+    512
+  ],
+  "exportSettings": {
+    "scale": 16,
+    "encoding": "Binary (glb)",
+    "embedTextures": true
+  },
+  "unverified": [
+    "browser GLTFLoader shading",
+    "runtime collision and interactions",
+    "5/20/50m recognition"
+  ]
+}

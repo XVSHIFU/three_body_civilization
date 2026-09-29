@@ -1,0 +1,52 @@
+# 三体文明 · 技术原型与重规划
+
+**当前是交接用技术原型，不是已验收的游戏。** 用户已确认可以移动，同时指出阅读返回多一次暂停、穿模、人物缺乏特征及整体美术不满意。下一步先审阅方案、对齐品质样板，不继续扩展整城。
+
+## 先阅读
+
+1. [计划书 v0.3 · 待逐项审阅](docs/PLAN-v0.3.md)（[Word阅读版](docs/PLAN-v0.3.docx)）
+2. [换机交接与复现](docs/HANDOFF.md)
+3. [最新问题与证据分级](docs/STATUS.md)
+4. [项目协作约定](AGENTS.md)
+
+Markdown计划书为内容来源，Word由同一源生成。A/B/C是历史入口候选，不代表游戏内美术已认可。
+
+## 本地运行
+
+需要Node.js ≥22.12；本机24.18.0，CI使用24。依赖锁在package-lock.json。
+
+```sh
+npm ci
+npm run dev
+```
+
+打开终端显示的本地地址，普通桌面浏览器窗口至少1024×640。WASD移动、Shift快走、鼠标观察、E交互、J日志、Esc暂停。完整体验与三分钟演示各自保存档案。未通过手感和完整路线验收。
+
+```sh
+npm run typecheck
+npm test
+npm run check:assets
+npm run check:handoff
+npm run build
+npm run check:subpath
+```
+
+浏览器回归：先构建，再执行 `npx playwright install chromium firefox` 和 `npm run test:browser`。下载需网络；结果以本机/CI日志为准，配置存在不等于通过。
+
+## 保留内容
+
+| 目录 | 用途 |
+| --- | --- |
+| src / content | 玩法、模拟、存档、场景、界面与配置 |
+| assets/source / public/assets | 可编辑源、模型、字体、材质；美术仍为原型 |
+| tests / tools | 逻辑回归、资产校验、独立技术检查页和复现脚本 |
+| reports | 必要夹具、原生导出及精选历史证据 |
+| docs / licenses | 新计划、交接、问题、历史资料及来源许可 |
+
+旧v0.2 DOCX、HTML及提取文本留在根目录作为需求历史；旧运行说明见[历史README](docs/archive/README-v0.3.md)。历史记录不自动成为新计划的验收结论。
+
+## 发布与许可
+
+本仓库用于用户授权的GitHub交接，不自动部署网站。未指定项目整体开源许可证；第三方资源沿用各自许可。仓库公开可见不代表所有内容可任意再授权。文学名称及正式游戏公开范围另行确认。
+
+本地依赖、构建产物、个人测试导出、工具会话与重复截图不进入Git。新电脑不依赖旧会话或本机绝对路径运行核心项目。

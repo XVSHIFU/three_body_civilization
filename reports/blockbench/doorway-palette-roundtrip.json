@@ -1,0 +1,22 @@
+{
+  "model": "doorway",
+  "nativeFile": "reports/blockbench/doorway-native-palette.glb",
+  "nativeSha256": "bc4f5bd9867a43344f04230f061e4b24cdf726b0268d4796cb482c929abba6a6",
+  "runtimeSha256": "5de478b50a0aed49e829420506da0fa7a5bafcbb0fc3947f9484fef82d4a5e3e",
+  "sourceSha256": "1902f16cb37cbceabf1140a62b671f249e9ffb33aa3b7df50536f2bacc686bc0",
+  "textureSize": [
+    512,
+    512
+  ],
+  "palettePixelsIdentical": true,
+  "uvVertexColorSamples": 72,
+  "meshCount": 3,
+  "maxBoundsErrorMetres": 0.0,
+  "animationTracks": 0,
+  "maxCurveComponentError": 0.0,
+  "passed": true,
+  "unverified": [
+    "browser lighting/material shading parity",
+    "moving-view mip filtering"
+  ]
+}

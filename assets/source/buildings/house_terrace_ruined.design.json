@@ -1,0 +1,175 @@
+{
+  "id": "house_terrace_ruined",
+  "status": "source-only",
+  "source": "assets/source/buildings/house_terrace_ruined.bbmodel",
+  "triangles": 132,
+  "triangleBudget": 1500,
+  "materials": 1,
+  "textureSize": 512,
+  "unitsPerMeter": 16,
+  "role": "Non-enterable backdrop building; no interactive doorway",
+  "statePair": "house_terrace",
+  "destroyed": true,
+  "size": [
+    8.5,
+    4.5,
+    8.5
+  ],
+  "colliders": [
+    {
+      "position": [
+        0,
+        0.175,
+        0
+      ],
+      "halfExtents": [
+        4.25,
+        0.175,
+        4.25
+      ]
+    },
+    {
+      "position": [
+        -3.5,
+        2.1,
+        -2.5
+      ],
+      "halfExtents": [
+        0.5,
+        2.1,
+        1.5
+      ]
+    },
+    {
+      "position": [
+        -3.5,
+        1.4,
+        0
+      ],
+      "halfExtents": [
+        0.5,
+        1.4,
+        1
+      ]
+    },
+    {
+      "position": [
+        -1.75,
+        1.2,
+        -3.5
+      ],
+      "halfExtents": [
+        1.25,
+        1.2,
+        0.5
+      ]
+    },
+    {
+      "position": [
+        3.5,
+        0.75,
+        -2.5
+      ],
+      "halfExtents": [
+        0.5,
+        0.75,
+        1.5
+      ]
+    },
+    {
+      "position": [
+        0.5,
+        0.8,
+        0.5
+      ],
+      "halfExtents": [
+        2.25,
+        0.45,
+        0.75
+      ]
+    },
+    {
+      "position": [
+        0.25,
+        1.45,
+        -0.1
+      ],
+      "halfExtents": [
+        1,
+        0.2,
+        0.5
+      ]
+    },
+    {
+      "position": [
+        -2.5,
+        0.65,
+        3.4
+      ],
+      "halfExtents": [
+        1,
+        0.65,
+        0.6
+      ]
+    },
+    {
+      "position": [
+        1.7,
+        0.55,
+        2.8
+      ],
+      "halfExtents": [
+        0.75,
+        0.55,
+        0.9
+      ]
+    },
+    {
+      "position": [
+        1.25,
+        0.5,
+        -2.5
+      ],
+      "halfExtents": [
+        0.75,
+        0.5,
+        0.75
+      ]
+    },
+    {
+      "position": [
+        -3.5,
+        4.35,
+        -3
+      ],
+      "halfExtents": [
+        0.5,
+        0.15,
+        1
+      ]
+    }
+  ],
+  "unverified": [
+    "native export",
+    "placement inside original building footprint",
+    "disaster state switch",
+    "collision and route regression",
+    "distance recognition"
+  ],
+  "author": "Project original geometry",
+  "license": "Project original; public release decision pending",
+  "version": 2,
+  "structuralNames": [
+    "foundation",
+    "west_wall_high",
+    "west_wall_step",
+    "rear_wall_stump",
+    "east_wall_stump",
+    "fallen_roof_band",
+    "fallen_upper_cap",
+    "front_wall_fragment",
+    "front_rubble",
+    "rear_rubble",
+    "west_cap_remnant"
+  ]
+}

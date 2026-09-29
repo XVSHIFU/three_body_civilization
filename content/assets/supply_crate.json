@@ -1,0 +1,27 @@
+{
+  "id": "supply_crate",
+  "path": "assets/models/supply_crate.glb",
+  "version": 1,
+  "type": "static",
+  "size": [
+    1,
+    1.0299999999999998,
+    0.86
+  ],
+  "coordinateSystem": "Y-up, metres, ground-centred",
+  "materials": 1,
+  "triangles": 72,
+  "animations": [],
+  "collider": "content/colliders/supply_crate.json",
+  "source": "assets/source/environment/supply_crate.bbmodel",
+  "author": "Project original geometry",
+  "license": "Project original; public release decision pending",
+  "bytes": 18520,
+  "sha256": "f5de90372a2c77db39ac769fbd9ffef7e0db819666bb7075e360e62b8799e70e",
+  "interactionPoints": [],
+  "export": {
+    "kind": "blockbench-native",
+    "report": "reports/blockbench/supply_crate-source-roundtrip.json",
+    "sourceSha256": "315c7272cc0d75fee2e9fc63a3e0b8859d7e178b6c1934a69e7d612e6ad6faf9"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "ground_band",
+  "status": "source-only",
+  "source": "assets/source/environment/ground_band.bbmodel",
+  "triangles": 36,
+  "triangleBudget": 200,
+  "materials": 1,
+  "textureSize": 512,
+  "unitsPerMeter": 16,
+  "role": "Repeatable 4m paving band; all upper faces coplanar, no raised line or micro-collider.",
+  "size": [
+    4,
+    0.25,
+    4
+  ],
+  "colliders": [
+    {
+      "position": [
+        0,
+        0.125,
+        0
+      ],
+      "halfExtents": [
+        2,
+        0.125,
+        2
+      ]
+    }
+  ],
+  "interactionPoints": [],
+  "author": "Project original geometry",
+  "license": "Project original; public release decision pending",
+  "unverified": [
+    "Blockbench native GLB export",
+    "source/native geometry and palette agreement",
+    "browser shading",
+    "internal-face cleanup",
+    "scene placement and route collision",
+    "distance readability"
+  ]
+}

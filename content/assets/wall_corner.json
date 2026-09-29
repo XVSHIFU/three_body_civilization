@@ -1,0 +1,27 @@
+{
+  "id": "wall_corner",
+  "path": "assets/models/wall_corner.glb",
+  "version": 1,
+  "type": "static",
+  "size": [
+    4,
+    3,
+    4
+  ],
+  "coordinateSystem": "Y-up, metres, ground-centred",
+  "materials": 1,
+  "triangles": 24,
+  "animations": [],
+  "collider": "content/colliders/wall_corner.json",
+  "source": "assets/source/environment/wall_corner.bbmodel",
+  "author": "Project original geometry",
+  "license": "Project original; public release decision pending",
+  "bytes": 11256,
+  "sha256": "91e83e0dc65a67ca47051de9a9c0c834315132a68287f334c3ee84091a3c6e2b",
+  "interactionPoints": [],
+  "export": {
+    "kind": "blockbench-native",
+    "report": "reports/blockbench/wall_corner-source-roundtrip.json",
+    "sourceSha256": "3f0b63cbe5dac72d2ec523191c886a94b14be3552a0247084d93cfef45f4836a"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "id": "wall_corner",
+  "status": "source-only",
+  "source": "assets/source/environment/wall_corner.bbmodel",
+  "triangles": 24,
+  "triangleBudget": 500,
+  "materials": 1,
+  "textureSize": 512,
+  "unitsPerMeter": 16,
+  "role": "90-degree wall junction with 4m outer arms, 0.5m thickness and 3m height; rotate to join wall modules.",
+  "size": [
+    4,
+    3,
+    4
+  ],
+  "colliders": [
+    {
+      "position": [
+        0,
+        1.5,
+        -1.75
+      ],
+      "halfExtents": [
+        2,
+        1.5,
+        0.25
+      ]
+    },
+    {
+      "position": [
+        -1.75,
+        1.5,
+        0.25
+      ],
+      "halfExtents": [
+        0.25,
+        1.5,
+        1.75
+      ]
+    }
+  ],
+  "interactionPoints": [],
+  "author": "Project original geometry",
+  "license": "Project original; public release decision pending",
+  "unverified": [
+    "Blockbench native GLB export",
+    "source/native geometry and palette agreement",
+    "browser shading",
+    "internal-face cleanup",
+    "scene placement and route collision",
+    "distance readability"
+  ]
+}
