@@ -65,3 +65,11 @@ Word计划书：安装Python包python-docx 1.2.0后执行 `python tools/export-p
 - 既有WASM大块构建提示保留。GitHub Actions结果以仓库实际运行记录为准；本地未运行Playwright runner。没有据此认证美术、穿模、真实路线或硬件性能。
 
 新机器仍需自行复现。历史报告只在各自记录的版本和范围内有效。
+
+### 首次GitHub Actions结果
+
+[运行36511472179](https://github.com/XVSHIFU/three_body_civilization/actions/runs/36511472179)，代码提交 `a4b73348ff189e8b8abc6f3459b07d5172b43516`：npm ci、类型检查、102项逻辑测试、资产与交接检查、场景筛选、构建、子路径校验均通过。
+
+Playwright runner实际执行6项，5通过、1失败。Chromium三项通过；Firefox主题／设置与小屏限制通过。Firefox关键模型故障用例先遇到“此设备未能创建WebGL2场景”，未到预期模型请求错误，故该用例失败。不能把这个结果改写为Firefox模型恢复通过或所有浏览器通过。
+
+待处理的是确认CI图形环境，并在具备WebGL2的Firefox环境重跑同一用例；没有删除、放宽或跳过断言。此轮只交接并记录，不据该失败修改玩法。Actions还提示既有v4动作的Node20运行时弃用，更新CI工具应作为单独维护项。

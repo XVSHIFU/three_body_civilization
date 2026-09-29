@@ -19,6 +19,8 @@
 
 Chrome通过CUA检查了主题、空档案、字号、焦点、小屏限制、模型503及重试恢复，见reports/chrome-remaining-regression.json。这不是Playwright runner成绩，不证明Firefox、Safari、硬件性能和完整路线。
 
+交接时新增远端证据：[首次Actions运行](https://github.com/XVSHIFU/three_body_civilization/actions/runs/36511472179)中，代码／102项测试／资产／构建通过；Playwright实际6项中5通过。Firefox的模型故障用例在WebGL2初始化提前失败，断言保留，尚未通过。具体范围见HANDOFF，不再沿用“runner完全未执行”的旧结论。
+
 自动视觉门槛此前未通过，用户也不认可实际游戏画面。旧相似度不作为新目标；先确认参考、真实样板和操作。
 
 ## 后续顺序
