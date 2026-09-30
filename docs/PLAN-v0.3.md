@@ -73,7 +73,7 @@ D1、D2、D5、D6方向已确认；D3评估责任已委托；D4原著方向及D1
 
 工具名单是候选，不要求全部安装。不得为了工具演示增加第二套运行时。保留现有引擎与迁移候选之间只做隔离的小实验，不双线重写整个游戏。
 
-引擎评估由开发者负责：先定位现有流程是否确实阻碍摆场景、调材质、碰撞或角色编辑，再定向验证能解决该问题的候选。不凑候选数量；已有信息足以判断时不追加实验。结论须说明保留哪些模块、改善什么、迁移和换机成本，以及可恢复的旧基线。当前没有候选在本项目中胜出的证据，因此暂保留Three.js；这不是最终排除编辑器或其他引擎。若结论涉及明显重写、费用或交付范围变化，再向用户说明影响并对齐。
+引擎评估由开发者负责：先定位现有流程是否确实阻碍摆场景、调材质、碰撞或角色编辑，再定向验证能解决该问题的候选。不凑候选数量；已有信息足以判断时不追加实验。结论须说明保留哪些模块、改善什么、迁移和换机成本，以及可恢复的旧基线。本轮评估建议庭院继续使用Three.js，具体依据与验证边界见本节评估；这不是最终排除编辑器或其他引擎。若结论涉及明显重写、费用或交付范围变化，再向用户说明影响并对齐。
 
 官方资料（2026-09-29核查，能力介绍不是项目集成结果）：
 
@@ -84,6 +84,50 @@ D1、D2、D5、D6方向已确认；D3评估责任已委托；D4原著方向及D1
 - Kenney许可说明：https://kenney.nl/support
 - Synty：https://www.syntystudios.com/
 - 小团队美术制作案例：https://gdcvault.com/play/1023191/Making-the-World-of
+
+### 庭院制作前评估 · 2026-09-30
+
+开发者结论：本轮庭院继续使用Three.js 0.186.1、Rapier与React，不迁移引擎。保留现有模拟、档案、状态机和测试；下一项建议是在当前栈制作有限庭院，先适配代表资产再扩展到已确认范围。此为受委托的技术评估结论，不代表庭院制作已启动，也不承诺生成图的逐像素还原或未经测量的帧率。
+
+方法采用用户知识库D-017的优先复用、按疑点检查，以及D-011的静态解析／引擎加载／真实体验分级；D-009关于单一权威状态的建议用于审视暂停与返回。只读参考这些方法，未读取个人笔记或回写知识库，未把旧案例当作本项目验证。交接所需理由均写在本节，不依赖私有路径。
+
+现有代码的具体限制：
+
+- src/renderer/model-materials.ts将带贴图的标准材质统一为正面、不透明和像素过滤；外部资产的透明及采样设置不能直接沿用。
+- src/renderer/environment.ts要求单材质合批；tools/glb-budget.ts只接受内嵌PNG、单材质及固定资产预算。外部文件须先适配，不删除原基线断言来放行。
+- src/renderer/world.ts对部分导入模型按每个Mesh的轴对齐包围盒生成碰撞。一个合并Mesh门洞可能被整块碰撞盒封住；这是新资产接入风险，不是已复现的用户穿模根因。新门墙与楼梯应有独立碰撞代理。
+- src/renderer/npc-appearance.ts和runtime.ts依赖固定节点及idle/walk/observe/panic/preserve动作。外部角色须映射或补作所需动作，不能按文件名直接替换。
+- 现有场景已使用标准PBR材质和ACES色调映射，但以色块图集、半球光和方向光为主。参考图需要有尺度的UV、石材细节、合理的粗糙度与金属反射，以及受控照明；继续堆立方体不能解决这些差距。
+
+引擎取舍：
+
+| 路线 | 收益与代价 | 本轮结论 |
+| --- | --- | --- |
+| 现有Three.js＋Rapier | 保留TypeScript算法、React界面、IndexedDB与控制器；局部改资产接入和庭院摆放。缺少已验证的可视化摆场链路 | 采用；先做小样，若摆场和调材质持续成为瓶颈，再定向引入编辑工具 |
+| PlayCanvas Editor | 官方提供可视化摆场、材质编辑及资产导入，但编辑器使用PlayCanvas运行时，不是现有Three.js场景的直接编辑器 | 本轮不迁移；需重接场景、交互、物理和渲染，有收益但缺少本项目胜出证据 |
+| Godot | 有本地场景编辑及桌面导出；官方语言为GDScript、C#、C++，现有TS／React／IndexedDB不能原样迁入 | 本轮不迁移；如果后续明确要求原生桌面且现有链路实测受阻，再评估独立小实验 |
+
+资产建议与证据：
+
+| 资产 | 用途与适配 | 当前证据／决定 |
+| --- | --- | --- |
+| Kenney Castle Kit 2.0 | 门墙、短楼梯基础模块；改比例、石材UV和材质，避免原包的卡通城堡配色 | 官方及包内CC0已核对；下载后检查了门洞与楼梯，门洞完成隔离渲染。选作几何起点，不整包投入生产 |
+| Kenney Blocky Characters 2.0 | 取一个基础角色和已有动画，按第1张参考改长袍、披肩、工具与姿态 | 官方及包内CC0已核对；character-a隔离渲染并读取27段动画，原材质是unlit，需改为受光材质；尚未达到参考人物品质 |
+| Poly Haven Stone Tiles | 候选地面石材，按庭院尺度调整UV与细节强度；先低分辨率验证，再按实际观距决定尺寸 | 官方资源及CC0再分发说明已核对；未下载、未集成，不将照片纹理直接视为适合方块风格 |
+| 观象仪器 | 复用既有交互和采样算法；环架、支座及操作部件需按参考单独制作可编辑资产 | 未找到本轮可直接采用且风格合适的完整仪器，不虚构现成资产；只做一件 |
+| Synty | 付费风格包可作未来候选 | 本轮不采购；当前条款限制团队外源文件分享，不能按普通资源提交到公开仓库 |
+
+资产编辑工具建议：Blockbench继续承担方块角色精修；Blender用于石材UV、环架和标准glTF材质导出。现有项目已有Blockbench源与历史导出证据，Blender官方支持glTF工作流；本机本轮未完成二者编辑／导出回读，不声称已建立完整工具链。开始制作后，由开发者恢复所需工具并完成一个代表资产的编辑→导出→引擎回读，不要求用户自行选工具。本轮无需付费采购；主要成本是资产精修、UV、动画适配、照明和交互验证，没有依据承诺具体工期。
+
+本轮验证范围（基线4b675a4，游戏代码未修改）：下载包只保存在Git忽略的本地评估目录。用锁定依赖中的Three.js r186在隔离Chromium／WebGL2页面加载门洞和角色，查看实际渲染，启动idle动画；不是正式loadAssets/createWorld链路，也未证明碰撞、完整动作或游戏手感。门洞原始尺寸约0.5×1.31×1，角色约1.6×2.7×0.8，必须统一尺度。文件解析得到门洞500三角形、楼梯104三角形、角色72三角形；原GLB均引用外部PNG，角色缺少项目所需observe/panic/preserve动作。文件哈希分别为：
+
+- wall-doorway.glb：8daf5cccceace888d51d74b0e0254e192004faf926e07f1b28e94191879af3a6
+- stairs-stone.glb：ec21b1d65c04ba6384734c31ac542bb4015541e652c411796fd7bcf292e6413c
+- character-a.glb：8ee5dae167ec589863f6bba222467eb90ace8be357a4c5abfcab289290181616
+
+未验证：完整依赖恢复后的原型运行、目标硬件性能、Blender／Blockbench新导出、PBR石材集成、正式角色动画适配、真实行走与穿模。npm ci在字体包下载长时间等待后由本轮停止，保留缓存且未修改锁文件；完整环境恢复及游戏测试未完成，不能把隔离渲染写成完整环境恢复成功。
+
+官方依据（2026-09-30核对）：[Three.js材质](https://threejs.org/docs/pages/MeshStandardMaterial.html)、[PlayCanvas Editor](https://developer.playcanvas.com/user-manual/editor/)、[Godot语言](https://docs.godotengine.org/en/stable/tutorials/scripting/other_languages.html)、[Godot功能](https://docs.godotengine.org/en/stable/about/list_of_features.html)、[Castle Kit](https://kenney.nl/assets/castle-kit)、[Blocky Characters](https://kenney.nl/assets/blocky-characters)、[Stone Tiles](https://polyhaven.com/a/stone_tiles)、[Poly Haven许可](https://polyhaven.com/license)、[Synty条款](https://syntystore.com/pages/one-time-purchase-licence)、[Blender glTF文档](https://docs.blender.org/manual/en/5.3/addons/scene_gltf2.html)。Blender全文抓取失败，本轮仅核对官方搜索摘要，未据此宣称导出验证通过。
 
 ## 5. 游戏内视觉定标
 
