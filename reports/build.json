@@ -1,6 +1,6 @@
 {
-  "node": "v24.18.0",
-  "buildId": "7a7fd0435986",
+  "node": "v24.15.0",
+  "buildId": "0eb6df49d0c3",
   "dependencies": {
     "@dimforge/rapier3d-compat": "0.21.0",
     "@fontsource/noto-sans-sc": "5.3.0",
@@ -9,8 +9,104 @@
     "react-dom": "19.3.0",
     "three": "0.186.1"
   },
-  "totalBytes": 12354759,
+  "totalBytes": 17819960,
   "files": [
+    {
+      "path": "dist\\assets\\chinese-simplified-400-Bh6dpRNu.js",
+      "bytes": 670,
+      "gzipBytes": 389,
+      "sha256": "418c206484b89b68ef5f067277831e583fc9193a62aadf4de269acaaeb12a85f"
+    },
+    {
+      "path": "dist\\assets\\chinese-simplified-400-OCfNPWEL.css",
+      "bytes": 254,
+      "gzipBytes": 177,
+      "sha256": "9c65c122c2d220c6728eca63d0a908c6cabde9a27cdca989a3dff1207a6056f0"
+    },
+    {
+      "path": "dist\\assets\\courtyard\\armillary.glb",
+      "bytes": 635904,
+      "gzipBytes": 87297,
+      "sha256": "32aa979dae41124494d71e5b34e8d0bfc0aaca8e95f90d552b6e6213dc102082"
+    },
+    {
+      "path": "dist\\assets\\courtyard\\doorway.glb",
+      "bytes": 37560,
+      "gzipBytes": 6900,
+      "sha256": "8daf5cccceace888d51d74b0e0254e192004faf926e07f1b28e94191879af3a6"
+    },
+    {
+      "path": "dist\\assets\\courtyard\\large_sandstone_blocks-Diffuse.jpg",
+      "bytes": 750937,
+      "gzipBytes": 750711,
+      "sha256": "2ad242551c841b0c3227bdaec693acc4a4fff3fee6a9576aa501310af2595ee9"
+    },
+    {
+      "path": "dist\\assets\\courtyard\\large_sandstone_blocks-nor_gl.jpg",
+      "bytes": 714290,
+      "gzipBytes": 713805,
+      "sha256": "7b258af6729615a78aff76ceaa153b23011bd1df39b370b7a7e06ad6193b5d82"
+    },
+    {
+      "path": "dist\\assets\\courtyard\\large_sandstone_blocks-Rough.jpg",
+      "bytes": 574293,
+      "gzipBytes": 574043,
+      "sha256": "f6ecff09649153976a53a612d8ba1bea02c2cbebc56adf981709af2601d9fb84"
+    },
+    {
+      "path": "dist\\assets\\courtyard\\observer-base.glb",
+      "bytes": 113596,
+      "gzipBytes": 15622,
+      "sha256": "8ee5dae167ec589863f6bba222467eb90ace8be357a4c5abfcab289290181616"
+    },
+    {
+      "path": "dist\\assets\\courtyard\\observer.glb",
+      "bytes": 206364,
+      "gzipBytes": 78802,
+      "sha256": "3152077e1ac4192b7b2fcd6e014b4006a0a1c7b0f2d4f06cefdf0fd8c269ec0a"
+    },
+    {
+      "path": "dist\\assets\\courtyard\\Textures\\colormap.png",
+      "bytes": 7529,
+      "gzipBytes": 7121,
+      "sha256": "66fd49be148f32e88f6c8cace67120250d1943a7856601158ad0ff24651db0b0"
+    },
+    {
+      "path": "dist\\assets\\courtyard\\Textures\\texture-a.png",
+      "bytes": 20171,
+      "gzipBytes": 17372,
+      "sha256": "257e944c582ce7cda206fbd8ceb717be648f9721756baf377a36478c11c0059a"
+    },
+    {
+      "path": "dist\\assets\\courtyard\\white_sandstone_blocks_02-Diffuse.jpg",
+      "bytes": 910262,
+      "gzipBytes": 908277,
+      "sha256": "0a43c8bc80581408f9c700ad98d2de64280e694148e37626d6648fdddf47a777"
+    },
+    {
+      "path": "dist\\assets\\courtyard\\white_sandstone_blocks_02-nor_gl.jpg",
+      "bytes": 826220,
+      "gzipBytes": 826081,
+      "sha256": "14eb23e29a347b97394c65a6f1fe2c7c107da55b18fb95b912c7280c5a43b72d"
+    },
+    {
+      "path": "dist\\assets\\courtyard\\white_sandstone_blocks_02-Rough.jpg",
+      "bytes": 635846,
+      "gzipBytes": 635821,
+      "sha256": "f30c3c460130ac867d398cacf8041d86eaa760f134f00c84cc1a30348751d3f5"
+    },
+    {
+      "path": "dist\\assets\\courtyard-Bbmx3KlE.css",
+      "bytes": 4622,
+      "gzipBytes": 1742,
+      "sha256": "edd23fb339b34ca1c791c5fa0d60cc9c142dd9924921eb505fb559d6518b86bc"
+    },
+    {
+      "path": "dist\\assets\\courtyard-BNDcl61B.js",
+      "bytes": 20651,
+      "gzipBytes": 9049,
+      "sha256": "729c33f63d676ff2414a78c582bdb2c76d0ebc3cd98a1050c3355258d9f5da86"
+    },
     {
       "path": "dist\\assets\\fonts\\noto-serif-sc-title-600.woff2",
       "bytes": 1312,
@@ -24,16 +120,22 @@
       "sha256": "18aabf190848725e2576eefb5c29ba06aac1029d02132252a7f312eac2e50cf3"
     },
     {
-      "path": "dist\\assets\\index-BE_fN-6x.js",
-      "bytes": 285281,
-      "gzipBytes": 89748,
-      "sha256": "7ac10d041fc5a8910dda8c95189768a57c262787d643fe1a4cf7827c704ea1d6"
+      "path": "dist\\assets\\GLTFLoader-C61Spt3n.js",
+      "bytes": 4971043,
+      "gzipBytes": 1803592,
+      "sha256": "ff45e8f381a528ca52c83bb7182b742986e47a58ffe80e9d3bb0926553ae7824"
     },
     {
-      "path": "dist\\assets\\index-DIHkbINJ.css",
-      "bytes": 19943,
-      "gzipBytes": 5060,
-      "sha256": "bea16d6d21081e7bd074c65ac9580be051c219ae8f417283a23cf67b5b3e331d"
+      "path": "dist\\assets\\main-B-b0BmT3.css",
+      "bytes": 19690,
+      "gzipBytes": 5036,
+      "sha256": "5467df610c869879f128f7d4c45bb4bf25156d2debf2625bb24d1e0e5b85fb6a"
+    },
+    {
+      "path": "dist\\assets\\main-CGz-1Ve6.js",
+      "bytes": 284934,
+      "gzipBytes": 89673,
+      "sha256": "42e8db8ff96c9b7699928cb10641bd2a972e9ef8eb0b0c232c733c5bfd544e4e"
     },
     {
       "path": "dist\\assets\\materials\\parchment.prompt.txt",
@@ -270,16 +372,22 @@
       "sha256": "a067c0709284871d8387a02523b04efb377eb1d49a8a592820248587540377c0"
     },
     {
-      "path": "dist\\assets\\runtime-DCnRgDSp.js",
-      "bytes": 5041822,
-      "gzipBytes": 1829317,
-      "sha256": "55c8b58a03c832e040d91d5e2b57857ad563ee4d74ac29588549900f8bf134a2"
+      "path": "dist\\assets\\runtime-DCB9cQOr.js",
+      "bytes": 75656,
+      "gzipBytes": 25132,
+      "sha256": "85ed354c166322ceaf9a45810124c2eb7c2589c9ab7ad9e43ea617771a9d1db4"
+    },
+    {
+      "path": "dist\\courtyard.html",
+      "bytes": 1575,
+      "gzipBytes": 825,
+      "sha256": "454ea10d8f654676205656f1538d308e3229ee31d21746960cc96ddeafb7fabe"
     },
     {
       "path": "dist\\index.html",
-      "bytes": 425,
-      "gzipBytes": 334,
-      "sha256": "51fa84480b443a8277377c0251d2938a53f36248caf1d01deb0e2ad2e4b4b340"
+      "bytes": 605,
+      "gzipBytes": 379,
+      "sha256": "2bd8ab8da0fae25a27f87e2f64ae19c79097bd2bbcce29aec506ca8d3e7f6080"
     }
   ],
   "scope": "Static build bytes only; not observed browser transfer, load latency, frame performance, or GPU memory."

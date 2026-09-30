@@ -1,0 +1,119 @@
+{
+  "units": "metres; character export retains Kenney source scale and uses 0.72 runtime scale",
+  "files": [
+    {
+      "path": "public/assets/courtyard/armillary.glb",
+      "sha256": "32aa979dae41124494d71e5b34e8d0bfc0aaca8e95f90d552b6e6213dc102082",
+      "bytes": 635904
+    },
+    {
+      "path": "public/assets/courtyard/doorway.glb",
+      "sha256": "8daf5cccceace888d51d74b0e0254e192004faf926e07f1b28e94191879af3a6",
+      "bytes": 37560
+    },
+    {
+      "path": "public/assets/courtyard/large_sandstone_blocks-Diffuse.jpg",
+      "sha256": "2ad242551c841b0c3227bdaec693acc4a4fff3fee6a9576aa501310af2595ee9",
+      "bytes": 750937
+    },
+    {
+      "path": "public/assets/courtyard/large_sandstone_blocks-nor_gl.jpg",
+      "sha256": "7b258af6729615a78aff76ceaa153b23011bd1df39b370b7a7e06ad6193b5d82",
+      "bytes": 714290
+    },
+    {
+      "path": "public/assets/courtyard/large_sandstone_blocks-Rough.jpg",
+      "sha256": "f6ecff09649153976a53a612d8ba1bea02c2cbebc56adf981709af2601d9fb84",
+      "bytes": 574293
+    },
+    {
+      "path": "public/assets/courtyard/observer-base.glb",
+      "sha256": "8ee5dae167ec589863f6bba222467eb90ace8be357a4c5abfcab289290181616",
+      "bytes": 113596
+    },
+    {
+      "path": "public/assets/courtyard/observer.glb",
+      "sha256": "3152077e1ac4192b7b2fcd6e014b4006a0a1c7b0f2d4f06cefdf0fd8c269ec0a",
+      "bytes": 206364
+    },
+    {
+      "path": "public/assets/courtyard/Textures/colormap.png",
+      "sha256": "66fd49be148f32e88f6c8cace67120250d1943a7856601158ad0ff24651db0b0",
+      "bytes": 7529
+    },
+    {
+      "path": "public/assets/courtyard/Textures/texture-a.png",
+      "sha256": "257e944c582ce7cda206fbd8ceb717be648f9721756baf377a36478c11c0059a",
+      "bytes": 20171
+    },
+    {
+      "path": "public/assets/courtyard/white_sandstone_blocks_02-Diffuse.jpg",
+      "sha256": "0a43c8bc80581408f9c700ad98d2de64280e694148e37626d6648fdddf47a777",
+      "bytes": 910262
+    },
+    {
+      "path": "public/assets/courtyard/white_sandstone_blocks_02-nor_gl.jpg",
+      "sha256": "14eb23e29a347b97394c65a6f1fe2c7c107da55b18fb95b912c7280c5a43b72d",
+      "bytes": 826220
+    },
+    {
+      "path": "public/assets/courtyard/white_sandstone_blocks_02-Rough.jpg",
+      "sha256": "f30c3c460130ac867d398cacf8041d86eaa760f134f00c84cc1a30348751d3f5",
+      "bytes": 635846
+    }
+  ],
+  "sources": [
+    {
+      "name": "Kenney Castle Kit",
+      "url": "https://kenney.nl/assets/castle-kit",
+      "license": "CC0-1.0",
+      "files": [
+        "doorway.glb",
+        "Textures/colormap.png"
+      ],
+      "adaptation": "door scale, UV, lit material and mesh collision are defined in src/courtyard/scene.ts"
+    },
+    {
+      "name": "Kenney Blocky Characters 2.0",
+      "url": "https://kenney.nl/assets/blocky-characters",
+      "license": "CC0-1.0",
+      "files": [
+        "observer-base.glb",
+        "Textures/texture-a.png",
+        "observer.glb"
+      ],
+      "adaptation": "robe, cape, hat, ledger and read-ledger pose from src/courtyard/recipes.ts; 27 source animations retained, only read-ledger used"
+    },
+    {
+      "name": "Poly Haven White Sandstone Blocks 02",
+      "url": "https://polyhaven.com/a/white_sandstone_blocks_02",
+      "license": "CC0-1.0",
+      "files": [
+        "white_sandstone_blocks_02-Diffuse.jpg",
+        "white_sandstone_blocks_02-nor_gl.jpg",
+        "white_sandstone_blocks_02-Rough.jpg"
+      ],
+      "resolution": "1k JPG; original downloads via https://api.polyhaven.com/files/white_sandstone_blocks_02"
+    },
+    {
+      "name": "Poly Haven Large Sandstone Blocks",
+      "url": "https://polyhaven.com/a/large_sandstone_blocks",
+      "license": "CC0-1.0",
+      "files": [
+        "large_sandstone_blocks-Diffuse.jpg",
+        "large_sandstone_blocks-nor_gl.jpg",
+        "large_sandstone_blocks-Rough.jpg"
+      ],
+      "resolution": "1k JPG; original downloads via https://api.polyhaven.com/files/large_sandstone_blocks"
+    },
+    {
+      "name": "Courtyard instrument and character additions",
+      "files": [
+        "armillary.glb",
+        "observer.glb"
+      ],
+      "source": "src/courtyard/recipes.ts",
+      "license": "Project-authored additions; no new project-wide license is granted"
+    }
+  ]
+}

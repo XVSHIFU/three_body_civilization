@@ -14,6 +14,86 @@
   ],
   "files": [
     {
+      "path": "assets/chinese-simplified-400-D0BHWCod.css",
+      "bytes": 314,
+      "status": 200
+    },
+    {
+      "path": "assets/chinese-simplified-400-qf-1wNVT.js",
+      "bytes": 670,
+      "status": 200
+    },
+    {
+      "path": "assets/courtyard/armillary.glb",
+      "bytes": 635904,
+      "status": 200
+    },
+    {
+      "path": "assets/courtyard/doorway.glb",
+      "bytes": 37560,
+      "status": 200
+    },
+    {
+      "path": "assets/courtyard/large_sandstone_blocks-Diffuse.jpg",
+      "bytes": 750937,
+      "status": 200
+    },
+    {
+      "path": "assets/courtyard/large_sandstone_blocks-nor_gl.jpg",
+      "bytes": 714290,
+      "status": 200
+    },
+    {
+      "path": "assets/courtyard/large_sandstone_blocks-Rough.jpg",
+      "bytes": 574293,
+      "status": 200
+    },
+    {
+      "path": "assets/courtyard/observer-base.glb",
+      "bytes": 113596,
+      "status": 200
+    },
+    {
+      "path": "assets/courtyard/observer.glb",
+      "bytes": 206364,
+      "status": 200
+    },
+    {
+      "path": "assets/courtyard/Textures/colormap.png",
+      "bytes": 7529,
+      "status": 200
+    },
+    {
+      "path": "assets/courtyard/Textures/texture-a.png",
+      "bytes": 20171,
+      "status": 200
+    },
+    {
+      "path": "assets/courtyard/white_sandstone_blocks_02-Diffuse.jpg",
+      "bytes": 910262,
+      "status": 200
+    },
+    {
+      "path": "assets/courtyard/white_sandstone_blocks_02-nor_gl.jpg",
+      "bytes": 826220,
+      "status": 200
+    },
+    {
+      "path": "assets/courtyard/white_sandstone_blocks_02-Rough.jpg",
+      "bytes": 635846,
+      "status": 200
+    },
+    {
+      "path": "assets/courtyard-Bbmx3KlE.css",
+      "bytes": 4622,
+      "status": 200
+    },
+    {
+      "path": "assets/courtyard-DHtBedMN.js",
+      "bytes": 20674,
+      "status": 200
+    },
+    {
       "path": "assets/fonts/noto-serif-sc-title-600.woff2",
       "bytes": 1312,
       "status": 200
@@ -24,13 +104,18 @@
       "status": 200
     },
     {
-      "path": "assets/index-3a_V6Fww.js",
-      "bytes": 285297,
+      "path": "assets/GLTFLoader-C61Spt3n.js",
+      "bytes": 4971043,
       "status": 200
     },
     {
-      "path": "assets/index-CBDJfT2g.css",
-      "bytes": 20167,
+      "path": "assets/main-BoKOjxj2.js",
+      "bytes": 284983,
+      "status": 200
+    },
+    {
+      "path": "assets/main-BYuVrEVC.css",
+      "bytes": 19854,
       "status": 200
     },
     {
@@ -229,13 +314,18 @@
       "status": 200
     },
     {
-      "path": "assets/runtime-CF9UMFW0.js",
-      "bytes": 5041796,
+      "path": "assets/runtime-viVHXa7s.js",
+      "bytes": 75679,
+      "status": 200
+    },
+    {
+      "path": "courtyard.html",
+      "bytes": 1690,
       "status": 200
     },
     {
       "path": "index.html",
-      "bytes": 471,
+      "bytes": 697,
       "status": 200
     }
   ]
