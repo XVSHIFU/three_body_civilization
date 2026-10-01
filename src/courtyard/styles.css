@@ -5,3 +5,6 @@
 
 
 .objective{position:fixed;left:32px;top:85px;max-width:460px;padding:8px 12px;background:#202d37ed;color:var(--ink);font-size:.85rem;pointer-events:none}#preservation-progress{position:fixed;left:50%;bottom:120px;transform:translateX(-50%);width:min(420px,80vw);padding:16px 20px;background:var(--panel);display:grid;gap:10px}#preservation-progress progress{width:100%;height:8px;accent-color:var(--gold)}body:not([data-state=playing]) #preservation-progress{display:none}#storage-failure{overflow-wrap:anywhere}button:disabled{cursor:not-allowed}
+
+/* Keep actions reachable while long inherited records scroll at enlarged text sizes. */
+dialog[open]{display:flex;flex-direction:column;overflow:hidden}dialog header,#panel-actions{flex-shrink:0}#panel-body{min-height:0;overflow:auto}#panel-body h3{font-size:1rem;font-weight:500;margin:0 0 .5em}

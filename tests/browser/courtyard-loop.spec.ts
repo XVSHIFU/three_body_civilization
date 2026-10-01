@@ -25,6 +25,7 @@ const enter=async(page:Page)=>{await page.getByRole('button',{name:'进入庭院
  const loop=new CourtyardLoop();for(let i=0;i<seconds*60;i++)loop.step();await seed(page,loop.snapshot({position:[-8,.92,-9.4],yaw:Math.atan2(1,1.1),pitch:Math.atan2(-.535,Math.hypot(1,1.1))}));await enter(page);await expect(page.locator('#target')).toBeVisible();await page.keyboard.press('e');
  await expect(page.locator('#panel-body')).toContainText('太晚开始可能无法完成');
  await page.getByRole('button',{name:'开始脱水保存'}).click();await expect(page.getByRole('heading',{name:'灾变之后',exact:true})).toBeVisible({timeout:4000});
+ await expect(page.locator('#panel-body')).toContainText('这次选择留下了什么');if(seconds===175)await expect(page.locator('#panel-body')).toContainText('尚未完成');
  const saved=await read(page);expect(saved.checkpoint.tick).toBe(10842);expect(saved.checkpoint.outcome.individual).toBe(seconds===100?'preserved':'lost');
  await page.reload();await expect(page.getByRole('heading',{name:'灾变之后',exact:true})).toBeVisible();await page.getByRole('button',{name:'经过灾变，查看接续'}).click();await expect(page.getByRole('heading',{name:seconds===100?'同一观察者复苏':'后来者接续档案',exact:true})).toBeVisible();
  }
@@ -49,4 +50,12 @@ const enter=async(page:Page)=>{await page.getByRole('button',{name:'进入庭院
  await seed(page,loop.snapshot({position:[4,2.4,-2.8],yaw:0,pitch:Math.atan2(-.495,.85)}));await enter(page);await expect(page.locator('#target')).toBeVisible();await page.keyboard.press('e');
  await expect(page.locator('#panel-body')).toContainText('新出现 2 个');await expect(page.locator('#panel-body')).toContainText('高度变化');
  await page.screenshot({path:'.handoff-local/observation-comparison.png'});
+ });
+
+ test('inherited observations guide the next attempt without inventing unseen sky',async({page})=>{
+ const loop=new CourtyardLoop();while(loop.tick<45*60)loop.step();loop.record(loop.observation(['s1']));while(loop.tick<100*60)loop.step();loop.beginPreservation([-8,.92,-10]);loop.finishPreservation();loop.resolveAftermath();
+ const next=loop.nextCivilization();await seed(page,next.snapshot());
+ await expect(page.locator('#panel-body')).toContainText('45秒：1个光源');await expect(page.locator('#panel-body')).not.toContainText('3个光源');
+ await page.getByRole('button',{name:'设置',exact:true}).click();await page.getByLabel('界面字号').fill('1.5');await page.getByRole('button',{name:'返回',exact:true}).click();
+ await page.setViewportSize({width:1024,height:640});await expect(page.getByRole('button',{name:'进入庭院',exact:true})).toBeInViewport();await page.screenshot({path:'.handoff-local/inherited-welcome.png'});await enter(page);await page.keyboard.press('j');await expect(page.locator('#panel-body')).toContainText('前人留下的天象');
  });
