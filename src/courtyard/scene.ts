@@ -18,7 +18,8 @@ export function courtyardCollisions():CollisionBox[]{
   {position:[-8,4.8,-5],size:[4,1.2,1.3]},
   {position:[4,.8,-6.5],size:[8,1.6,7]},
   {position:[4,2.45,-6],size:[2.2,1.7,2.2]},
-  {position:[1.4,4,-6],size:[.6,4.8,.65]},{position:[6.6,4,-6],size:[.6,4.8,.65]},
+  {position:[1.4,4.2,-6],size:[.6,3.6,.65]},{position:[6.6,4.2,-6],size:[.6,3.6,.65]},
+  {position:[1.4,2,-6],size:[1.04,.8,1.04]},{position:[6.6,2,-6],size:[1.04,.8,1.04]},
   {position:[9,.78,-2.5],size:[2.6,1.55,1.25]},
   {position:[7.25,1,1.5],size:[.85,2,.85]},
   {position:[-.8,.8,3.3],size:[1.3,1.6,.35]},
@@ -70,12 +71,18 @@ export async function createCourtyard(scene:THREE.Scene,world:RAPIER.World){
  for(const x of [1.7,6.3])for(let i=0;i<4;i++){box(x,.38+i*.2,.5-i, .5,.76+i*.4,1);box(x,.8+i*.4,.5-i,.65,.09,1.08,pale);}
  for(const x of [.1,7.9])for(const z of [-4,-7,-9.5]){box(x,2.1,z,.35,1,.35,dark);box(x,2.65,z,.5,.15,.5,trim);}
  for(const x of [.1,7.9])box(x,2.4,-6.8,.12,.12,5.7,trim);
- const instrument=armillary.scene;instrument.position.set(4,1.6,-6);instrument.traverse(o=>{if(o instanceof THREE.Mesh)o.castShadow=o.receiveShadow=true;});scene.add(instrument);
+ const instrument=armillary.scene;instrument.position.set(4,1.6,-6);instrument.traverse(o=>{if(o instanceof THREE.Mesh){o.castShadow=o.receiveShadow=true;const m=o.material as THREE.MeshStandardMaterial;if(m.map)m.map.anisotropy=4;}});scene.add(instrument);
  // A hand-height sighting console belongs to the instrument, rather than a distant floating hotspot.
  const consoleRoot=new THREE.Group();consoleRoot.position.set(4,1.6,-3.65);consoleRoot.name='sighting-console';scene.add(consoleRoot);
- const consoleBody=new THREE.Mesh(new THREE.BoxGeometry(.9,1.05,.6),dark);consoleBody.position.y=.525;consoleRoot.add(consoleBody);
- const dial=new THREE.Mesh(new THREE.CylinderGeometry(.40,.40,.06,32),trim);dial.position.y=1.08;consoleRoot.add(dial);
- for(let i=0;i<12;i++){const a=i/12*Math.PI*2;const mark=new THREE.Mesh(new THREE.BoxGeometry(.045,.015,.11),pale);mark.position.set(Math.cos(a)*.3,1.12,Math.sin(a)*.3);mark.rotation.y=-a;consoleRoot.add(mark);}
+ // Console silhouette remains within its original collision footprint.
+ let consoleStone:THREE.Material=wall;instrument.traverse(o=>{if(o instanceof THREE.Mesh&&(o.material as THREE.Material).name==='instrument-sandstone')consoleStone=o.material as THREE.Material;});
+ const consoleParts=new Map<THREE.Material,THREE.BufferGeometry[]>();
+ function consoleBox(y:number,w:number,h:number,d:number,material:THREE.Material){const g=new THREE.BoxGeometry(w,h,d);const uv=g.getAttribute('uv'),p=g.getAttribute('position'),n=g.getAttribute('normal');for(let i=0;i<uv.count;i++)uv.setXY(i,(Math.abs(n.getX(i))>.5?p.getZ(i):p.getX(i))*.08+.40,(Math.abs(n.getY(i))>.5?p.getZ(i):p.getY(i))*.08+.655);g.translate(0,y,0);const parts=consoleParts.get(material)??[];parts.push(g);consoleParts.set(material,parts);}
+ consoleBox(.06,.9,.12,.6,consoleStone);consoleBox(.15,.83,.06,.55,trim);consoleBox(.53,.73,.70,.48,consoleStone);consoleBox(.91,.85,.08,.56,consoleStone);consoleBox(.98,.88,.06,.59,trim);
+ const dialGeometry=new THREE.CylinderGeometry(.40,.40,.06,32);dialGeometry.translate(0,1.04,0);consoleParts.get(trim)!.push(dialGeometry);
+ for(let i=0;i<12;i++){const a=i/12*Math.PI*2,g=new THREE.BoxGeometry(.025,.012,.075);g.rotateY(-a);g.translate(Math.cos(a)*.3,1.078,Math.sin(a)*.3);const parts=consoleParts.get(dark)??[];parts.push(g);consoleParts.set(dark,parts);}
+ for(const [material,parts] of consoleParts){const m=new THREE.Mesh(mergeGeometries(parts),material);m.castShadow=m.receiveShadow=true;consoleRoot.add(m);parts.forEach(g=>g.dispose());}
+ const consoleChart=new THREE.Mesh(new THREE.PlaneGeometry(.55,.48),new THREE.MeshStandardMaterial({map:chartTexture(),roughness:.88,metalness:.25}));consoleChart.position.set(0,.54,.245);consoleRoot.add(consoleChart);
  world.createCollider(RAPIER.ColliderDesc.cuboid(.45,.55,.3).setTranslation(4,2.15,-3.65));
  const observer=character.scene;observer.scale.setScalar(.72);observer.position.set(7.25,0,1.5);observer.rotation.y=-.65;observer.traverse(o=>{if(o instanceof THREE.Mesh)o.castShadow=o.receiveShadow=true;});scene.add(observer);
  const mixer=new THREE.AnimationMixer(observer);const idle=character.animations.find(c=>c.name==='read-ledger');if(!idle)throw Error('观测员缺少阅读姿态');mixer.clipAction(idle).play();mixer.update(0);

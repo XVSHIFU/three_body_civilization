@@ -4,7 +4,7 @@
 
 - 门洞：Kenney Castle Kit的wall-doorway；原始源副本在`assets/source/courtyard/kenney-doorway.glb`。游戏按米适配为4×5.4×1.4，原点在地面；原始网格生成三角形碰撞，门墙另有明确方盒代理，避免封死开口。
 - 人物：Kenney Blocky Characters 2.0的character-a；原始GLB和外部PNG保留在`public/assets/courtyard/observer-base.glb`及Textures目录。脚本增加袍、披肩、帽与图册，保留27段节点动画，另加read-ledger姿态。不是蒙皮骨架，也未声称全部动作已适配。运行缩放0.72，交互在角色根节点，碰撞为独立立方体。
-- 仪器：`src/courtyard/recipes.ts`为可编辑源，导出`armillary.glb`，单位米、地面原点、3种标准受光材质。环架是静态模型；操作点为前方手高瞄准台。当前读取固定检查光源的高度并写入本页日志，不是已接入天体玩法的正式仪器。
+- 仪器：`src/courtyard/recipes.ts`为可编辑源，导出`armillary.glb`，单位米、地面原点、3种标准受光材质。本轮增加分段石柱、局部倒角、铜箍、轴承、分层底座与球面经纬线，共14208个三角形，保留原有15000面检查上限。石材漫反射从下述White Sandstone资源选取UV区域并以PNG内嵌，铜材斑驳由export.ts确定性生成并内嵌；细刻线为低段数几何。环架是静态模型；操作点为前方手高瞄准台。当前读取固定检查光源的高度并写入本页日志，不是已接入天体玩法的正式仪器。
 - 石材：Poly Haven White Sandstone Blocks 02用于墙面，Large Sandstone Blocks用于地坪；1k漫反射、OpenGL法线与粗糙度原图。UV、法线强度和材质适配在`src/courtyard/scene.ts`；地坪使用固定高粗糙度。
 - 庭院布局、碰撞、操作点：`src/courtyard/scene.ts`。只包含一个庭院；外部剪影不可探索。
 

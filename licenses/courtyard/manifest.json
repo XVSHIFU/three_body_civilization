@@ -3,8 +3,8 @@
   "files": [
     {
       "path": "public/assets/courtyard/armillary.glb",
-      "sha256": "32aa979dae41124494d71e5b34e8d0bfc0aaca8e95f90d552b6e6213dc102082",
-      "bytes": 635904
+      "sha256": "21adf55feff3a33ea715840b78d86780503063cdc2e110f5501494c3a9b7b00a",
+      "bytes": 3878824
     },
     {
       "path": "public/assets/courtyard/doorway.glb",
@@ -91,9 +91,11 @@
       "files": [
         "white_sandstone_blocks_02-Diffuse.jpg",
         "white_sandstone_blocks_02-nor_gl.jpg",
-        "white_sandstone_blocks_02-Rough.jpg"
+        "white_sandstone_blocks_02-Rough.jpg",
+        "armillary.glb"
       ],
-      "resolution": "1k JPG; original downloads via https://api.polyhaven.com/files/white_sandstone_blocks_02"
+      "resolution": "1k JPG; original downloads via https://api.polyhaven.com/files/white_sandstone_blocks_02",
+      "adaptation": "Diffuse embedded as PNG in armillary.glb; quiet atlas patch on segmented stone supports; courtyard walls retain original maps"
     },
     {
       "name": "Poly Haven Large Sandstone Blocks",
