@@ -1,6 +1,6 @@
 {
   "node": "v24.15.0",
-  "buildId": "e32edb073169",
+  "buildId": "85e1d4ab0918",
   "dependencies": {
     "@dimforge/rapier3d-compat": "0.21.0",
     "@fontsource/noto-sans-sc": "5.3.0",
@@ -9,13 +9,13 @@
     "react-dom": "19.3.0",
     "three": "0.186.1"
   },
-  "totalBytes": 23631330,
+  "totalBytes": 23632668,
   "files": [
     {
-      "path": "dist\\assets\\archive-BOd5gB7s.js",
+      "path": "dist\\assets\\archive-B0mxaWad.js",
       "bytes": 16303,
-      "gzipBytes": 6101,
-      "sha256": "d890baceb14aee250a5d521e4197e14be980ae08356082fc0e3ec9ffe8b6a162"
+      "gzipBytes": 6102,
+      "sha256": "dfcba598ccba1175fe566e2a4478a5ca3c374243479683d8faa62c496898a040"
     },
     {
       "path": "dist\\assets\\archive-OCfNPWEL.css",
@@ -102,10 +102,10 @@
       "sha256": "f30c3c460130ac867d398cacf8041d86eaa760f134f00c84cc1a30348751d3f5"
     },
     {
-      "path": "dist\\assets\\courtyard-DT7kR5U6.js",
+      "path": "dist\\assets\\courtyard-BDmo0NhS.js",
       "bytes": 42539,
-      "gzipBytes": 16593,
-      "sha256": "fb0f7af47001d8855478d68ce807c79e92b761fe7faa6766efdd431e845948b1"
+      "gzipBytes": 16592,
+      "sha256": "81ce50461cd30db25a59e4fa3891d97bed7f6d91fd423bf0743a0449e728f6d7"
     },
     {
       "path": "dist\\assets\\courtyard-kZQI3fGm.css",
@@ -138,10 +138,10 @@
       "sha256": "5467df610c869879f128f7d4c45bb4bf25156d2debf2625bb24d1e0e5b85fb6a"
     },
     {
-      "path": "dist\\assets\\main-dWHxpAP0.js",
-      "bytes": 269447,
-      "gzipBytes": 84547,
-      "sha256": "42eec3eeb25187aaa5151c92209a711c339acb00f824202b76a858ab501edc2e"
+      "path": "dist\\assets\\main-mgr0wnya.js",
+      "bytes": 270785,
+      "gzipBytes": 85002,
+      "sha256": "cb9257a95a32adee2a44addb131cda4921d4a3068705a8370ebc0524d20eb8e9"
     },
     {
       "path": "dist\\assets\\materials\\parchment.prompt.txt",
@@ -378,22 +378,22 @@
       "sha256": "a067c0709284871d8387a02523b04efb377eb1d49a8a592820248587540377c0"
     },
     {
-      "path": "dist\\assets\\runtime-Bf5d1Lmy.js",
+      "path": "dist\\assets\\runtime-F9wgxZub.js",
       "bytes": 71009,
-      "gzipBytes": 23407,
-      "sha256": "3568dfd8977b3eb50196df606992ca7efe0832571d8b7b7de68221a75f1d7132"
+      "gzipBytes": 23406,
+      "sha256": "538f0fe7fd85b484c42d3609dd9f154a66c3fad1226e58b3c177bdcdd90458ed"
     },
     {
       "path": "dist\\courtyard.html",
       "bytes": 1866,
-      "gzipBytes": 939,
-      "sha256": "91b32d9c4b14c2a3eb8a465e83b82de7c10d26f8f858dc494c0daf408c7fd968"
+      "gzipBytes": 937,
+      "sha256": "d58a6ef5bedd2a6d1ae2b9e1789f5210995325988569c899db77a9832b4e3df7"
     },
     {
       "path": "dist\\index.html",
       "bytes": 575,
-      "gzipBytes": 369,
-      "sha256": "eb04e3bcfb12c97132cdd406520d4513d3153fec085b1e57e34421d2065c03be"
+      "gzipBytes": 364,
+      "sha256": "98ad7be4c4dd34af1a8654142cf044e6951d36aaa22dd520ce432af8f923fb7c"
     }
   ],
   "scope": "Static build bytes only; not observed browser transfer, load latency, frame performance, or GPU memory."
