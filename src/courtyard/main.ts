@@ -2,6 +2,7 @@ import * as THREE from 'three';
 import RAPIER from '@dimforge/rapier3d-compat';
 import {RoomEnvironment} from 'three/addons/environments/RoomEnvironment.js';
 import {PlayerController} from '../player/controller';
+import {PositionInterpolation} from '../renderer/position-interpolation';
 import {disposeResources} from '../renderer/dispose-resources';
 import {CourtyardSession,type Panel} from './session';
 import {createCourtyard,spawn,type CourtyardTarget} from './scene';
@@ -11,18 +12,21 @@ import './styles.css';
 const $=<T extends HTMLElement>(id:string)=>document.getElementById(id) as T;
 const panel=$<HTMLDialogElement>('panel'),body=$('panel-body'),actions=$('panel-actions'),title=$('panel-title'),host=$('scene');
 const state=new CourtyardSession(),keys=new Set<string>(),abort=new AbortController();
+const viewPosition=new PositionInterpolation(),movement=new THREE.Vector3(),up=new THREE.Vector3(0,1,0);
+let needsRender=true;
 let renderer:THREE.WebGLRenderer,physics:RAPIER.World,player:PlayerController,world:Awaited<ReturnType<typeof createCourtyard>>;
 const scene=new THREE.Scene(),camera=new THREE.PerspectiveCamera(62,1,.08,220);camera.rotation.order='YXZ';camera.rotation.set(.10,-.38,0);
 const ray=new THREE.Raycaster();let target:CourtyardTarget|undefined,last=0,notifyTimer:ReturnType<typeof setTimeout>,pending=false,disposed=false;
 let lightMode='dual',fontScale=1;const records:{tick:number;light:string;angles:number[]}[]=[];
 const suns:THREE.Mesh[]=[],lights:THREE.DirectionalLight[]=[];
 function notify(text:string){$('notification').textContent=text;clearTimeout(notifyTimer);notifyTimer=setTimeout(()=>$('notification').textContent='',4000);}
-function pause(){keys.clear();if(document.pointerLockElement===renderer?.domElement)document.exitPointerLock();}
+function pause(){keys.clear();if(player)viewPosition.reset(player.eye);if(document.pointerLockElement===renderer?.domElement)document.exitPointerLock();}
 function button(label:string,fn:()=>void,primary=false){const b=document.createElement('button');b.textContent=label;b.className=primary?'primary':'';b.onclick=fn;actions.append(b);return b;}
 function open(next:Exclude<Panel,null>){state.open(next);pause();drawPanel();}
 function escape(){state.escape();pause();drawPanel();}
 function readings(){return suns.filter(s=>s.visible).map(s=>Math.asin(s.position.clone().normalize().y)*180/Math.PI);}
 function drawPanel(){
+ needsRender=true;
  document.body.dataset.state=state.panel??'playing';$('target').hidden=!!state.panel||!target;
  if(!state.panel){panel.close();return;}if(!panel.open)panel.showModal();body.replaceChildren();actions.replaceChildren();$('close').hidden=state.panel==='loading'||state.panel==='welcome'||state.panel==='error';
  const content=(heading:string,html:string)=>{title.textContent=heading;body.innerHTML=html;};
@@ -40,12 +44,14 @@ function drawPanel(){
 }
 async function resume(){
  if(pending||document.hidden||state.panel==='error')return;
+ if(document.pointerLockElement===renderer.domElement){if(state.locked())drawPanel();return;}
  if(innerWidth<1024||innerHeight<640){notify('请使用至少 1024 × 640 的桌面窗口。');return;}
  pending=true;
  try{const request=renderer.domElement.requestPointerLock();await request;}catch(e){state.escape();drawPanel();notify(`未能锁定鼠标，请点击继续重试。${e instanceof Error?e.name:''}`);}finally{pending=false;}
 }
 function returnToScene(){if(!state.canReturn){state.escape();drawPanel();return;}void resume();}
 function setLighting(){
+ needsRender=true;renderer.shadowMap.needsUpdate=true;
  const disaster=lightMode==='disaster';scene.fog=new THREE.Fog(disaster?0x9b6d53:0x9babb7,35,125);renderer.toneMappingExposure=disaster?.72:.78;
  lights[0].intensity=disaster?3.5:3;lights[0].color.set(disaster?0xffb378:0xffdfab);lights[1].intensity=lightMode==='normal'?0:.65;suns[1].visible=lightMode!=='normal';
  $('light-label').textContent=(lightMode==='normal'?'常态':lightMode==='dual'?'双日':'灾变')+' · 检查光照';
@@ -58,10 +64,13 @@ async function initialize(){
  const ambient=new THREE.HemisphereLight(0xd5dfea,0xa29881,2.5);scene.add(ambient);
  const pmrem=new THREE.PMREMGenerator(renderer),environment=new RoomEnvironment();const env=pmrem.fromScene(environment,.04);scene.environment=env.texture;scene.environmentIntensity=.34;environment.dispose();pmrem.dispose();
  for(const [i,pos] of [[-30,32,-75],[2,42,-85]].entries()){const sun=new THREE.DirectionalLight(i?0xffc88e:0xffdfab,i?.65:3);sun.position.set(...pos as [number,number,number]);sun.target.position.set(0,0,-2);scene.add(sun,sun.target);sun.castShadow=i===0;sun.shadow.mapSize.set(2048,2048);Object.assign(sun.shadow.camera,{left:-23,right:23,top:24,bottom:-24,near:1,far:140});sun.shadow.normalBias=.025;sun.shadow.bias=-.00015;lights.push(sun);const disk=new THREE.Mesh(new THREE.SphereGeometry(i?1.1:2.2,32,16),new THREE.MeshBasicMaterial({color:i?0xffd393:0xffe9b7,fog:false,toneMapped:false}));disk.position.copy(sun.position).normalize().multiplyScalar(110);disk.userData.sky=true;suns.push(disk);scene.add(disk);}
- world=await createCourtyard(scene,physics);player=new PlayerController(physics,spawn);physics.step();camera.position.copy(player.eye);setLighting();
- const resize=()=>{renderer.setSize(innerWidth,innerHeight);camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();if(innerWidth<1024||innerHeight<640){state.interrupt('focusLost');pause();if(state.panel===null)state.escape();drawPanel();}};
+ world=await createCourtyard(scene,physics);player=new PlayerController(physics,spawn);physics.step();viewPosition.reset(player.eye);camera.position.copy(player.eye);
+ // This sample has fixed lights and a constant read-ledger pose, with no player mesh.
+ // Rebuild only when lighting is selected; future moving shadow casters must invalidate it.
+ renderer.shadowMap.autoUpdate=false;setLighting();
+ const resize=()=>{needsRender=true;renderer.setSize(innerWidth,innerHeight);camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();if(innerWidth<1024||innerHeight<640){state.interrupt('focusLost');pause();if(state.panel===null)state.escape();drawPanel();}};
  const opts={signal:abort.signal};window.addEventListener('resize',resize,opts);resize();
- document.addEventListener('pointerlockchange',()=>{keys.clear();if(document.pointerLockElement===renderer.domElement){if(!state.locked())document.exitPointerLock();}else state.interrupt('pointerUnlocked');drawPanel();},opts);
+ document.addEventListener('pointerlockchange',()=>{keys.clear();viewPosition.reset(player.eye);if(document.pointerLockElement===renderer.domElement){if(!state.locked())document.exitPointerLock();}else state.interrupt('pointerUnlocked');drawPanel();},opts);
  document.addEventListener('pointerlockerror',()=>{pending=false;state.escape();drawPanel();notify('浏览器拒绝鼠标锁定，请点击继续重试。');},opts);
  window.addEventListener('blur',()=>{state.interrupt('focusLost');pause();drawPanel();},opts);
  document.addEventListener('visibilitychange',()=>{if(document.hidden){state.interrupt('hidden');pause();drawPanel();}},opts);
@@ -70,7 +79,19 @@ async function initialize(){
  document.addEventListener('keyup',e=>keys.delete(e.code),opts);
  renderer.domElement.addEventListener('webglcontextlost',e=>{e.preventDefault();state.clock.pause('contextLost');state.open('error');pause();drawPanel();$('failure').textContent='图形上下文丢失。请重新加载庭院。';},opts);
  state.ready();drawPanel();last=performance.now();
- renderer.setAnimationLoop(now=>{if(disposed)return;const delta=(now-last)/1000;last=now;state.clock.advance(delta,dt=>{const v=new THREE.Vector3(Number(keys.has('KeyD'))-Number(keys.has('KeyA')),0,Number(keys.has('KeyS'))-Number(keys.has('KeyW'))).normalize().applyAxisAngle(new THREE.Vector3(0,1,0),camera.rotation.y).multiplyScalar(keys.has('ShiftLeft')?4.5:3.1);player.move(v.x,v.z,dt);physics.step();world.mixer.update(dt);});camera.position.copy(player.eye);if(!state.clock.paused){target=pick();$('target').hidden=!target;$('target').querySelector('span')!.textContent=target?.name??'';}renderer.render(scene,camera);});
+ renderer.setAnimationLoop(now=>{
+  if(disposed)return;const delta=(now-last)/1000;last=now;
+  if(document.hidden)return;
+  state.clock.advance(delta,dt=>{
+   movement.set(Number(keys.has('KeyD'))-Number(keys.has('KeyA')),0,Number(keys.has('KeyS'))-Number(keys.has('KeyW'))).normalize().applyAxisAngle(up,camera.rotation.y).multiplyScalar(keys.has('ShiftLeft')?4.5:3.1);
+   player.move(movement.x,movement.z,dt);physics.step();viewPosition.record(player.eye);world.mixer.update(dt);
+  });
+  camera.position.copy(viewPosition.at(state.clock.interpolationAlpha));
+  if(!state.clock.paused){
+   const next=pick();if(next!==target){target=next;$('target').hidden=!target;$('target').querySelector('span')!.textContent=target?.name??'';}
+  }
+  if(!state.clock.paused||needsRender){renderer.render(scene,camera);needsRender=false;}
+ });
  // Development-only inspection endpoint. It never fabricates pointer lock or bypasses physics.
  if(import.meta.env.DEV){Object.assign(window,{__courtyard:{scene,camera,player,world,physics,state,renderer,keys,readings,get snapshot(){const p=player.body.translation();return{position:[p.x,p.y,p.z],grounded:player.grounded,tick:state.clock.tick,panel:state.panel,reasons:[...state.clock.pauseReasons],locked:document.pointerLockElement===renderer.domElement,target:target?.id,records,drawCalls:renderer.info.render.calls,triangles:renderer.info.render.triangles};}}});}
 }
