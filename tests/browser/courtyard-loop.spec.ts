@@ -10,7 +10,7 @@ async function seed(page:Page,archive:Archive){
  await page.goto('/courtyard.html');await page.getByRole('button',{name:'进入庭院',exact:true}).waitFor();
 }
 async function read(page:Page){return page.evaluate(async(name)=>new Promise<any>((resolve,reject)=>{const req=indexedDB.open(name,1);req.onsuccess=()=>{const db=req.result,r=db.transaction('archive').objectStore('archive').get('current');r.onsuccess=()=>{db.close();resolve(r.result);};r.onerror=()=>reject(r.error);};req.onerror=()=>reject(req.error);}),COURTYARD_LOOP_DB);}
-const enter=async(page:Page)=>{await page.getByRole('button',{name:'进入庭院',exact:true}).click();await expect.poll(()=>page.evaluate(()=>!!document.pointerLockElement)).toBe(true);};
+const enter=async(page:Page)=>{await page.getByRole('button',{name:'进入庭院',exact:true}).click();await expect.poll(()=>page.evaluate(()=>!!document.pointerLockElement)).toBe(true);await expect(page.locator('#panel')).not.toBeVisible();};
 
  test('loop reading resumes once and refresh retains committed observations and paused progress',async({page})=>{
  const loop=new CourtyardLoop();for(let i=0;i<3600;i++)loop.step();loop.record(loop.observation(loop.sky.filter(s=>s.direction[1]>.025).map(s=>s.id)));
@@ -20,10 +20,14 @@ const enter=async(page:Page)=>{await page.getByRole('button',{name:'进入庭院
  const saved=await read(page);await page.reload();await expect(page.getByRole('button',{name:'进入庭院',exact:true})).toBeVisible();await enter(page);await page.keyboard.press('j');await expect(page.locator('#panel-body')).toContainText('观测时刻 60秒');expect((await read(page)).observations).toEqual(saved.observations);
  });
 
- test('preparation can cancel, later preservation pauses and survives refresh',async({page})=>{
- const loop=new CourtyardLoop();for(let i=0;i<6000;i++)loop.step();await seed(page,loop.snapshot({position:[-8,.92,-9.4],yaw:Math.atan2(1,1.1),pitch:Math.atan2(-.535,Math.hypot(1,1.1))}));await enter(page);await page.keyboard.press('e');await page.getByRole('button',{name:'开始脱水保存'}).click();await expect(page.locator('#cancel-preservation')).toBeVisible();await page.keyboard.press('r');await expect(page.locator('#preservation-progress')).toBeHidden();
- await page.keyboard.press('e');await page.getByRole('button',{name:'开始脱水保存'}).click();await expect(page.locator('#preservation-label')).toHaveText('进入保管位置',{timeout:6000});await page.keyboard.press('Escape');await expect(page.getByRole('heading',{name:'世界已暂停'})).toBeVisible();
- await expect.poll(async()=>((await read(page))?.checkpoint?.preservation?.elapsed??0)).toBeGreaterThan(2);const before=await read(page);await page.reload();await enter(page);await expect(page.locator('#preservation-label')).toHaveText('脱水完成 · 等待灾变过去',{timeout:15000});expect((await read(page)).checkpoint.tick).toBeGreaterThan(before.checkpoint.tick);
+ test('committing preservation skips waiting, retains outcomes and survives refresh',async({page})=>{
+ for(const seconds of [100,175]){
+ const loop=new CourtyardLoop();for(let i=0;i<seconds*60;i++)loop.step();await seed(page,loop.snapshot({position:[-8,.92,-9.4],yaw:Math.atan2(1,1.1),pitch:Math.atan2(-.535,Math.hypot(1,1.1))}));await enter(page);await expect(page.locator('#target')).toBeVisible();await page.keyboard.press('e');
+ await expect(page.locator('#panel-body')).toContainText('太晚开始可能无法完成');
+ await page.getByRole('button',{name:'开始脱水保存'}).click();await expect(page.getByRole('heading',{name:'灾变之后',exact:true})).toBeVisible({timeout:4000});
+ const saved=await read(page);expect(saved.checkpoint.tick).toBe(10842);expect(saved.checkpoint.outcome.individual).toBe(seconds===100?'preserved':'lost');
+ await page.reload();await expect(page.getByRole('heading',{name:'灾变之后',exact:true})).toBeVisible();await page.getByRole('button',{name:'经过灾变，查看接续'}).click();await expect(page.getByRole('heading',{name:seconds===100?'同一观察者复苏':'后来者接续档案',exact:true})).toBeVisible();
+ }
  });
 
  test('storage failure pauses with export and retry, without replacing the last committed archive',async({page})=>{
@@ -38,4 +42,11 @@ const enter=async(page:Page)=>{await page.getByRole('button',{name:'进入庭院
  const writer=await context.newPage();await writer.goto('/courtyard.html?sample=1');await writer.getByRole('button',{name:'进入庭院',exact:true}).waitFor();
  const written=await writer.evaluate(async name=>new Promise<number>((resolve,reject)=>{const r=indexedDB.open(name,1);r.onsuccess=()=>{const db=r.result,tx=db.transaction('archive','readwrite'),store=tx.objectStore('archive'),get=store.get('current');let revision=0;get.onsuccess=()=>{const a=get.result;revision=++a.revision;store.put(a,'current');};tx.oncomplete=()=>{db.close();resolve(revision);};tx.onabort=()=>reject(tx.error);};}),COURTYARD_LOOP_DB);
  await page.bringToFront();await page.keyboard.press('Escape');await expect(page.getByRole('heading',{name:'档案尚未写入'})).toBeVisible();await expect(page.locator('#storage-failure')).toContainText('另一个标签页');expect((await read(page)).revision).toBe(written);await writer.close();
+ });
+
+ test('instrument compares current sky to the last committed observation',async({page})=>{
+ const loop=new CourtyardLoop();while(loop.tick<45*60)loop.step();loop.record(loop.observation(['s1']));while(loop.tick<140*60)loop.step();
+ await seed(page,loop.snapshot({position:[4,2.4,-2.8],yaw:0,pitch:Math.atan2(-.495,.85)}));await enter(page);await expect(page.locator('#target')).toBeVisible();await page.keyboard.press('e');
+ await expect(page.locator('#panel-body')).toContainText('新出现 2 个');await expect(page.locator('#panel-body')).toContainText('高度变化');
+ await page.screenshot({path:'.handoff-local/observation-comparison.png'});
  });

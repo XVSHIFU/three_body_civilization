@@ -69,3 +69,14 @@ it('keeps a failed transaction recoverable without duplicating records or outcom
  await store.save(loop);reader.close();const recovered=await reader.open();expect(recovered.archive.observations).toHaveLength(2);expect(recovered.tick).toBe(loop.tick);
  store.close();reader.close();
 });
+
+
+it('skips passive preservation time without changing early or late outcomes',()=>{
+ for(const seconds of [100,175]){
+  const natural=new CourtyardLoop();advance(natural,seconds);natural.beginPreservation(atFacility);
+  const skipped=new CourtyardLoop(natural.snapshot());advance(natural,230);skipped.finishPreservation();
+  expect(skipped.snapshot()).toEqual(natural.snapshot());
+  expect(skipped.resolveAftermath()).toEqual(natural.resolveAftermath());
+ }
+ expect(()=>new CourtyardLoop().finishPreservation()).toThrow();
+});

@@ -88,6 +88,13 @@ export class CourtyardLoop {
   if(JSON.stringify(expected)!==JSON.stringify(observation))throw Error('观测记录与当前读数不一致。');
   this.archive.observations=addObservation(this.archive.observations,observation);
  }
+ /** Skip passive time after commitment, preserving the same fixed-step outcomes. */
+ finishPreservation(){
+  if(this.phase!=='observing'||!this.movementLocked)throw Error('尚未确认保存。');
+  const limit=this.tick+60*900;
+  while(this.phase==='observing'&&this.tick<limit)this.step();
+  if(this.phase==='observing')throw Error('保存过场未能结束。');
+ }
  /** Fast-forward is limited to the aftermath. It advances the same orbit/climate and
   * body integrity; it cannot rescue a living player who missed the preservation deadline. */
  resolveAftermath(provision=recoveryProvision):Recovery {
