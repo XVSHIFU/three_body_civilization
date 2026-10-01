@@ -33,3 +33,8 @@ it('walks all eight courtyard treads up and down, while perimeter and instrument
  p.dispose();w.free();
 });
 
+
+it('keeps terminal results and storage failures paused through Esc and journal return',()=>{
+ const s=new CourtyardSession();s.ready();s.locked();s.open('result');s.open('journal');s.escape();expect(s.panel).toBe('result');expect(s.locked()).toBe(false);
+ s.open('storage');s.escape();expect(s.panel).toBe('storage');expect(s.locked()).toBe(false);
+});

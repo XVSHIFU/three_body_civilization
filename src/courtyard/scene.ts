@@ -1,9 +1,10 @@
+import {shelterOrigin,type ShelterCollider} from './shelter';
 import * as THREE from 'three';
 import RAPIER from '@dimforge/rapier3d-compat';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {mergeGeometries} from 'three/addons/utils/BufferGeometryUtils.js';
 
-export type TargetId='instrument'|'plaque'|'observer';
+export type TargetId='instrument'|'plaque'|'observer'|'facility';
 export interface CourtyardTarget {id:TargetId;name:string;object:THREE.Object3D}
 export interface CollisionBox {position:[number,number,number];size:[number,number,number]}
 export const spawn={x:-3.8,y:.92,z:8.5};
@@ -36,7 +37,7 @@ const base=()=>`${import.meta.env.BASE_URL}assets/courtyard/`;
 export async function createCourtyard(scene:THREE.Scene,world:RAPIER.World){
  const textureLoader=new THREE.TextureLoader();
  async function stone(name:string,tint:number){const [map,normalMap,roughnessMap]=await Promise.all(['Diffuse','nor_gl','Rough'].map(channel=>textureLoader.loadAsync(base()+name+'-'+channel+'.jpg')));map.colorSpace=THREE.SRGBColorSpace;for(const t of [map,normalMap,roughnessMap]){t.wrapS=t.wrapT=THREE.RepeatWrapping;t.anisotropy=4;}return new THREE.MeshStandardMaterial({map,normalMap,roughnessMap,color:tint,roughness:1,normalScale:new THREE.Vector2(.45,.45)});}
- const [wall,floor,door,character,armillary]=await Promise.all([stone('white_sandstone_blocks_02',0xe5e0d6),stone('large_sandstone_blocks',0xc8c5ba),new GLTFLoader().loadAsync(base()+'doorway.glb'),new GLTFLoader().loadAsync(base()+'observer.glb'),new GLTFLoader().loadAsync(base()+'armillary.glb')]);
+ const [wall,floor,door,character,armillary,shelterModel]=await Promise.all([stone('white_sandstone_blocks_02',0xe5e0d6),stone('large_sandstone_blocks',0xc8c5ba),new GLTFLoader().loadAsync(base()+'doorway.glb'),new GLTFLoader().loadAsync(base()+'observer.glb'),new GLTFLoader().loadAsync(base()+'armillary.glb'),new GLTFLoader().loadAsync(base()+'shelter.glb')]);
  wall.normalScale.setScalar(.22);floor.normalScale.setScalar(.16);floor.roughnessMap=null;floor.roughness=.95;
  const dark=new THREE.MeshStandardMaterial({color:0x394047,roughness:.84});
  const trim=new THREE.MeshStandardMaterial({color:0x8b744e,metalness:.45,roughness:.59});
@@ -105,9 +106,13 @@ export async function createCourtyard(scene:THREE.Scene,world:RAPIER.World){
  // Low-detail distant silhouettes are scenery, not another explorable map.
  for(let i=0;i<26;i++){const x=-55+i*4.3,z=-48-(i%3)*7,h=6+(i*7%13);box(x,h/2-1,z,3.6,h,4,dark);box(x,h-1,z,2.6,.7,3,dark);}
  for(const [material,parts] of staticParts){const merged=mergeGeometries(parts);parts.forEach(g=>g.dispose());const m=new THREE.Mesh(merged,material);m.castShadow=m.receiveShadow=true;scene.add(m);}
- const targets:CourtyardTarget[]=[{id:'instrument',name:'观测天象',object:consoleRoot},{id:'plaque',name:'阅读石牌',object:plaque},{id:'observer',name:'与观测员交谈',object:observer}];
+ const shelter=shelterModel.scene;shelter.position.set(...shelterOrigin);scene.add(shelter);const shelterRoot=shelter.getObjectByName('preservation-shelter')!;
+ shelter.traverse(o=>{if(o instanceof THREE.Mesh){o.castShadow=o.receiveShadow=true;const m=o.material as THREE.MeshStandardMaterial;if(m.map)m.map.anisotropy=4;}});
+ for(const c of shelterRoot.userData.collisions as ShelterCollider[])world.createCollider(RAPIER.ColliderDesc.cuboid(c.size[0]/2,c.size[1]/2,c.size[2]/2).setTranslation(c.position[0]+shelterOrigin[0],c.position[1],c.position[2]+shelterOrigin[2]));
+ const dryBody=shelter.getObjectByName('preserved-body')!;dryBody.visible=false;
+ const targets:CourtyardTarget[]=[{id:'instrument',name:'观测天象',object:consoleRoot},{id:'plaque',name:'阅读石牌',object:plaque},{id:'observer',name:'与观测员交谈',object:observer},{id:'facility',name:'保存与救助',object:shelter.getObjectByName('preservation-console')!}];
  targets.forEach(t=>t.object.userData.targetId=t.id);plaqueFace.userData.targetId='plaque';
- return {targets,mixer,instrument,observer,animations:character.animations};
+ return {targets,mixer,instrument,observer,shelter,dryBody,animations:character.animations};
 }
 
 

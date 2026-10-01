@@ -2,7 +2,7 @@ import {test,expect} from '@playwright/test';
 
 test('courtyard reading returns on the same click; Esc and settings retain pause',async({page})=>{
  const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));
- await page.goto('/courtyard.html');
+ await page.goto('/courtyard.html?sample=1');
  await page.getByRole('button',{name:'进入庭院',exact:true}).click();
  const locked=()=>page.evaluate(()=>document.pointerLockElement instanceof HTMLCanvasElement);
  await expect.poll(locked).toBe(true);
@@ -26,7 +26,7 @@ test('courtyard reading returns on the same click; Esc and settings retain pause
 
 test('a missing courtyard model stays in a recoverable error screen after Esc',async({page})=>{
  await page.route('**/assets/courtyard/observer.glb',route=>route.fulfill({status:503,body:'synthetic model fault'}));
- await page.goto('/courtyard.html');await expect(page.getByRole('heading',{name:'庭院暂时无法继续'})).toBeVisible();
+ await page.goto('/courtyard.html?sample=1');await expect(page.getByRole('heading',{name:'庭院暂时无法继续'})).toBeVisible();
  await page.keyboard.press('Escape');await expect(page.getByRole('heading',{name:'庭院暂时无法继续'})).toBeVisible();
  await expect(page.getByRole('button',{name:'重新加载'})).toBeVisible();
 });

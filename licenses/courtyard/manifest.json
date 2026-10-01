@@ -60,6 +60,11 @@
       "path": "public/assets/courtyard/white_sandstone_blocks_02-Rough.jpg",
       "sha256": "f30c3c460130ac867d398cacf8041d86eaa760f134f00c84cc1a30348751d3f5",
       "bytes": 635846
+    },
+    {
+      "path": "public/assets/courtyard/shelter.glb",
+      "bytes": 2545044,
+      "sha256": "618d9d3153f53192c73d7a568b35488b4a99d0fcd51d965176560d98ed1e657c"
     }
   ],
   "sources": [
@@ -92,7 +97,8 @@
         "white_sandstone_blocks_02-Diffuse.jpg",
         "white_sandstone_blocks_02-nor_gl.jpg",
         "white_sandstone_blocks_02-Rough.jpg",
-        "armillary.glb"
+        "armillary.glb",
+        "shelter.glb"
       ],
       "resolution": "1k JPG; original downloads via https://api.polyhaven.com/files/white_sandstone_blocks_02",
       "adaptation": "Diffuse embedded as PNG in armillary.glb; quiet atlas patch on segmented stone supports; courtyard walls retain original maps"
@@ -116,6 +122,14 @@
       ],
       "source": "src/courtyard/recipes.ts",
       "license": "Project-authored additions; no new project-wide license is granted"
+    },
+    {
+      "name": "Courtyard preservation shelter",
+      "files": [
+        "shelter.glb"
+      ],
+      "source": "src/courtyard/shelter.ts",
+      "license": "Project-authored geometry; existing CC0 White Sandstone diffuse embedded; concept used only as design reference"
     }
   ]
 }

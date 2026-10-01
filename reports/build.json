@@ -1,6 +1,6 @@
 {
   "node": "v24.15.0",
-  "buildId": "89ae5ba7eb41",
+  "buildId": "05c4cac36a89",
   "dependencies": {
     "@dimforge/rapier3d-compat": "0.21.0",
     "@fontsource/noto-sans-sc": "5.3.0",
@@ -9,16 +9,16 @@
     "react-dom": "19.3.0",
     "three": "0.186.1"
   },
-  "totalBytes": 21064087,
+  "totalBytes": 23627657,
   "files": [
     {
-      "path": "dist\\assets\\chinese-simplified-400-Bh6dpRNu.js",
-      "bytes": 670,
-      "gzipBytes": 389,
-      "sha256": "418c206484b89b68ef5f067277831e583fc9193a62aadf4de269acaaeb12a85f"
+      "path": "dist\\assets\\archive-CrFiy3dV.js",
+      "bytes": 16303,
+      "gzipBytes": 6101,
+      "sha256": "248e4cb970c3af1675a2b6eaae68620325f5c845b22422f9cfea3644878b8e60"
     },
     {
-      "path": "dist\\assets\\chinese-simplified-400-OCfNPWEL.css",
+      "path": "dist\\assets\\archive-OCfNPWEL.css",
       "bytes": 254,
       "gzipBytes": 177,
       "sha256": "9c65c122c2d220c6728eca63d0a908c6cabde9a27cdca989a3dff1207a6056f0"
@@ -66,6 +66,12 @@
       "sha256": "3152077e1ac4192b7b2fcd6e014b4006a0a1c7b0f2d4f06cefdf0fd8c269ec0a"
     },
     {
+      "path": "dist\\assets\\courtyard\\shelter.glb",
+      "bytes": 2545044,
+      "gzipBytes": 2439936,
+      "sha256": "618d9d3153f53192c73d7a568b35488b4a99d0fcd51d965176560d98ed1e657c"
+    },
+    {
       "path": "dist\\assets\\courtyard\\Textures\\colormap.png",
       "bytes": 7529,
       "gzipBytes": 7121,
@@ -96,16 +102,16 @@
       "sha256": "f30c3c460130ac867d398cacf8041d86eaa760f134f00c84cc1a30348751d3f5"
     },
     {
-      "path": "dist\\assets\\courtyard-Bbmx3KlE.css",
-      "bytes": 4622,
-      "gzipBytes": 1742,
-      "sha256": "edd23fb339b34ca1c791c5fa0d60cc9c142dd9924921eb505fb559d6518b86bc"
+      "path": "dist\\assets\\courtyard-CHmm5yN0.css",
+      "bytes": 5168,
+      "gzipBytes": 1879,
+      "sha256": "70ba293e62c65d49396abf232b476abd2b571dba160d55e2a6bfc0ba30d32ea2"
     },
     {
-      "path": "dist\\assets\\courtyard-D_CBtDHm.js",
-      "bytes": 21845,
-      "gzipBytes": 9455,
-      "sha256": "bdd608f66e1703b980029e7f600ca77aa8407e63856b1fad77a4044279f4777f"
+      "path": "dist\\assets\\courtyard-Dzl6qJ23.js",
+      "bytes": 39074,
+      "gzipBytes": 15479,
+      "sha256": "f4f5fce09ad8815c61e4392985d255e7bfadf82bf1bd827cb870fc9e136dd4a0"
     },
     {
       "path": "dist\\assets\\fonts\\noto-serif-sc-title-600.woff2",
@@ -120,10 +126,10 @@
       "sha256": "18aabf190848725e2576eefb5c29ba06aac1029d02132252a7f312eac2e50cf3"
     },
     {
-      "path": "dist\\assets\\GLTFLoader-B9T4ZhK0.js",
-      "bytes": 4971419,
-      "gzipBytes": 1803699,
-      "sha256": "f84c4e03b6b98a4d0716c921d5626d89f8620b672a39c1016018afc0bdca65b1"
+      "path": "dist\\assets\\GLTFLoader-DC3GsBt_.js",
+      "bytes": 4976047,
+      "gzipBytes": 1805708,
+      "sha256": "42f4fce1911a21f3684052da804dad36ff0831b8b86267a0b7f89b1d4a3fd6fb"
     },
     {
       "path": "dist\\assets\\main-B-b0BmT3.css",
@@ -132,10 +138,10 @@
       "sha256": "5467df610c869879f128f7d4c45bb4bf25156d2debf2625bb24d1e0e5b85fb6a"
     },
     {
-      "path": "dist\\assets\\main-CKsrAq00.js",
-      "bytes": 284934,
-      "gzipBytes": 89677,
-      "sha256": "914660185338163a520a90c02e443e897fbf14968f10458427f8aea07957de67"
+      "path": "dist\\assets\\main-BCzQPNuJ.js",
+      "bytes": 269447,
+      "gzipBytes": 84547,
+      "sha256": "e11cd9d150a002d3482854cc7d2a3b8817c2656f749221c9066722ea9c9e3854"
     },
     {
       "path": "dist\\assets\\materials\\parchment.prompt.txt",
@@ -372,22 +378,22 @@
       "sha256": "a067c0709284871d8387a02523b04efb377eb1d49a8a592820248587540377c0"
     },
     {
-      "path": "dist\\assets\\runtime-vMP8BsZH.js",
-      "bytes": 75293,
-      "gzipBytes": 25047,
-      "sha256": "0c02c5ca77246bcef1a9ea1f38d94ed75d42d0aae9436c2f0fc55beefbcecef9"
+      "path": "dist\\assets\\runtime-BuYSb3Zc.js",
+      "bytes": 71009,
+      "gzipBytes": 23406,
+      "sha256": "d20e6c9a41c6b10ec70d71179e39e85862beb92bd58c37d87f02a0a6be297393"
     },
     {
       "path": "dist\\courtyard.html",
-      "bytes": 1575,
-      "gzipBytes": 831,
-      "sha256": "25177d7d9269a9bf6d902bc5ae01347553b363e6991e06f74c25225286fa3f00"
+      "bytes": 1866,
+      "gzipBytes": 936,
+      "sha256": "6f16b26e7420ffc979b580a1665261e15376b5b3f04f9bd09dd7b7eaf77bfb0d"
     },
     {
       "path": "dist\\index.html",
-      "bytes": 605,
-      "gzipBytes": 382,
-      "sha256": "9eeb5a77a6529b54220515bb06fd605baea1fce59f70cc4504134f12bd767b07"
+      "bytes": 575,
+      "gzipBytes": 367,
+      "sha256": "b7d5c667e5a04e12861c0750e7748287b426260d5c7261593632e5aafee57159"
     }
   ],
   "scope": "Static build bytes only; not observed browser transfer, load latency, frame performance, or GPU memory."

@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {GLTFExporter} from 'three/addons/exporters/GLTFExporter.js';
+import {createShelter} from './shelter';
 import {createArmillary,dressObserver,observerReadingClip} from './recipes';
 
 /** Invoked by the local export command, never by the shipped entry. */
@@ -14,9 +15,10 @@ export async function exportCourtyardAssets(){
  for(let y=0;y<256;y++)for(let x=0;x<256;x++){seed=(Math.imul(seed,1664525)+1013904223)>>>0;const v=205+Math.sin(x*.09)*Math.sin(y*.07)*18+(seed/4294967296-.5)*28,i=(y*256+x)*4;pixels.data[i]=v;pixels.data[i+1]=v;pixels.data[i+2]=v;pixels.data[i+3]=255;}
  ctx.putImageData(pixels,0,0);const patina=new THREE.CanvasTexture(canvas);patina.colorSpace=THREE.SRGBColorSpace;
  instrument.traverse(o=>{if(o instanceof THREE.Mesh){const m=o.material as THREE.MeshStandardMaterial;m.map=m.name==='instrument-sandstone'?stoneMap:patina;}});
+ const shelter=createShelter();shelter.traverse(o=>{if(o instanceof THREE.Mesh&&(o.material as THREE.Material).name==='shelter-stone'){const m=o.material as THREE.MeshStandardMaterial;m.map=stoneMap.clone();m.map.wrapS=m.map.wrapT=THREE.RepeatWrapping;}});
  const animations=[...original.animations,observerReadingClip(original.animations.find(c=>c.name==='holding-both')!)];
  const exporter=new GLTFExporter();const result:Record<string,string>={};
- for(const [name,object,clips] of [['armillary',instrument,[]],['observer',observer,animations]] as const){
+ for(const [name,object,clips] of [['armillary',instrument,[]],['observer',observer,animations],['shelter',shelter,[]]] as const){
   const buffer=await exporter.parseAsync(object,{binary:true,animations:[...clips]}) as ArrayBuffer;
   let text='';for(const byte of new Uint8Array(buffer))text+=String.fromCharCode(byte);result[name]=btoa(text);
  }

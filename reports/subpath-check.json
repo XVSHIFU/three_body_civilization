@@ -14,13 +14,13 @@
   ],
   "files": [
     {
-      "path": "assets/chinese-simplified-400-D0BHWCod.css",
-      "bytes": 314,
+      "path": "assets/archive-B7-Hdcd0.js",
+      "bytes": 16303,
       "status": 200
     },
     {
-      "path": "assets/chinese-simplified-400-qf-1wNVT.js",
-      "bytes": 670,
+      "path": "assets/archive-D0BHWCod.css",
+      "bytes": 314,
       "status": 200
     },
     {
@@ -59,6 +59,11 @@
       "status": 200
     },
     {
+      "path": "assets/courtyard/shelter.glb",
+      "bytes": 2545044,
+      "status": 200
+    },
+    {
       "path": "assets/courtyard/Textures/colormap.png",
       "bytes": 7529,
       "status": 200
@@ -84,13 +89,13 @@
       "status": 200
     },
     {
-      "path": "assets/courtyard-B5qJrAAB.js",
-      "bytes": 21868,
+      "path": "assets/courtyard-B2TODw6S.js",
+      "bytes": 39097,
       "status": 200
     },
     {
-      "path": "assets/courtyard-Bbmx3KlE.css",
-      "bytes": 4622,
+      "path": "assets/courtyard-CHmm5yN0.css",
+      "bytes": 5168,
       "status": 200
     },
     {
@@ -104,8 +109,8 @@
       "status": 200
     },
     {
-      "path": "assets/GLTFLoader-B9T4ZhK0.js",
-      "bytes": 4971419,
+      "path": "assets/GLTFLoader-DC3GsBt_.js",
+      "bytes": 4976047,
       "status": 200
     },
     {
@@ -114,8 +119,8 @@
       "status": 200
     },
     {
-      "path": "assets/main-CougLgLr.js",
-      "bytes": 284983,
+      "path": "assets/main-Cx2BMf7R.js",
+      "bytes": 269506,
       "status": 200
     },
     {
@@ -314,18 +319,18 @@
       "status": 200
     },
     {
-      "path": "assets/runtime-C95-PO1S.js",
-      "bytes": 75316,
+      "path": "assets/runtime-yg8vZ1hH.js",
+      "bytes": 71032,
       "status": 200
     },
     {
       "path": "courtyard.html",
-      "bytes": 1690,
+      "bytes": 1981,
       "status": 200
     },
     {
       "path": "index.html",
-      "bytes": 697,
+      "bytes": 667,
       "status": 200
     }
   ]

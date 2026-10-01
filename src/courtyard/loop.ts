@@ -21,7 +21,7 @@ export interface LoopMetadata {version:1;phase:LoopPhase;observerId:number;recov
 export type LoopCheckpoint=Checkpoint&{courtyard:LoopMetadata};
 export interface PlayerPose {position:Vec3;yaw:number;pitch:number;motion?:Checkpoint['motion']}
 const initialPose:PlayerPose={position:[-3.8,.92,8.5],yaw:-.38,pitch:.1};
-/** Authoring contract for the approved small space beyond the existing gateway; art pending. */
+/** Authoring contract for the approved small space beyond the existing gateway. */
 export const preservationPoint={position:[-9,1,-10.5] as Vec3,range:1.8};
 export function nearPreservationPoint(position:Vec3){return position[0]>=-10&&position[0]<=-6&&position[2]>=-12&&position[2]<=-7&&Math.abs(position[1]-.92)<.6&&Math.hypot(position[0]-preservationPoint.position[0],position[2]-preservationPoint.position[2])<=preservationPoint.range;}
 /** Authored epilogue provision, not a claim about the novel: a water-equipped rescue party
@@ -125,5 +125,6 @@ export class CourtyardLoopStore {
   const run=this.writes.then(async()=>{snapshot.revision=loop.archive.revision;const saved=await this.store.save(validateLoopArchive(snapshot));loop.archive.revision=saved.revision;loop.archive.savedAt=saved.savedAt;return saved;});
   this.writes=run.catch(()=>{});return run;
  }
+ readRaw(){return this.store.readRaw();}
  close(){this.store.close();}
 }

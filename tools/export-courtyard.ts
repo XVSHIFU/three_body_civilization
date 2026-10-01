@@ -16,6 +16,6 @@ try{
  });
  await mkdir('public/assets/courtyard',{recursive:true});
  for(const [name,data] of Object.entries(assets))await writeFile(`public/assets/courtyard/${name}.glb`,Buffer.from(data,'base64'));
- console.log('Exported armillary.glb and observer.glb from editable recipes; visual acceptance remains separate.');
+ console.log('Exported armillary.glb, observer.glb and shelter.glb from editable recipes; visual acceptance remains separate.');
  await page.close();
 }finally{await browser.close();await server.close();}

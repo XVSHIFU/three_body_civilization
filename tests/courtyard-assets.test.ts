@@ -1,3 +1,4 @@
+import {createShelter} from '../src/courtyard/shelter';
 import {readFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 import {expect,it} from 'vitest';
@@ -26,4 +27,12 @@ it('reads the dressed character, embedded head texture and named node animation'
  const head=model.scene.getObjectByName('head') as THREE.Mesh;expect((head.material as THREE.MeshStandardMaterial).map).toBeTruthy();
  const size=new THREE.Box3().setFromObject(model.scene).getSize(new THREE.Vector3()).multiplyScalar(.72);
  expect(size.y).toBeGreaterThan(1.8);expect(size.y).toBeLessThan(2.3);
+});
+
+it('loads the shelter with separately addressable console/body and authored metre-scale collisions',async()=>{
+ const model=(await load('shelter')).scene,root=model.getObjectByName('preservation-shelter')!,source=createShelter();
+ expect(root).toBeTruthy();expect(model.getObjectByName('preservation-console')).toBeTruthy();expect(model.getObjectByName('preserved-body')).toBeTruthy();
+ expect(root.userData.collisions).toEqual(source.userData.collisions);
+ for(const box of root.userData.collisions){expect(box.size.every((n:number)=>n>0)).toBe(true);}
+ const actual=new THREE.Box3().setFromObject(model),expected=new THREE.Box3().setFromObject(source);expect(actual.min.distanceTo(expected.min)).toBeLessThan(.0001);expect(actual.max.distanceTo(expected.max)).toBeLessThan(.0001);
 });
