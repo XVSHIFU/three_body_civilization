@@ -8,3 +8,5 @@
 
 /* Keep actions reachable while long inherited records scroll at enlarged text sizes. */
 dialog[open]{display:flex;flex-direction:column;overflow:hidden}dialog header,#panel-actions{flex-shrink:0}#panel-body{min-height:0;overflow:auto}#panel-body h3{font-size:1rem;font-weight:500;margin:0 0 .5em}
+
+.objective{margin:0;max-width:340px;display:grid;gap:5px}.objective strong{color:var(--gold);font-weight:500}.objective small{color:var(--muted);font-size:.8rem}#quest-marker{position:fixed;transform:translate(-50%,-50%);display:flex;align-items:center;gap:7px;padding:6px 10px;color:var(--gold);background:#202d37ed;font-size:.8rem;pointer-events:none;white-space:nowrap}#quest-marker[hidden],.objective[hidden]{display:none}body:not([data-state=playing]) #quest-marker{display:none}

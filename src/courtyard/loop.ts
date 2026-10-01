@@ -1,3 +1,4 @@
+import type {QuestProgress} from './quest';
 import {compressedScenario} from '../simulation/scenario';
 import {advanceEnvironment,initialEnvironment,type EnvironmentState} from '../simulation/environment';
 import {environmentSky} from '../simulation/sky';
@@ -17,7 +18,7 @@ export const canRevive=(conditions:RecoveryConditions)=>conditions.bodyIntact&&c
 export interface Recovery {
  tick:number;conditions:RecoveryConditions;observer:'same'|'successor'|'waiting';
 }
-export interface LoopMetadata {version:1;phase:LoopPhase;observerId:number;recovery:Recovery|null}
+export interface LoopMetadata {version:1;phase:LoopPhase;observerId:number;recovery:Recovery|null;quest?:QuestProgress}
 export type LoopCheckpoint=Checkpoint&{courtyard:LoopMetadata};
 export interface PlayerPose {position:Vec3;yaw:number;pitch:number;motion?:Checkpoint['motion']}
 const initialPose:PlayerPose={position:[-3.8,.92,8.5],yaw:-.38,pitch:.1};
@@ -35,6 +36,7 @@ export function validateLoopArchive(input:unknown):Archive {
  const expectedTime=c.tick*DT*loopScenario.timeScale;
  if(Math.abs(c.celestial.time+(c.celestialAccumulator??0)-expectedTime)>1e-6)throw Error('庭院时钟与轨道检查点不一致。');
  const m=c.courtyard;
+ if(m?.quest!==undefined&&(!m.quest||typeof m.quest.accepted!=='boolean'||typeof m.quest.briefed!=='boolean'||m.quest.briefed&&!m.quest.accepted))throw Error('委托进度无效。');
  if(!m||m.version!==1||!['observing','aftermath','resolved'].includes(m.phase)||!Number.isInteger(m.observerId)||m.observerId<1||m.observerId>archive.civilization)throw Error('庭院接续状态无效。');
  if(c.ended!==(m.phase!=='observing')||(m.phase==='resolved')!==(m.recovery!==null&&m.recovery.observer!=='waiting'))throw Error('庭院结局阶段不一致。');
  if(m.phase==='observing'&&m.recovery!==null)throw Error('观测阶段不能含有复苏结果。');
@@ -54,11 +56,12 @@ export class CourtyardLoop {
  phase:LoopPhase;
  observerId:number;
  recovery:Recovery|null;
+ quest:QuestProgress;
  private result:Outcome|null;
  constructor(input:Archive=emptyArchive()){
   this.archive=validateLoopArchive(input);const c=this.archive.checkpoint as LoopCheckpoint|null;
   this.environment=c?{celestial:structuredClone(c.celestial),celestialAccumulator:c.celestialAccumulator??0,temperature:c.temperature,heatLoad:c.heatLoad,dangerDuration:c.dangerDuration,warning:c.warning}:initialEnvironment(loopScenario);
-  this.preservation=c?{...c.preservation}:freshPreservation();this.tick=c?.tick??0;this.phase=c?.courtyard.phase??'observing';this.observerId=c?.courtyard.observerId??1;this.recovery=c?.courtyard.recovery??null;this.result=c?.outcome??null;
+  this.preservation=c?{...c.preservation}:freshPreservation();this.tick=c?.tick??0;this.phase=c?.courtyard.phase??'observing';this.observerId=c?.courtyard.observerId??1;this.recovery=c?.courtyard.recovery??null;this.result=c?.outcome??null;this.quest=c?.courtyard.quest?{...c.courtyard.quest}:{accepted:false,briefed:false};
  }
  get sky(){return environmentSky(this.environment.celestial,this.environment.celestialAccumulator,loopScenario);}
  get movementLocked(){return this.preservation.phase!=='idle'||this.phase!=='observing';}
@@ -109,7 +112,7 @@ export class CourtyardLoop {
   this.recovery={tick,conditions,observer:canRevive(conditions)?'same':conditions.bodyIntact&&conditions.siteIntact?'waiting':'successor'};this.phase=this.recovery.observer==='waiting'?'aftermath':'resolved';return structuredClone(this.recovery);
  }
  checkpoint(pose:PlayerPose=initialPose):LoopCheckpoint {
-  return {runtimeId:LOOP_VERSION,scenarioId:loopScenario.id,scenarioVersion:loopScenario.version,integratorVersion:loopScenario.integratorVersion,tick:this.tick,...structuredClone(this.environment),...structuredClone(pose),preservation:{...this.preservation},ended:this.phase!=='observing',outcome:this.result?{...this.result}:null,courtyard:{version:1,phase:this.phase,observerId:this.observerId,recovery:structuredClone(this.recovery)}};
+  return {runtimeId:LOOP_VERSION,scenarioId:loopScenario.id,scenarioVersion:loopScenario.version,integratorVersion:loopScenario.integratorVersion,tick:this.tick,...structuredClone(this.environment),...structuredClone(pose),preservation:{...this.preservation},ended:this.phase!=='observing',outcome:this.result?{...this.result}:null,courtyard:{version:1,phase:this.phase,observerId:this.observerId,recovery:structuredClone(this.recovery),quest:{...this.quest}}};
  }
  snapshot(pose:PlayerPose=initialPose):Archive {return {...structuredClone(this.archive),checkpoint:this.checkpoint(pose)};}
  nextCivilization(){
